@@ -1,0 +1,108 @@
+<!doctype html>
+
+<html>
+<head>
+	<title>{{action}}</title>  
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="/css/bootstrap-theme.css">
+	<link rel="stylesheet" type="text/css" href="/css/poll.css">   
+	<script src='https://cdn.firebase.com/v0/firebase.js'></script> 
+	 
+     
+</head>
+
+<body>
+
+	<div class="header">
+		<center>
+			<table>
+				<tr>
+					<td width="50" align="center">
+						<button type="button" class="btn btn-default" onclick="window.location.href='/eventView/{{pollInfo.id}}'">
+							<span class="glyphicon glyphicon-arrow-left"></span>
+						</button>
+					</td>
+					<td align="center"><p>{{action}}</p></td>
+					<td width="50" align="center"></td>
+				</tr>
+			</table>
+		</center>
+	</div>
+
+
+	<div class="main">
+		<!-- Header placeholder so that header bar doesn't cover content -->
+		<div class="headerPlaceholder"></div>
+			<br>
+			<br>
+		<!-- Content goes here -->
+		<center>
+		
+			{{#if voteSuccess}}
+				<h3>Your vote was submitted successfully!</h3>
+				<!--<a href="/eventView/{{pollid}}"><button type="button" class="btn btn-default">Go To Created Hangout</button></a>&nbsp;&nbsp;&nbsp;&nbsp;
+				<br> -->
+				<br>
+				<a href="/myevents"><button type="button" class="btn btn-success">Go To My Hangouts</button></a> 
+
+			{{/if}}
+
+			{{#if changeSuccess}}
+				<h3>Your vote was changed successfully!</h3>
+				<!--<a href="/eventView/{{pollid}}"><button type="button" class="btn btn-default">Go Back To The Hangout</button></a>&nbsp;&nbsp;&nbsp;&nbsp; -->
+				<br>
+				<a href="/myevents"><button type="button" class="btn btn-success">Go To My Hangouts</button></a>
+			{{/if}}
+
+			{{#if deleteSuccess}}
+				<h3>Your vote was deleted successfully!</h3>
+				<h3>We are sorry to see that you are not attending the Hangout.</h3>
+				<!--<a href="/eventView/{{pollid}}"><button type="button" class="btn btn-default">Go Back To The Hangout</button></a>&nbsp;&nbsp;&nbsp;&nbsp; -->
+				<a href="/myevents"><button type="button" class="btn btn-success">Go To My Hangouts</button></a>
+			{{/if}}
+
+		</center>
+
+	</div>
+
+	
+	<div class="bar">
+		<center>
+			<div class="btn-group btn-group-justified">
+  				<div class="btn-group">
+    				<a href="/myevents"><button type="button" class="btn btn-default"><span class="glyphicon glyphicon-glass"></span><br>myHangouts</button></a>
+  				</div>
+  				<div class="btn-group">
+    				<a href="/events"><button type="button" class="btn btn-default"><span class="glyphicon glyphicon-globe"></span><br>Hangouts<br></button></a>
+  				</div>
+  				<div class="btn-group">
+    				<a href="/people"><button type="button" class="btn btn-default"><span class="glyphicon glyphicon-search"></span><br>Community<br></button></a>
+  				</div>
+  				<div class="btn-group">
+    				{{#if user}}<a href="/profile/{{user.id}}">{{else}}<a href="/profile">{{/if}}
+    				<button type="button" class="btn btn-default"><span class="glyphicon glyphicon-user"></span><br>Profile</button></a>
+  				</div>
+			</div>
+		</center>
+	</div>
+
+
+	
+	<script type="text/javascript" src="../js/jquery-1.11.0.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.js"></script>
+
+	<script src="../js/result_helper.js"></script>
+	<!--<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-48674675-1', 'pollnow.herokuapp.com');
+  ga('send', 'pageview');
+
+</script> -->
+</body>
+</html>

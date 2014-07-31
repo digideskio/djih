@@ -1,0 +1,268 @@
+/* applies to anything of class "example-class-selector" */
+body {
+    background-color: #ffffff;
+}
+
+.main {
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+    bottom: 25px;
+}
+
+
+.example-class-selector {
+	margin-top: 2em;
+}
+
+/* applies to any <p> descendants of an element of class "example-class-selector" */
+.example-class-selector p {
+	/* Colors are in hexadecimal: http://www.colorpicker.com/ */	
+	color: #CC00AA;
+}
+
+h1, h2, h3, h4, h5 {
+	 font-family: "Helvetica";
+  font-weight: "light";
+  color: #000033;
+}
+
+.friend {
+    width: 300px;
+}
+
+.header {
+  background-color: #780000;
+  /*background: linear-gradient(#fef8f0,#5E2D79);*/
+  position: fixed;
+  top: 0px;
+  height: 60px;
+  width: 100%;
+}
+
+.header p {
+  font-family: "Helvetica";
+  font-weight: "light";
+  font-size: x-large;
+  color: #ffffff;
+}
+
+.header table {
+  border-collapse: collapse;
+  border-spacing: 0px;
+  width: 95%;
+  height: 50px;
+}
+
+.header tr {
+  padding: 0;
+}
+
+.header td {
+  padding: 0;
+}
+
+.header img {
+  width: 35px;
+  height: 35px;
+}
+
+.header btn {
+
+}
+
+.headerPlaceholder {
+  height: 50px;
+}
+
+.subheader {
+  background-color: #d3d3d3;
+  position: fixed;
+  top: 60px;
+  height: 20px;
+  width: 100%;
+}
+
+.subheader p {
+  font-family: "Helvetica";
+  font-weight: "light";
+  font-size: x-large;
+  color: #000033;
+}
+
+.subheader table {
+  border-collapse: collapse;
+  border-spacing: 0px;
+  width: 95%;
+  height: 50px;
+}
+
+.subheader tr {
+  padding: 0;
+}
+
+.subheader td {
+  padding: 0;
+  vertical-align: top;
+  font-size: 15px;
+}
+
+.profilePic {
+  height: 150px;
+  width: 150px;
+}
+
+.friendPic {
+  height: 100px;
+  width: 100px;
+}
+
+.VotePic {
+  height: 50px;
+  width: 50px;
+}
+
+.chatTextArea{
+overflow: auto; 
+overflow-y: auto;
+word-wrap:break-word;
+
+width: 96.5%;
+padding:5px;
+border:solid 1px #c3c3c3;
+
+
+}
+.messages2 {
+height: 150px;
+max-height: 150px;
+}
+#m0 {
+background-color: #ffffff;
+}
+#m1 {
+background-color: #f5f5f5;
+}
+#message-date {
+font-size: 8px;
+color: rgba(0,0,0,0.5);
+padding-left:40%;
+}
+.messages{
+background-color: #ffffff;
+text-align: left;
+overflow-x: hidden;
+min-height: 50px;
+position: relative;
+word-wrap:break-word;
+resize:none;
+border:solid 1px #c3c3c3;
+}
+
+.event {
+  background-color: #ffffff;
+  width: 100%;
+}
+.event table{
+  border-collapse: collapse;
+  border-spacing: 0px;
+  width: 95%;
+}
+
+.event tr{
+  padding: 0px;
+}
+
+.event td{
+  padding: 0px;
+}
+
+.event p {
+  font-family: "Helvetica";
+  font-weight: "light";
+  font-size: 15px;
+  color: #000000;
+  text-align: left;
+}
+
+.event h3 {
+  font-family: "Helvetica";
+  font-weight: 900;
+  font-size: 15px;
+  color: #000033;
+  text-align: left;
+}
+
+.event img{
+  width: 60px;
+  height: 60px;
+}
+
+.event hr {
+  height: 5px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.bar {
+background-color: #ffffff;
+position: fixed;
+bottom: 0px;
+width: 100%;
+height: 50px;
+}
+
+@media screen and (max-height: 350px) and (orientation: portrait) and (device-aspect-ratio: 2/3){
+  .bar {
+    display: none;
+  }
+}
+
+@media screen and (max-height: 450px) and (orientation: portrait) and (device-aspect-ratio: 40/71){
+  .bar {
+    display: none;
+  }
+}
+
+.bar table {
+  background-color: #000033;
+  border-collapse: collapse;
+  border-spacing: 10px;
+  width: 100%;
+
+}
+
+.bar tr {
+    background-color: #000033;
+}
+
+.footerPlaceholder {
+    height: 75px;
+}
+
+.chart div {
+  font: 10px Helvetica;
+  background-color: steelblue;
+  text-align: right;
+  padding: 3px;
+  margin: 1px;
+  color: white;
+}
+
+.profile h1 {
+  font-family: "Helvetica";
+  font-weight: "light";
+  font-size: 23px;
+  color: #000033;
+}
+
+.profile h3 {
+  font-family: "Helvetica";
+  font-weight: "light";
+  font-size: 17px;
+  color: #000033;
+}
+
+.footer {
+  background-color: #FEF8F0;
+}
