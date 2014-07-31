@@ -1,11 +1,11 @@
 {
-  "name": "IntroHCI",
+  "name": "djih",
   "version": "0.0.1",
-  "author": "Intro HCI Staff",
+  "author": "Daniel Jih",
 
   "repository": {
     "type": "git",
-    "url": "https://github.com/IntroHCI/lab5"
+    "url": "https://github.com/djih/djih.git"
   },
   "license": "MIT",
 
@@ -20,5 +20,5 @@
   },
   "engines": {
     "node": "0.10.x"
-  }  
+  }
 }
