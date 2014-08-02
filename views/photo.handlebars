@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap 101 Template</title>
+    <title>Photo Portfolio</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -38,9 +38,19 @@
 
           <div class="inner cover">
             <h1 class="cover-heading">Express Yourself</h1>
-            <p class="lead">"A good snapshot keeps a moment from running away" - Eudora Welty</p>
+            <p class="lead">"Which of my photographs is my favorite? The one I'm going to take tomorrow" - Imogen Cunningham</p>
             
             <ul class="gallery">
+              
+              {{#each photo_id}}
+                <li>
+                  <img id="{{this}}" src="images/{{this}}_small.JPG">
+                  <h3>Title</h3>
+                  <p id="{{this}}_info">Photo Description</p>
+                </li>
+              {{/each}}
+
+              <!--
               <li>
                 <img id="52" src="images/DSC_0052.JPG">
                 <h3>Ghiradelli Square</h3>
@@ -60,6 +70,9 @@
                 <img src="images/DSC_0089.JPG">
                 <h3>A quiet dinner</h3>
                 <p>The San Francisco sunset through the glass walls of McCormick Killion</p>
+              </li>
+              -->
+
             </ul>
 
           <div class="mastfoot">
@@ -83,19 +96,41 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.exif.js"></script>
-    <script>
-      $("#52").load(function(){
-        $(this).exifLoad(function(){
-          $("#52-model").html("Model: " + $("#52").exif("Model"));
-          $("#52-av").html("Aperture: f" + $("#52").exif("FNumber"));
 
-          // Convert Exposure time into fraction
-          var ss = Ratio.parse($("#52").exif("ExposureTime")).simplify().toString();
-          $("#52-ss").html('Shutter Speed: ' + ss + ' sec');
-          $("#52-iso").html("ISO: " + $("#52").exif("ISOSpeedRatings"));
-          $("#52-fl").html("Focal Length: " + $("#52").exif("FocalLength") + 'mm');
+    <script>
+      {{#each photo_id}}
+        $('#{{this}}').load(function(){
+          var photo = $(this);
+          var id = {{this}};
+          photo.exifLoad(function(){
+            var info = '';
+
+            var model = photo.exif('Model');
+            info += 'Camera: ' + model + '<br>';
+
+            var fl = photo.exif('FocalLength');
+            info += 'Focal Length: ' + fl + 'mm' + '<br>';
+            
+            var fnum = photo.exif('FNumber');
+            info += 'Aperture: f/' + fnum + '<br>';
+
+            var et = parseFloat(photo.exif('ExposureTime'));
+            var ss;
+            if (et > 0){
+              ss = et;
+            }
+            else {
+              ss = Ratio.parse(et).simplify().toString();
+            }
+            info += 'Shutter Speed: ' + ss + 's' + '<br>';
+
+            var iso = photo.exif('ISOSpeedRatings');
+            info += 'ISO: ' + iso;
+
+            $('#{{this}}_info').html(info);
+          });
         });
-      });
+      {{/each}}
     </script>
   </body>
 </html>

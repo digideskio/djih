@@ -3,6 +3,10 @@
 
 
 exports.view = function(req, res){
+
+    var photo_ids = ['DSC_0052', 'DSC_0070', 'DSC_0089', 'DSC_0115'];
+
     var data = [];
+    data['photo_id'] = photo_ids
     res.render('photo', data);
 };
