@@ -9,6 +9,7 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/cover.css" rel="stylesheet">
+    <script src="js/ratio.js"></script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -41,9 +42,14 @@
             
             <ul class="gallery">
               <li>
-                <img src="images/DSC_0052.JPG">
+                <img id="52" src="images/DSC_0052.JPG">
                 <h3>Ghiradelli Square</h3>
                 <p>The front face of the iconic San Francisco square</p>
+                <p id="52-model"></p>
+                <p id="52-ss"></p>
+                <p id="52-av"></p>
+                <p id="52-iso"></p>
+                <p id="52-fl"></p>
               </li>
               <li>
                 <img src="images/DSC_0070.JPG">
@@ -76,5 +82,20 @@
     <script src="js/jquery-1.8.3.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.exif.js"></script>
+    <script>
+      $("#52").load(function(){
+        $(this).exifLoad(function(){
+          $("#52-model").html("Model: " + $("#52").exif("Model"));
+          $("#52-av").html("Aperture: f" + $("#52").exif("FNumber"));
+
+          // Convert Exposure time into fraction
+          var ss = Ratio.parse($("#52").exif("ExposureTime")).simplify().toString();
+          $("#52-ss").html('Shutter Speed: ' + ss + ' sec');
+          $("#52-iso").html("ISO: " + $("#52").exif("ISOSpeedRatings"));
+          $("#52-fl").html("Focal Length: " + $("#52").exif("FocalLength") + 'mm');
+        });
+      });
+    </script>
   </body>
 </html>
