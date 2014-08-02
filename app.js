@@ -26,9 +26,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 // define routes
-var index = require('./routes/index');
+var cover = require('./routes/cover');
 var car = require('./routes/car');
 var dashboard = require('./routes/dashboard');
+var photo = require('./routes/photo');
 
 //var myevents = require('./routes/myevents');
 //var events = require('./routes/events');
@@ -53,9 +54,11 @@ if ('development' == app.get('env')) {
 }
 
 // Add routes here
-app.get('/', index.view);
+app.get('/', cover.view);
 app.get('/car', car.view);
 app.get('/dashboard', dashboard.view);
+app.get('/photo', photo.view);
+
 
 //app.get('/myevents', myevents.view);
 //app.get('/events', events.view);
