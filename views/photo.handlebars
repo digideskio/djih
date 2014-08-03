@@ -42,11 +42,11 @@
             
             <ul class="gallery">
               
-              {{#each photo_id}}
+              {{#each photos}}
                 <li>
-                  <img id="{{this}}" src="images/{{this}}_small.JPG">
-                  <h3>Title</h3>
-                  <p id="{{this}}_info">Photo Description</p>
+                  <img id="{{this.id}}" src="images/{{this.id}}_small.JPG">
+                  <h3>{{this.title}}</h3>
+                  <p id="{{this.id}}_info">Photo Description</p>
                 </li>
               {{/each}}
 
@@ -114,9 +114,9 @@
             var fnum = photo.exif('FNumber');
             info += 'Aperture: f/' + fnum + '<br>';
 
-            var et = parseFloat(photo.exif('ExposureTime'));
+            var et = photo.exif('ExposureTime');
             var ss;
-            if (et > 0){
+            if (et > 1){
               ss = et;
             }
             else {

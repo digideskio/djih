@@ -133,7 +133,9 @@ body {
   display: inline-block;
   padding: 10px;
   margin: 0 0 2.5% 2.5%;
-  background: #fff;
+  margin-bottom: 20px;
+  /*background: #fff;*/
+  background: #616060;
   border: 1px solid #ddd;
   font-size: 16px;
   font-size: 1rem;
