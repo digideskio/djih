@@ -83,75 +83,16 @@
                   <h3>{{this.location}}</h3>
                   <p id="{{this.id}}_info">Photo Description</p>
                 </li>
-
                 <script>
                   $('#{{this.id}}').load(function(){
                   var photo = $(this);
                   photo.exifLoad(function(){
                     addPhotoInfoFromExif('{{this.id}}', photo);
-                    /*
-                    //var info = 'Location: {{this.location}}' + '<br><br>';
-                    var info = '';
-
-                    var date = photo.exif('DateTime');
-                    //debugger;
-                    formatExifDateTime(date);
-
-                    var model = photo.exif('Model');
-                    info += 'Camera: ' + model + '<br>';
-
-                    var fl = photo.exif('FocalLength');
-                    info += 'Focal Length: ' + fl + 'mm' + '<br>';
-                    
-                    var fnum = photo.exif('FNumber');
-                    info += 'Aperture: f/' + fnum + '<br>';
-
-                    var et = photo.exif('ExposureTime');
-                    var ss;
-                    if (et > 1){
-                      ss = et;
-                    }
-                    else {
-                      ss = Ratio.parse(et).simplify().toString();
-                    }
-                    info += 'Shutter Speed: ' + ss + 's' + '<br>';
-
-                    var iso = photo.exif('ISOSpeedRatings');
-                    info += 'ISO: ' + iso;
-
-                    $('#{{this.id}}_info').html(info).css('display', 'block');
-                    */
-
                   });
                 });
 
                 </script>
-
               {{/each}}
-
-              <!--
-              <li>
-                <img id="52" src="images/DSC_0052.JPG">
-                <h3>Ghiradelli Square</h3>
-                <p>The front face of the iconic San Francisco square</p>
-                <p id="52-model"></p>
-                <p id="52-ss"></p>
-                <p id="52-av"></p>
-                <p id="52-iso"></p>
-                <p id="52-fl"></p>
-              </li>
-              <li>
-                <img src="images/DSC_0070.JPG">
-                <h3>Seafood & Steaks</h3>
-                <p>A long exposure shot of the sky behind McCormick Killion</p>
-              </li>
-              <li>
-                <img src="images/DSC_0089.JPG">
-                <h3>A quiet dinner</h3>
-                <p>The San Francisco sunset through the glass walls of McCormick Killion</p>
-              </li>
-              -->
-
             </ul>
 
           <div class="mastfoot">
@@ -167,49 +108,5 @@
     </div>
 
 
-
-
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <!--<script src="js/jquery-1.8.3.min.js"></script>-->
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <!--<script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.exif.js"></script>-->
-
-    <!--<script>
-      {{#each photos}}
-        $('#{{this.id}}').load(function(){
-          var photo = $(this);
-          photo.exifLoad(function(){
-            //var info = 'Location: {{this.location}}' + '<br><br>';
-            var info = '';
-
-            var model = photo.exif('Model');
-            info += 'Camera: ' + model + '<br>';
-
-            var fl = photo.exif('FocalLength');
-            info += 'Focal Length: ' + fl + 'mm' + '<br>';
-            
-            var fnum = photo.exif('FNumber');
-            info += 'Aperture: f/' + fnum + '<br>';
-
-            var et = photo.exif('ExposureTime');
-            var ss;
-            if (et > 1){
-              ss = et;
-            }
-            else {
-              ss = Ratio.parse(et).simplify().toString();
-            }
-            info += 'Shutter Speed: ' + ss + 's' + '<br>';
-
-            var iso = photo.exif('ISOSpeedRatings');
-            info += 'ISO: ' + iso;
-
-            $('#{{this.id}}_info').html(info);
-          });
-        });
-      {{/each}}
-    </script>-->
   </body>
 </html>
