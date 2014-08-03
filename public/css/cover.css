@@ -161,6 +161,7 @@ body {
   font-size: .9em;
   line-height: 1.5em;
   color: #999;
+  display: none;
  }
 
 @media (max-width: 768px) {

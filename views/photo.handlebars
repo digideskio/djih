@@ -84,7 +84,8 @@
                     var iso = photo.exif('ISOSpeedRatings');
                     info += 'ISO: ' + iso;
 
-                    $('#{{this.id}}_info').html(info);
+                    $('#{{this.id}}_info').html(info).css('display', 'block');
+
                   });
                 });
 
