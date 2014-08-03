@@ -22,6 +22,35 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.exif.js"></script>
+
+    <script>
+      var formatExifDateTime = function(d){
+        date = d.split(' ')[0];
+        parts = date.split(':');
+        return parts[1]+'/'+parts[2]+'/'+parts[0];
+      };
+
+      var addPhotoInfoFromExif = function(id, photo){
+        var model = photo.exif('Model');
+        var fl = photo.exif('FocalLength');
+        var fnum = photo.exif('FNumber');
+        var et = photo.exif('ExposureTime');
+        var ss = ((et > 1) ? et : Ratio.parse(et).simplify().toString());
+        var iso = photo.exif('ISOSpeedRatings');
+        var date = formatExifDateTime(photo.exif('DateTime')[0]);
+
+        var info = 'Camera: ' + model + '<br>' + 
+          'Focal Length: ' + fl + 'mm' + '<br>' + 
+          'Aperture: f/' + fnum + '<br>' +
+          'Shutter Speed: ' + ss + 's' + '<br>' +
+          'ISO: ' + iso + '<br>' +
+          'Date: ' + date;
+
+        $('#'+id+'_info').html(info).css('display', 'block');
+      }
+
+    </script>
+
   </head>
   <body>
    
@@ -59,8 +88,14 @@
                   $('#{{this.id}}').load(function(){
                   var photo = $(this);
                   photo.exifLoad(function(){
+                    addPhotoInfoFromExif('{{this.id}}', photo);
+                    /*
                     //var info = 'Location: {{this.location}}' + '<br><br>';
                     var info = '';
+
+                    var date = photo.exif('DateTime');
+                    //debugger;
+                    formatExifDateTime(date);
 
                     var model = photo.exif('Model');
                     info += 'Camera: ' + model + '<br>';
@@ -85,6 +120,7 @@
                     info += 'ISO: ' + iso;
 
                     $('#{{this.id}}_info').html(info).css('display', 'block');
+                    */
 
                   });
                 });
