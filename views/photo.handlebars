@@ -45,7 +45,7 @@
               {{#each photos}}
                 <li>
                   <img id="{{this.id}}" src="images/{{this.id}}_small.JPG">
-                  <h3>{{this.title}}</h3>
+                  <h3>{{this.location}}</h3>
                   <p id="{{this.id}}_info">Photo Description</p>
                 </li>
               {{/each}}
@@ -98,11 +98,11 @@
     <script src="js/jquery.exif.js"></script>
 
     <script>
-      {{#each photo_id}}
-        $('#{{this}}').load(function(){
+      {{#each photos}}
+        $('#{{this.id}}').load(function(){
           var photo = $(this);
-          var id = {{this}};
           photo.exifLoad(function(){
+            //var info = 'Location: {{this.location}}' + '<br><br>';
             var info = '';
 
             var model = photo.exif('Model');
@@ -127,7 +127,7 @@
             var iso = photo.exif('ISOSpeedRatings');
             info += 'ISO: ' + iso;
 
-            $('#{{this}}_info').html(info);
+            $('#{{this.id}}_info').html(info);
           });
         });
       {{/each}}

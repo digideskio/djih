@@ -1,18 +1,77 @@
 [
     {
         "id": "DSC_0052",
-        "title": "The front face of Ghiradeli Square"
+        "title": "The front face of Ghiradeli Square",
+        "location": "Ghiradeli Square, San Francisco"
     },
     {
         "id": "DSC_0070",
-        "title": "Sunset behind McCormick & Kuleto's"
+        "title": "Sunset behind McCormick & Kuleto's",
+        "location": "Ghiradeli Square, San Francisco"
     },
     {
         "id": "DSC_0089",
-        "title": "Lone diner by the window"
+        "title": "Lone diner by the window",
+        "location": "Ghiradeli Square, San Francisco"
     },
     {
         "id": "DSC_0115",
-        "title": "Ghiradeli Square at dusk"
+        "title": "Ghiradeli Square at dusk",
+        "location": "Ghiradeli Square, San Francisco"
+    },
+    {
+        "id": "DSC_0359",
+        "title": "The red machines",
+        "location": "Driven Raceway, Santa Rosa"
+    },
+    {
+        "id": "DSC_0597",
+        "title": "Coastal town",
+        "location": "Crescent City, CA"
+    },
+    {
+        "id": "DSC_0639",
+        "title": "Logs",
+        "location": "Crescent City, CA"
+    },
+    {
+        "id": "DSC_0672",
+        "title": "Beach sunset",
+        "location": "Cescent City, CA"
+    },
+    {
+        "id": "DSC_0290",
+        "title": "Giants vs. Cardinals",
+        "location": "AT&T Park, San Francisco"
+    },
+    {
+        "id": "DSC_0721",
+        "title": "Leaving Pier 33",
+        "location": "San Francisco, CA"
+    },
+    {
+        "id": "DSC_0866",
+        "title": "Desolate Fortress",
+        "location": "Alcatraz, San Francisco"
+    },
+    {
+        "id": "DSC_0113",
+        "title": "Abandoned bird haven",
+        "location": "Alcatraz, San Francisco"
+    },
+    {
+        "id": "DSC_0123",
+        "title": "A taste of freedom",
+        "location": "Alcatraz, San Francisco"
+    },
+    {
+        "id": "DSC_0890",
+        "title": "The sunset behind Golden Gate Bridge",
+        "location": "Alcatraz, San Francisco"
+    },
+    {
+        "id": "DSC_0903",
+        "title": "Start of the night shift",
+        "location": "Alcatraz, San Francisco"
     }
 ]
