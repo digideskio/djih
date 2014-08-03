@@ -62,7 +62,7 @@
 
           <div class="masthead clearfix">
             <div class="inner">
-              <h3 class="masthead-brand">Cover</h3>
+              <h3 class="masthead-brand">DJ</h3>
               <ul class="nav masthead-nav">
                 <li><a href="/">Home</a></li>
                 <li class="active"><a href="/photo">Photos</a></li>
@@ -78,12 +78,18 @@
             <ul class="gallery">
               
               {{#each photos}}
-                <li>
-                  <img id="{{this.id}}" src="images/{{this.id}}_small.JPG">
-                  <h3>{{this.location}}</h3>
-                  <p id="{{this.id}}_info">Photo Description</p>
-                </li>
+                <a href="#" id="{{this.id}}_link">
+                  <li>
+                    <img id="{{this.id}}" src="images/{{this.id}}_small.JPG">
+                    <h3>{{this.location}}</h3>
+                    <p id="{{this.id}}_info">Photo Description</p>
+                  </li>
+                </a>
                 <script>
+                  $('#{{this.id}}_link').click(function(e){
+                    e.preventDefault();
+                  });
+
                   $('#{{this.id}}').load(function(){
                   var photo = $(this);
                   photo.exifLoad(function(){
