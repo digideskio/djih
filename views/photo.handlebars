@@ -16,6 +16,12 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.exif.js"></script>
   </head>
   <body>
    
@@ -48,6 +54,42 @@
                   <h3>{{this.location}}</h3>
                   <p id="{{this.id}}_info">Photo Description</p>
                 </li>
+
+                <script>
+                  $('#{{this.id}}').load(function(){
+                  var photo = $(this);
+                  photo.exifLoad(function(){
+                    //var info = 'Location: {{this.location}}' + '<br><br>';
+                    var info = '';
+
+                    var model = photo.exif('Model');
+                    info += 'Camera: ' + model + '<br>';
+
+                    var fl = photo.exif('FocalLength');
+                    info += 'Focal Length: ' + fl + 'mm' + '<br>';
+                    
+                    var fnum = photo.exif('FNumber');
+                    info += 'Aperture: f/' + fnum + '<br>';
+
+                    var et = photo.exif('ExposureTime');
+                    var ss;
+                    if (et > 1){
+                      ss = et;
+                    }
+                    else {
+                      ss = Ratio.parse(et).simplify().toString();
+                    }
+                    info += 'Shutter Speed: ' + ss + 's' + '<br>';
+
+                    var iso = photo.exif('ISOSpeedRatings');
+                    info += 'ISO: ' + iso;
+
+                    $('#{{this.id}}_info').html(info);
+                  });
+                });
+
+                </script>
+
               {{/each}}
 
               <!--
@@ -92,12 +134,12 @@
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="js/jquery-1.8.3.min.js"></script>
+    <!--<script src="js/jquery-1.8.3.min.js"></script>-->
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.exif.js"></script>
+    <!--<script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.exif.js"></script>-->
 
-    <script>
+    <!--<script>
       {{#each photos}}
         $('#{{this.id}}').load(function(){
           var photo = $(this);
@@ -131,6 +173,6 @@
           });
         });
       {{/each}}
-    </script>
+    </script>-->
   </body>
 </html>
