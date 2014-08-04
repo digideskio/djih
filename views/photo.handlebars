@@ -86,7 +86,8 @@
                 <a href="#" id="{{this.id}}_link" title="{{this.location}}">
                   <li>
                     <img id="{{this.id}}" src="images/{{this.id}}_small.JPG">
-                    <h3>{{this.location}}</h3>
+                    <!--<h3>{{this.location}}</h3>-->
+                    <h3>{{this.title}}</h3>
                     <p id="{{this.id}}_info">Photo Description</p>
                   </li>
                 </a>
@@ -112,7 +113,7 @@
                       type: 'image',
                       image: {
                         verticalFit: true,
-                        titleSrc: function(){return '<center>{{this.location}}</center>';}
+                        titleSrc: function(){return '<strong>{{this.title}}</strong>  -  {{this.location}}';}
                       },
                       mainClass: 'mfp-img-mobile'
                     });
