@@ -147,7 +147,8 @@ body {
  }
 
  ul.gallery li:hover {
-  border: 1px solid #9CDCFF
+  /*border: 1px solid #73CEFF;*/
+  border: 1px solid #91C1FF;
  }
 
  ul.gallery li img {
