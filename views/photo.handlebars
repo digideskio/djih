@@ -108,11 +108,11 @@
                       showCloseBtn: true,
                       items: {
                         src: 'images/{{this.id}}.JPG',
-                        titleSrc: function(){return '{{this.location}}';}
                       },
                       type: 'image',
                       image: {
-                        verticalFit: true
+                        verticalFit: true,
+                        titleSrc: function(){return '<center>{{this.location}}</center>';}
                       },
                       mainClass: 'mfp-img-mobile'
                     });
