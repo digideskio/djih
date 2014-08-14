@@ -30,6 +30,7 @@ var cover = require('./routes/cover');
 var car = require('./routes/car');
 var dashboard = require('./routes/dashboard');
 var photo = require('./routes/photo');
+var photo_get_rest = require('./routes/photo_get_rest');
 
 //var myevents = require('./routes/myevents');
 //var events = require('./routes/events');
@@ -58,6 +59,7 @@ app.get('/', cover.view);
 app.get('/car', car.view);
 app.get('/dashboard', dashboard.view);
 app.get('/photo', photo.view);
+app.get('/photo_get_rest', photo_get_rest.view);
 
 
 //app.get('/myevents', myevents.view);
