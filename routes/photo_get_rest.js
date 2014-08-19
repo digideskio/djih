@@ -24,6 +24,6 @@ exports.view = function(req, res){
         var data = [];
         data['photos'] = photos;
 
-        res.render('photo', data);
+        res.render('photo_get_rest', data);
     })
 };
