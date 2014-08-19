@@ -27,6 +27,8 @@
     <script src="js/jquery.magnific-popup.min.js" rel="stylesheet"></script>
 
     <script>
+      var photo_json = [];
+
       var formatExifDateTime = function(d){
         date = d.split(' ')[0];
         parts = date.split(':');
@@ -34,12 +36,12 @@
       };
 
       var addPhotoInfoFromExif = function(id, photo){
-        var model = photo.exif('Model');
+        var model = photo.exif('Model')[0];
         var fl = photo.exif('FocalLength');
         var fnum = photo.exif('FNumber');
         var et = photo.exif('ExposureTime');
         var ss = ((et > 1) ? et : Ratio.parse(et).simplify().toString());
-        var iso = photo.exif('ISOSpeedRatings');
+        var iso = photo.exif('ISOSpeedRatings')[0];
         var date = formatExifDateTime(photo.exif('DateTime')[0]);
 
         var info = 'Camera: ' + model + '<br>' + 
@@ -50,6 +52,17 @@
           'Date: ' + date;
 
         $('#'+id+'_info').html(info).css('display', 'block');
+
+        photo_dict = {};
+        photo_dict['file'] = id;
+        photo_dict['camera'] = model;
+        photo_dict['focal_length'] = fl + 'mm';
+        photo_dict['aperture'] = 'f/' + fnum;
+        photo_dict['shutter_speed'] = ss + 's';
+        photo_dict['iso'] = iso;
+        photo_dict['date_taken'] = date;
+
+        photo_json.push(photo_dict)
       }
 
     </script>

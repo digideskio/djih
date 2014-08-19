@@ -53,6 +53,10 @@ body {
   margin-left: auto;
 }
 
+.form-control {
+  width: 60%;
+}
+
 /* Padding for spacing */
 .inner {
   padding: 30px;
@@ -103,6 +107,8 @@ body {
     float: right;
   }
 }
+
+
 
 
 /*
@@ -192,6 +198,11 @@ body {
  */
 
 @media (min-width: 768px) {
+
+  .form-control{
+    width: 460px;
+  }
+
   /* Pull out the header and footer */
   .masthead {
     position: fixed;
