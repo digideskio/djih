@@ -116,23 +116,18 @@
                   </li>
                 </a>
                 <script>
-                  $('#{{this.id}}_link').click(function(e){
+                  $('#{{this.filename}}_link').click(function(e){
                     e.preventDefault();
                   });
 
-                  $('#{{this.id}}').load(function(){
-                    var photo = $(this);
-                    photo.exifLoad(function(){
-                      addPhotoInfoFromExif('{{this.id}}', photo);
-                    });
-
-                    $('#{{this.id}}_link').magnificPopup({
+                  $('#{{this.filename}}').load(function(){
+                    $('#{{this.filename}}_link').magnificPopup({
                       disableOn: 480,
                       closeOnContentClick: true,
                       closeOnBgClick: true,
                       showCloseBtn: true,
                       items: {
-                        src: 'images/{{this.id}}.JPG',
+                        src: 'images/{{this.filename}}.JPG',
                       },
                       type: 'image',
                       image: {
