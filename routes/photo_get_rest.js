@@ -4,14 +4,21 @@
 // http://djih-rest.herokuapp.com/get_photos
 
 exports.view = function(req, res){
+    var data = [];
+    data['self.url'] = '/photo_get_rest';
+
+    if (!req.query.sort_by){
+        req.query.sort_by = 'none';
+    }
 
     var request = require('request');
-    request('http://djih-rest.herokuapp.com/get_photos', function(error, response, body){
-        photos = JSON.parse(body)['photos']
+    request('http://djih-rest.herokuapp.com/get_photos?sort_by=' + req.query.sort_by, function(error, response, body){
+        json_data = JSON.parse(body);
+        photos = json_data['photos'];
         console.log(photos);
-
-        var data = [];
         data['photos'] = photos;
+
+        console.log('sort by: ' + json_data['sort_by']);
 
         res.render('photo_get_rest', data);
     })

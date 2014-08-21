@@ -98,9 +98,13 @@
               </button>
               <ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="dropdownMenu2">
                 <li role="presentation" class="dropdown-header">Sort Photos By:</li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="{{self.url}}?sort_by=date">Date Taken</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="{{self.url}}?sort_by=location">Location</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="{{self.url}}?sort_by=title">Title</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="{{self.url}}?sort_by=focal_length">Focal Length</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="{{self.url}}?sort_by=aperture">Aperture</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="{{self.url}}?sort_by=shutter_speed">Shutter Speed</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="{{self.url}}?sort_by=iso">ISO</a></li>
               </ul>
             </div>
             <h1 class="cover-heading">Never Stop Exploring</h1>
