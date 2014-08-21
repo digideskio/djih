@@ -11,7 +11,7 @@
     <link href="css/cover.css" rel="stylesheet">
     <link href="css/magnific-popup.css" rel="stylesheet">
 
-    <script src="js/ratio.js"></script>
+    <!--<script src="js/ratio.js"></script>-->
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -23,9 +23,10 @@
     <script src="js/jquery-1.8.3.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.exif.js"></script>
+    <!--<script src="js/jquery.exif.js"></script>-->
     <script src="js/jquery.magnific-popup.min.js" rel="stylesheet"></script>
 
+    <!--
     <script>
       var photo_json = [];
 
@@ -66,6 +67,7 @@
       }
 
     </script>
+  -->
 
   </head>
   <body>
@@ -96,37 +98,34 @@
             <ul class="gallery">
               
               {{#each photos}}
-                <a href="#" id="{{this.id}}_link" title="{{this.location}}">
+                <a href="#" id="{{this.filename}}_link" title="{{this.location}}">
                   <li>
-                    <img id="{{this.id}}" src="images/{{this.id}}_small.JPG">
+                    <img id="{{this.filename}}" src="images/{{this.filename}}_small.JPG">
                     <!--<h3>{{this.location}}</h3>-->
                     <h3>{{this.title}}</h3>
-                    <p id="{{this.id}}_info">Photo Description</p>
+                    <p id="{{this.filename}}_info" style="display:block">
+                      {{this.location}} - {{this.city}}<br>{{this.date_taken}}
+                    </p>
                   </li>
                 </a>
                 <script>
-                  $('#{{this.id}}_link').click(function(e){
+                  $('#{{this.filename}}_link').click(function(e){
                     e.preventDefault();
                   });
 
-                  $('#{{this.id}}').load(function(){
-                    var photo = $(this);
-                    photo.exifLoad(function(){
-                      addPhotoInfoFromExif('{{this.id}}', photo);
-                    });
-
-                    $('#{{this.id}}_link').magnificPopup({
+                  $('#{{this.filename}}').load(function(){
+                    $('#{{this.filename}}_link').magnificPopup({
                       disableOn: 480,
                       closeOnContentClick: true,
                       closeOnBgClick: true,
                       showCloseBtn: true,
                       items: {
-                        src: 'images/{{this.id}}.JPG',
+                        src: 'images/{{this.filename}}.JPG',
                       },
                       type: 'image',
                       image: {
                         verticalFit: true,
-                        titleSrc: function(){return '<strong>{{this.title}}</strong>  -  {{this.location}}';}
+                        titleSrc: function(){return '<strong>{{this.title}}</strong>  -  {{this.camera}}: {{this.focal_length}}, {{this.aperture}}, {{this.shutter_speed}}, ISO {{this.iso}}';}
                       },
                       mainClass: 'mfp-img-mobile'
                     });
@@ -135,14 +134,6 @@
                 </script>
               {{/each}}
             </ul>
-
-          <!--
-          <div class="mastfoot">
-            <div class="inner">
-              <p>Cover template for <a href="http://getbootstrap.com">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
-            </div>
-          </div>
-          -->
           <div class="copyright">
             <p>All images &#169; 2014 Daniel Jih</p>
           </div>
