@@ -104,10 +104,7 @@
                     <!--<h3>{{this.location}}</h3>-->
                     <h3>{{this.title}}</h3>
                     <p id="{{this.filename}}_info" style="display:block">
-                      {{this.location}} - {{this.city}}<br>
-                      {{this.camera}}<br>
-                      {{this.focal_length}}, {{this.aperture}}, {{this.shutter_speed}}, ISO {{this.iso}}<br>
-                      {{this.date_taken}}
+                      {{this.location}} - {{this.city}}<br>{{this.date_taken}}
                     </p>
                   </li>
                 </a>
@@ -128,7 +125,7 @@
                       type: 'image',
                       image: {
                         verticalFit: true,
-                        titleSrc: function(){return '<strong>{{this.title}}</strong>  -  {{this.location}}';}
+                        titleSrc: function(){return '<strong>{{this.title}}</strong>  -  {{this.camera}}: {{this.focal_length}}, {{this.aperture}}, {{this.shutter_speed}}, ISO {{this.iso}}';}
                       },
                       mainClass: 'mfp-img-mobile'
                     });
