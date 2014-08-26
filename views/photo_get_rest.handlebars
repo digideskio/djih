@@ -95,10 +95,11 @@
             <div class="dropdown">
               <button class="btn btn-default dropdown-toggle" type="button" id="sort-photo-button" data-toggle="dropdown">
                 <span class="glyphicon glyphicon-th-large" id="sort-photo-icon"></span>
+                <span id="sort-photo-span">Sort Photos <span class="caret"></span></span>
               </button>
               <ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="dropdownMenu2">
                 <li role="presentation" class="dropdown-header">Sort Photos By:</li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="{{self.url}}?sort_by=date">Date Taken</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="{{self.url}}?sort_by=date">Most Recent</a></li>
                 <li role="presentation"><a role="menuitem" tabindex="-1" href="{{self.url}}?sort_by=location">Location</a></li>
                 <li role="presentation"><a role="menuitem" tabindex="-1" href="{{self.url}}?sort_by=title">Title</a></li>
                 <li role="presentation"><a role="menuitem" tabindex="-1" href="{{self.url}}?sort_by=focal_length">Focal Length</a></li>

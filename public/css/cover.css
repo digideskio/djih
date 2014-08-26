@@ -125,6 +125,10 @@ body {
   color: #fff;
 }
 
+#sort-photo-span {
+  display: none;
+}
+
 #sort-photo-button:hover #sort-photo-icon{
   color: #91C1FF;
 }
@@ -288,5 +292,22 @@ body {
 
   ul.gallery li {
     width: 30.83%;
+  }
+
+  #sort-photo-icon {
+    display: none;
+  }
+
+  #sort-photo-span {
+    display: block;
+    color: #fff;
+  }
+
+  #sort-photo-button:hover #sort-photo-span{
+    color: #91C1FF;
+  }
+
+  .dropdown.open #sort-photo-span {
+    color: #91C1FF;
   }
 }
