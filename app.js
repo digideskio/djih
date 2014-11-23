@@ -58,7 +58,7 @@ if ('development' == app.get('env')) {
 }
 
 // Add routes here
-app.get('/', cover.view);
+app.get('/', photo.view);
 app.get('/car', car.view);
 app.get('/dashboard', dashboard.view);
 app.get('/photo', photo.view);
