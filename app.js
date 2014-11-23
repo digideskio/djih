@@ -33,6 +33,7 @@ var photo = require('./routes/photo');
 var photo_get_rest = require('./routes/photo_get_rest');
 var photo_get_exif = require('./routes/photo_get_exif');
 var food_freelancer = require('./routes/food_freelancer');
+var food_agency = require('./routes/food_agency');
 
 //var myevents = require('./routes/myevents');
 //var events = require('./routes/events');
@@ -63,7 +64,8 @@ app.get('/dashboard', dashboard.view);
 app.get('/photo', photo.view);
 app.get('/photo_get_rest', photo_get_rest.view);
 app.get('/photo_get_exif', photo_get_exif.view);
-app.get('/food/freelancer', food_freelancer.view);
+app.get('/food_freelancer', food_freelancer.view);
+app.get('/food_agency', food_agency.view);
 
 
 //app.get('/myevents', myevents.view);
