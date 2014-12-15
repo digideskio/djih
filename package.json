@@ -16,7 +16,8 @@
   "dependencies": {
     "pg": "2.x",
     "express": "3.x",
-    "express3-handlebars": "*"
+    "express3-handlebars": "*",
+    "bluebird": "2.3.11"
   },
   "engines": {
     "node": "0.10.x"
