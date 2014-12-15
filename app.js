@@ -6,8 +6,10 @@
 var express = require('express');
 var http = require('http');
 var path = require('path');
+var Promise = require('bluebird');
 var handlebars = require('express3-handlebars')
 var app = express();
+
 
 // all environments
 app.set('port', process.env.PORT || 3000);
