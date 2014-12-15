@@ -14,8 +14,11 @@ exports.view = function(req, res){
     }
     var url = get_photos_url + req.query.sort_by;
 
-    request(url).then(function(content){
-        data['photos'] = JSON.parse(content[1])['photos'];;
+    request(url).then(function(response){
+        data['photos'] = JSON.parse(response[1])['photos'];
         res.render('photo_get_rest', data);
+    })
+    .catch(function(e){
+        console.log(e);
     });
 };
