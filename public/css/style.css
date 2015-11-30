@@ -2,6 +2,8 @@
  * Globals
  */
 
+ @font-face { font-family: "Fugaz One"; src: url('/fonts/fugaz-one.ttf'); } 
+
 /* Links */
 a,
 a:focus,
@@ -71,7 +73,7 @@ body {
   padding: 0;
   position: absolute;
   top: 0;
-  width: 250px;
+  width: 240px;
 }
 
 .sidebar-nav li {
@@ -84,13 +86,54 @@ body {
   display: inline-block;
   color: rgba(204, 204, 204, 0.6);
   font-size: 1.5em;
-  margin-right: 1.5em;
-  margin-top: 0.2em;
-  -moz-transition: all 0.5s ease;
-  -webkit-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  margin-right: 1em;
+  margin-top: 0.3em;
+  /*-moz-transition: all 0.5s ease;*/
+  /*-webkit-transition: all 0.5s ease;*/
+  /*-o-transition: all 0.5s ease;*/
+  /*transition: all 0.5s ease;*/
 }
+
+.sidebar-nav .headshot {
+  font-size: 1em;
+  height: 18em;
+  margin-bottom: -30px;
+  position: relative;
+  text-align: center;
+  top: 0.5em;
+}
+
+.sidebar-nav .headshot img {
+  border: 1px solid rgba(204, 204, 204, 0.6);
+  margin: 0.25em auto 0;
+  position: relative;
+  top: 10px;
+  left: 1.25em;
+  -moz-border-radius: 50%;/*Firefox*/
+  -webkit-border-radius: 50%;/*Safari, Chrome*/
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+.sidebar-nav li a {
+  color: #9a9a9a;
+  display: block;
+  line-height: 3.24;
+  text-decoration: none;
+}
+
+.sidebar-nav li h1 {
+  color: #91C1FF;
+  font-size: 2.92em;
+  font-family: "Fugaz One" serif;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-top: 0.75em;
+  margin-left: 0.25em;
+  margin-right: 0.25em;
+}
+
 
 
 .content {
