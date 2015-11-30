@@ -1,0 +1,25 @@
+http://www.morgannorman.com/   -  header bar transition
+http://www.worldinmylens.com/  - 4x4 photogrid no spaces, fixed header
+http://themes.mariaantoniettaperna.com/photoclick-v1-3/work.html - sidebar nav, layout
+
+
+v2 design:
+
+color scheme? maybe keep same
+(MAYBE) fixed header: daniel jih photography, button to open menu
+side bar nav: photo, links: travel, food, blog, about
+content: scrolling, 4x4 grid of albums
+
+
+albums:
+cover photo
+date
+title / location
+
+view album pages - node dynamic url with album number in url
+
+
+
+Todo
+Update db table
+Update djih-rest to cedar 14
