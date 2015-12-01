@@ -142,7 +142,7 @@ body {
   border: 0px;
   /*min-height: 100%; */
   color: white;
-  padding: .5rem;
+  /*padding: .5rem;*/
   -webkit-overflow-scrolling: touch;
   -ms-overflow-style: none;
 }
@@ -307,30 +307,26 @@ body {
 
  ul.gallery li {
   display: inline-block;
-  padding: 10px;
-  margin: 0 0 2.5% 2.5%;
-  margin-bottom: 20px;
-  /*background: #fff;*/
-  background: #616060;
-  border: 1px solid #ddd;
+  padding: 0px;
+  margin: 0 0 0 0;
   font-size: 16px;
   font-size: 1rem;
   vertical-align: top;
-  box-shadow: 0 0 5px #ddd;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
+  /*box-shadow: 0 0 5px #ddd;*/
+  /*box-sizing: border-box;*/
+  /*-moz-box-sizing: border-box;*/
+  /*-webkit-box-sizing: border-box;*/
  }
 
  ul.gallery li:hover {
   /*border: 1px solid #73CEFF;*/
-  border: 1px solid #91C1FF;
+  /*border: 1px solid #91C1FF;*/
  }
 
  ul.gallery li img {
   max-width: 100%;
   height: auto;
-  margin: 0 0 10px;
+  margin: 0 0 0 0;
  }
 
  ul.gallery li h3 {
@@ -360,18 +356,19 @@ body {
 
 @media (min-width: 768px) {
   ul.gallery {
-    margin-left: -2.5%; /* should match li left margin */
+    /*margin-left: -2.5%;  should match li left margin */
   }
 
   ul.gallery li {
-    margin: 0 0 2.5% 2.5%;
-    width: 47.5%;
+    margin: 0 0 0 0;
+    /*width: 47.5%;*/
   }
 }
 
 @media (min-width: 992px) {
   ul.gallery li {
-    width: 30.83%;
+    /*width: 30.83%;*/
+    width: 25%
   }
 }
 

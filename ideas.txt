@@ -21,5 +21,9 @@ view album pages - node dynamic url with album number in url
 
 
 Todo
+1. cover photo
+2. update gallery css to remove spaces
+
+
 Update db table
 Update djih-rest to cedar 14
