@@ -56,9 +56,12 @@ body {
   top: 0px;
   left: 0px;
   right: 0px;
-  display: block;
   width: 100%;
-  height: 3em;
+  height: 0px;
+  -moz-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .header .header-background {
@@ -66,10 +69,9 @@ body {
   top: 0px;
   left: 0px;
   right: 0px;
-  display: block;
   width: 100%;
-  height: 3em;
   opacity: 0;
+  height: 0px;
   background-color: #333;
 }
 
@@ -82,9 +84,8 @@ body {
   top: 0px;
   left: 0px;
   right: 0px;
-  display: block;
+  height: 0px;
   width: 100%;
-  height: 3em;
   z-index: 1;
 }
 
@@ -96,6 +97,7 @@ body {
   top: 0.25em;
   position: absolute;
   left: 0.3em;
+  display: none;
   -moz-transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
@@ -130,7 +132,7 @@ body {
   margin-top: 0.75em;
   margin-left: 0.25em;
   margin-right: 0.25em;
-  background: none;
+  display: none;
 }
 
 .sidebar, .content {
@@ -148,7 +150,11 @@ body {
 .sidebar {
   width: 250px;
   background-color: #333;
-  display: none;
+  display: block;
+  -moz-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .sidebar-nav {
@@ -241,11 +247,45 @@ body {
 }
 
 
+/*
+ * Toggling the sidebar nav and header
+ */
+
+.body-wrapper.toggled .sidebar {
+  width: 0;
+  padding: 0;
+  -moz-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.body-wrapper.toggled .header,
+.body-wrapper.toggled .header-background,
+.body-wrapper.toggled .header-content
+ {
+  height: 3em;
+}
+
+.body-wrapper.toggled .header .header-content span,
+.body-wrapper.toggled .header .header-content h1
+{
+  display: block;
+}
+
+
+
+
+
 
 .content {
   flex: 1;
   background-color: #fff;
   color: #000;
+  -moz-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 
