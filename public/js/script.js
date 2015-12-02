@@ -16,4 +16,10 @@ $(document).ready(function() {
       $("#header-background").removeClass('visible');
     }
   });
+
+  $('#jump-button').bind('click', function(event) {
+    var jumpPos = $('#masthead').height() + 1;
+    $('#content').animate({ scrollTop: jumpPos}, 1500, 'easeInOutExpo');
+    event.preventDefault();
+  });
 });
