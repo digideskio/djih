@@ -9,10 +9,8 @@ $(document).ready(function() {
     $('.body-wrapper').toggleClass('toggled');
   });
 
-  var galleryPosition = $('.gallery').position().top;
-
   $('#content').scroll(function() {
-    if ($('#content').scrollTop() > galleryPosition) {
+    if ($('#content').scrollTop() > $('#masthead').height()) {
       $("#header-background").addClass('visible');
     } else {
       $("#header-background").removeClass('visible');

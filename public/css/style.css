@@ -80,7 +80,7 @@ body {
 }
 
 .header .header-background.visible {
-  opacity: 0.875;
+  opacity: 0.8;
 }
 
 .header .header-content {
@@ -132,7 +132,7 @@ body {
 .header .header-content h1 {
   /*color: #91C1FF;*/
   color: #fff;
-  font-size: 1em;
+  font-size: 1.2em;
   font-family: "Fugaz One" serif;
   text-transform: uppercase;
   margin-top: 0.75em;
@@ -248,9 +248,9 @@ body {
 
 .sidebar-nav li h1 {
   color: #91C1FF;
-  font-size: 2.3em;
+  font-size: 2.4em;
   font-family: "Fugaz One";
-  text-transform: none;
+  /*text-transform: none;*/
   font-weight: 300;
   margin-top: 0.75em;
   margin-left: 0.25em;
@@ -303,9 +303,7 @@ body {
 .content .masthead {
   position: relative;
   float: left;
-  top: 0px;
   width: 100%;
-  text-align: center;
 }
 
 .content .masthead img {
