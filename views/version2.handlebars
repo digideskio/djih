@@ -86,9 +86,13 @@
       <ul class="gallery">
               
         {{#each photos}}
-          <a href="#" id="{{this.filename}}_link" title="{{this.location}}">
+          <a href="#" id="{{this.filename}}_link">
             <li>
-              <img id="{{this.filename}}" src="images/{{this.filename}}_small.JPG">
+              <div class="img-details-wrapper">
+                <div class="img-border"></div>
+                <img id="{{this.filename}}" src="images/{{this.filename}}_small.JPG">
+                <span>{{this.city}}<br>{{this.year}}</span>
+              </div>
             </li>
           </a>
           <script>

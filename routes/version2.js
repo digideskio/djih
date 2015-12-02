@@ -15,7 +15,31 @@ exports.view = function(req, res){
     var url = get_photos_url + req.query.sort_by;
 
     request(url).then(function(response){
-        data['photos'] = JSON.parse(response[1])['photos'];
+        var photos = JSON.parse(response[1])['photos'];
+
+        // format data for display
+        var numPhotos = photos.length;
+        for (var i = 0; i < numPhotos; i++) {
+            var photo = photos[i];
+
+            // strip off country from location string
+            var location = photo['city'];
+            var commaLocation = location.indexOf(',');
+            if (commaLocation >= 0) {
+                location = location.substring(0, commaLocation);
+            }
+            photo['city'] = location;
+
+            // isolate year from date taken
+            var year = photo['date_taken'];
+            var slashLocation = year.lastIndexOf('/');
+            if (slashLocation >= 0) {
+                year = year.substring(slashLocation+1);
+            }
+            photo['year'] = year;
+        }
+
+        data['photos'] = photos;
         res.render('version2', data);
     })
     .catch(function(e){
