@@ -71,9 +71,16 @@
 
 
     <div class="content" id="content">
-      <br>
-      <h1 class="cover-heading">Never Stop Exploring</h1>
-      <p class="lead">"Photography takes an instant out of time, altering life by holding it still." - Dorothea Lange</p>
+
+      <div class="masthead">
+        <img src="images/travel_bg.jpg">
+        <h1>Never Stop Exploring</h1>
+        <h3>Wherever you go, go with all your heart. - Confucious</h3>
+        <div class="button-container">
+          <button type="button">Explore</button>
+        </div>
+      </div>
+
 
       <ul class="gallery">
               
@@ -81,11 +88,6 @@
           <a href="#" id="{{this.filename}}_link" title="{{this.location}}">
             <li>
               <img id="{{this.filename}}" src="images/{{this.filename}}_small.JPG">
-              <!-- <h3>{{this.location}}</h3> -->
-              <!-- <h3>{{this.title}}</h3> -->
-              <!-- <p id="{{this.filename}}_info" style="display:block"> -->
-                <!-- {{this.location}} - {{this.city}}<br>{{this.date_taken}} -->
-              <!-- </p> -->
             </li>
           </a>
           <script>
@@ -115,9 +117,9 @@
         {{/each}}
       </ul>
 
-      <div class="copyright">
-        <p>All images &#169; 2014 Daniel Jih</p>
-      </div>
+      <!-- <div class="copyright"> -->
+        <!-- <p>All images &#169; 2014 Daniel Jih</p> -->
+      <!-- </div> -->
         
     </div>
 
