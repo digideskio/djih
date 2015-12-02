@@ -3,6 +3,9 @@ http://www.worldinmylens.com/  - 4x4 photogrid no spaces, fixed header
 http://themes.mariaantoniettaperna.com/photoclick-v1-3/work.html - sidebar nav, layout
 
 
+http://jasonmillerdesign.com/Programming/Overlay_Text_On_Images_With_CSS
+https://www.typewolf.com/open-source-web-fonts
+
 v2 design:
 
 color scheme? maybe keep same
