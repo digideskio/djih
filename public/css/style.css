@@ -488,6 +488,27 @@ body {
   {
     display: none;
   }
+
+  .content .masthead .masthead-text-wrapper h1 {
+    font-size: 25px;
+    font-family: 'Fugaz One';
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+
+  .content .masthead .masthead-text-wrapper h3 {
+    font-size: 15px;
+    font-family: 'Roboto-Bold';
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  .content .masthead .masthead-text-wrapper button {
+    width: 80px;
+    height: 30px;
+    font-size: 15px;
+    font-family: 'Mont-Semi';
+  }
 }
 
 @media (min-width: 768px) {
