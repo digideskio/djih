@@ -523,9 +523,7 @@ body {
   }
 
   .content .masthead .masthead-text-wrapper button {
-    width: 80px;
-    height: 30px;
-    font-size: 15px;
+    display: none;
   }
 
   ul.gallery li .img-text {
