@@ -397,7 +397,7 @@ body {
 
  ul.gallery li .img-details-wrapper:hover .img-border {
   border: 2px solid white;
-  /*cursor: pointer;*/
+  cursor: pointer;
  }
 
  ul.gallery li img {
