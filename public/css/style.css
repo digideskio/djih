@@ -297,38 +297,36 @@ body {
   z-index: 1;
 }
 
-.content .masthead h1 {
+.content .masthead-text-wrapper {
   position: absolute;
   z-index: 2;
   top: 34%;
   width: 100%;
+  text-align: center;
+}
+
+.content .masthead .masthead-text-wrapper h1 {
   font-size: 50px;
   font-family: 'Fugaz One';
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
-.content .masthead h3 {
-  position: absolute;
-  z-index: 2;
-  top: 45%;
-  width: 100%;
+.content .masthead .masthead-text-wrapper h3 {
   font-size: 30px;
   font-family: 'Roboto-Bold';
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
-.content .masthead .button-container {
-  position: absolute;
+/*.content .masthead .button-container {
   display: inline-block;
   width: 0px;
   height: 0px;
-  top: 57%;
-  left: 50%;
-}
+}*/
 
-.content .masthead button {
-  position: absolute;
-  left: -100px;
-  top: 5px;
-  z-index: 2;
+.content .masthead .masthead-text-wrapper button {
+  /*left: -100px;*/
   background-color: transparent;
   border: 2px solid white;
   border-radius: 7px;
@@ -498,13 +496,13 @@ body {
   }
 }
 
-@media (min-width: 884px) {
+@media (min-width: 890px) {
   ul.gallery li {
     width: 33.33%;
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1020px) {
   ul.gallery li {
     /*width: 30.83%;*/
     width: 25%
