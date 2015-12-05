@@ -4,6 +4,10 @@
 var Promise = require('bluebird');
 var request = Promise.promisify(require('request'));
 var get_photos_url = 'http://djih-rest.herokuapp.com/get_photos?sort_by=';
+var months = [
+    'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August',
+    'September', 'October', 'November', 'December'
+]
 
 exports.view = function(req, res){
     var data = [];
@@ -30,13 +34,10 @@ exports.view = function(req, res){
             }
             photo['city'] = location;
 
-            // isolate year from date taken
-            var year = photo['date_taken'];
-            var slashLocation = year.lastIndexOf('/');
-            if (slashLocation >= 0) {
-                year = year.substring(slashLocation+1);
-            }
-            photo['year'] = year;
+            // format date to Month Year
+            var dateTaken = new Date(photo['date_taken']);
+            dateTaken = months[dateTaken.getMonth()] + ' ' + dateTaken.getFullYear();
+            photo['date_taken'] = dateTaken;
         }
 
         data['photos'] = photos;

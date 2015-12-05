@@ -408,7 +408,31 @@ body {
   z-index: 1;
  }
 
- ul.gallery li span {
+ ul.gallery li .img-text {
+  display: block;
+  position: absolute;
+  width: 100%;
+  top: 37.5%;
+  z-index: 10;
+  color: #fff;
+  /*border: 1px solid white;*/
+ }
+
+ ul.gallery li .img-text h2 {
+  font-size: 20px;
+  font-family: 'Mont-Bold';
+  margin-top: 0px;
+  margin-bottom: 5px;
+ }
+
+ ul.gallery li .img-text h3 {
+  font-size: 10px;
+  font-family: 'Mont-Semi';
+  margin-top: 0px;
+  margin-bottom: 0px;
+ }
+
+ /*ul.gallery li span {
   display: block;
   position: absolute;
   width: 100%;
@@ -421,8 +445,9 @@ body {
   font-family: 'Mont-Bold';
   vertical-align: middle;
   line-height: 1.0;
- }
+ }*/
 
+/*
  ul.gallery li h3 {
   font-size: 13px;
   margin: 0 0 5px;
@@ -434,7 +459,7 @@ body {
   color: #bbb;
   display: none;
  }
-
+*/
 
 
 /*
@@ -511,9 +536,14 @@ body {
     font-family: 'Mont-Semi';
   }
 
+  ul.gallery li .img-text {
+    top: 43%;
+  }
+
   .body-wrapper.toggled .content .masthead .masthead-text-wrapper h1,
   .body-wrapper.toggled .content .masthead .masthead-text-wrapper h3,
-  .body-wrapper.toggled .content .masthead .masthead-text-wrapper button
+  .body-wrapper.toggled .content .masthead .masthead-text-wrapper button,
+  .body-wrapper.toggled .content ul.gallery li .img-text
   {
     display: none;
     -moz-transition: all 0.5s ease;
