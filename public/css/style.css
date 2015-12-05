@@ -494,6 +494,7 @@ body {
     font-family: 'Fugaz One';
     margin-top: 0;
     margin-bottom: 5px;
+
   }
 
   .content .masthead .masthead-text-wrapper h3 {
@@ -509,6 +510,19 @@ body {
     font-size: 15px;
     font-family: 'Mont-Semi';
   }
+
+  .body-wrapper.toggled .content .masthead .masthead-text-wrapper h1,
+  .body-wrapper.toggled .content .masthead .masthead-text-wrapper h3,
+  .body-wrapper.toggled .content .masthead .masthead-text-wrapper button
+  {
+    display: none;
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+
+  .body-wrapper.toggled ul.gallery li .img-details-wrapper 
 }
 
 @media (min-width: 768px) {
