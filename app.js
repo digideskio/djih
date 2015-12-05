@@ -39,23 +39,6 @@ var food_agency = require('./routes/food_agency');
 var version2 = require('./routes/version2');
 
 
-//var myevents = require('./routes/myevents');
-//var events = require('./routes/events');
-//var people = require('./routes/people');
-//var profile = require('./routes/profile');
-//var login = require('./routes/login');
-//var createAccount = require('./routes/createAccount');
-//var addAccount = require('./routes/addAccount');
-//var addEvent = require('./routes/addEvent');
-//var pollOptions = require('./routes/pollOptions');
-//var createEvent = require('./routes/createEvent');
-//var eventView = require('./routes/eventView');
-//var vote = require('./routes/vote');
-//var submitVote = require('./routes/submitVote');
-//var eventDelete = require('./routes/eventDelete');
-//var project = require('./routes/project');
-
-
 // development only
 if ('development' == app.get('env')) {
   app.use(express.errorHandler());
@@ -79,34 +62,6 @@ app.get('/food', version2.view);
 app.get('/blog', version2.view);
 app.get('/aboutme', version2.view);
 
-
-
-//app.get('/myevents', myevents.view);
-//app.get('/events', events.view);
-//app.get('/people', people.view);
-//app.get('/profile/:id', profile.view);
-//app.get('/profile', profile.view);
-//app.get('/login', login.view);
-//app.get('/addEvent', addEvent.view);
-//app.get('/pollOptions', addEvent.view);
-//app.get('/createEvent', addEvent.view);
-//app.get('/eventView/:id', eventView.view);
-//app.get('/vote', vote.view);
-//app.get('/submitVote', myevents.view);
-//app.get('/addAccount', addAccount.view);
-//app.get('/myeventsalt', myevents.altview);
-
-// POST REQUESTS - Form submission
-//app.post('/login', login.view);
-//app.post('/pollOptions', pollOptions.view);
-//app.post('/profile/:id', profile.view);
-//app.post('/addEvent', addEvent.view);
-//app.post('/createEvent', createEvent.view);
-//app.post('/submitVote', submitVote.view);
-//app.post('/createAccount', createAccount.view);
-
-//app.post('/eventDelete/delete_event', eventDelete.delete_event);
-//app.post('/project/:id/delete', project.deleteProject);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
