@@ -38,6 +38,7 @@ var food_freelancer = require('./routes/food_freelancer');
 var food_agency = require('./routes/food_agency');
 var version2 = require('./routes/version2');
 
+
 //var myevents = require('./routes/myevents');
 //var events = require('./routes/events');
 //var people = require('./routes/people');
@@ -69,7 +70,15 @@ app.get('/photo_get_rest', photo_get_rest.view);
 app.get('/photo_get_exif', photo_get_exif.view);
 app.get('/food_freelancer', food_freelancer.view);
 app.get('/food_agency', food_agency.view);
+
+
+// version 2
 app.get('/v2', version2.view);
+app.get('/travel', version2.view);
+app.get('/food', version2.view);
+app.get('/blog', version2.view);
+app.get('/aboutme', version2.view);
+
 
 
 //app.get('/myevents', myevents.view);
