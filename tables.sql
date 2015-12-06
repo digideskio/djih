@@ -43,6 +43,8 @@ INSERT INTO albums (name, location, date, cover_photo_id, category) VALUES ('Chi
 
 INSERT INTO albums (name, location, date, cover_photo_id, category) VALUES ('Hong Kong 2014', 'Hong Kong, PRC', '09/14/2014', 11, 'travel');
 
+INSERT INTO albums (name, location, date, cover_photo_id, category) VALUES ('San Francisco 2014', 'San Francisco, CA', '06/30/2014', 12, 'travel');
+
 
 CREATE TABLE IF NOT EXISTS photos(
     id SERIAL PRIMARY KEY,
