@@ -45,6 +45,9 @@ INSERT INTO albums (name, location, date, cover_photo_id, category) VALUES ('Hon
 
 INSERT INTO albums (name, location, date, cover_photo_id, category) VALUES ('San Francisco 2014', 'San Francisco, CA', '06/30/2014', 12, 'travel');
 
+INSERT INTO albums (name, location, date, cover_photo_id, category) VALUES ('New York City 2013', 'New York, NY', '12/24/2013', 13, 'travel');
+
+INSERT INTO albums (name, location, date, cover_photo_id, category) VALUES ('New York City 2013', 'New York, NY', '08/17/2013', 14, 'travel');
 
 CREATE TABLE IF NOT EXISTS photos(
     id SERIAL PRIMARY KEY,
@@ -84,6 +87,15 @@ INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_
 INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('hong-kong-2014/DSC_0540.jpg', 'Hong Kong', 'Nikon D5100', '10mm', 'f/8', '1/400s', 1000, '09/14/2014', 1440, 870);
 
 INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('san-francisco-2014/DSC_0721.jpg', 'San Francisco', 'Nikon D5100', '10mm', 'f/22', '1/60s', 100, '07/13/2014', 960, 636);
+
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('new-york-2013/1537842_10201326507305054_1391125307_o.jpg', 'New York City', 'Nikon D5100', '35mm', 'f/1.8', '1/60s', 100, '12/24/2013', 1440, 954);
+
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('new-york-summer-2013/1116116_10200575878779810_1123777098_o.jpg', 'New York City', 'Nikon D5100', '35mm', 'f/1.8', '10s', 100, '08/17/2013', 1440, 954);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('chicago-2013/1048515_10200327796577910_224028052_o.jpg', 'Chicago', 'Nikon D5100', '35mm', 'f/1.8', '1/100s', 100, '07/04/2013', 1440, 954);
+
 
 
 CREATE TABLE IF NOT EXISTS album_photos(

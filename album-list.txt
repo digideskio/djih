@@ -11,7 +11,9 @@ Chicago 2014
 Taiwan 2014
 Hong Kong 2014
 SF 2014
-NYC 2013
+NYC 2013 Winter
+NYC 2013 Summer
+Chicago 2013
 Taiwan 2012
 Hong Kong 2012
 
