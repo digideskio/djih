@@ -29,6 +29,7 @@ INSERT INTO albums (name, location, date, cover_photo_id, category) VALUES ('Cra
 
 INSERT INTO albums (name, location, date, cover_photo_id, category) VALUES ('Caltopia 2015', 'Berkeley, CA', '08/23/2015', 3, 'travel');
 
+INSERT INTO albums (name, location, date, cover_photo_id, category) VALUES ('Mission Peak 2015', 'Mission Peak, CA', '07/12/2015', 4, 'travel');
 
 
 
@@ -57,6 +58,11 @@ INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_
 
 INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('caltopia-2015/DSC_2773.jpg', 'Berkeley', 'Nikon D7100', '10mm', 'f/11', '1/500s', 400, '08/23/2015', 1440, 960);
 
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('mission-peak-2015/DSC_2607.jpg', 'Mission Peak', 'Nikon D7100', '13mm', 'f/7.1', '1/100s', 500, '07/12/2015', 1440, 960);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('la-2015/DSC_1517.jpg', 'Los Angelos', 'Nikon D7100', '10mm', 'f/8', '1/2000s', 500, '05/24/2015', 1440, 960);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('la-2015/DSC_1619.jpg', 'Los Angelos', 'Nikon D7100', '10mm', 'f/8', '1/800s', 800, '05/25/2015', 1440, 960);
 
 
 
