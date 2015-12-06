@@ -333,6 +333,7 @@ body {
   float: left;
   padding: 0px;
   margin: 0 0 0 0;
+  background-color: #000;
   /*font-size: 16px;*/
   /*font-size: 1rem;*/
   /*vertical-align: top;*/
@@ -354,6 +355,10 @@ body {
   margin: 0 0 0 0;
   width: 100%;
   height: auto;
+ }
+
+ ul.gallery li .img-details-wrapper {
+  cursor: pointer;
  }
 
  ul.gallery li .img-details-wrapper .img-border {
@@ -379,6 +384,10 @@ body {
   margin: 0 0 0 0;
   position: relative;
   z-index: 1;
+ }
+
+ ul.gallery li .img-details-wrapper:hover img {
+  opacity: 0.7;
  }
 
  ul.gallery li .img-text {
