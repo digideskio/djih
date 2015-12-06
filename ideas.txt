@@ -30,3 +30,9 @@ Todo
 
 Update db table
 Update djih-rest to cedar 14
+
+
+1. fix media queries
+2. fix masthead text
+3. downsample images
+4. setup albums
