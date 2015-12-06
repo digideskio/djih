@@ -31,7 +31,9 @@ INSERT INTO albums (name, location, date, cover_photo_id, category) VALUES ('Cal
 
 INSERT INTO albums (name, location, date, cover_photo_id, category) VALUES ('Mission Peak 2015', 'Mission Peak, CA', '07/12/2015', 4, 'travel');
 
+INSERT INTO albums (name, location, date, cover_photo_id, category) VALUES ('Los Angelos 2015', 'Los Angelos, CA', '05/24/2015', 6, 'travel');
 
+INSERT INTO albums (name, location, date, cover_photo_id, category) VALUES ('Napa 2015', 'Napa, CA', '04/26/2015', 7, 'travel');
 
 
 
@@ -62,8 +64,11 @@ INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_
 
 INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('la-2015/DSC_1517.jpg', 'Los Angelos', 'Nikon D7100', '10mm', 'f/8', '1/2000s', 500, '05/24/2015', 1440, 960);
 
-INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('la-2015/DSC_1619.jpg', 'Los Angelos', 'Nikon D7100', '10mm', 'f/8', '1/800s', 800, '05/25/2015', 1440, 960);
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('la-2015/DSC_1619.jpg', 'Los Angelos', 'Nikon D7100', '10mm', 'f/8', '1/800s', 800, '05/25/2015', 1440, 866);
 
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('napa-2015/DSC_1230.jpg', 'Napa', 'Nikon D7100', '55mm', 'f/2.8', '1/1000s', 100, '04/26/2015', 1440, 960);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('taiwan-2015/DSC_1075.jpg', 'Taiwan', 'Nikon D7100', '20mm', 'f/8', '1/320s', 160, '03/26/2015', 1440, 838);
 
 
 CREATE TABLE IF NOT EXISTS album_photos(
