@@ -39,6 +39,8 @@ INSERT INTO albums (name, location, date, cover_photo_id, category) VALUES ('Tai
 
 INSERT INTO albums (name, location, date, cover_photo_id, category) VALUES ('Boston 2014', 'Boston, MA', '12/28/2014', 9, 'travel');
 
+INSERT INTO albums (name, location, date, cover_photo_id, category) VALUES ('Chicago 2014', 'Chicago, IL', '11/23/2014', 10, 'travel');
+
 
 
 CREATE TABLE IF NOT EXISTS photos(
@@ -74,6 +76,7 @@ INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_
 
 INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('boston-2014/DSC_0547.jpg', 'Boston', 'Nikon D7100', '10mm', 'f/13', '1/160s', 400, '12/31/2014', 1440, 960);
 
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('chicago-2014/DSC_0171.jpg', 'Chicago', 'Nikon D5100', '10mm', 'f/8', '1/800s', 250, '11/25/2014', 1440, 954);
 
 
 CREATE TABLE IF NOT EXISTS album_photos(
