@@ -1,13 +1,29 @@
 $(document).ready(function() {
-// $(body).load(function() {
+  var resizeLiOnResize = function() {
+    $("img.img-album").each(
+      function() {
+        var maxWidth = -1;
+        $('img.img-album').each(function() {
+          maxWidth = Math.max(maxWidth, $(this).width());
+        }).height(maxWidth / 3 * 2);
+      }
+    );
+  };
+
+  $(window).resize(function() {
+    resizeLiOnResize();
+  });
+
   $('#close-sidebar').click(function(e) {
     e.preventDefault();
     $('.body-wrapper').toggleClass('toggled');
+    resizeLiOnResize();
   });
 
   $('#toggle-sidebar').click(function(e) {
     e.preventDefault();
     $('.body-wrapper').toggleClass('toggled');
+    resizeLiOnResize();
   });
 
   $('#content').scroll(function() {
@@ -35,20 +51,4 @@ $(document).ready(function() {
     });
   };
   resizeLiOnLoad();
-
-  var resizeLiOnResize = function() {
-    $("img.img-album").each(
-      function() {
-        var maxWidth = -1;
-        $('img.img-album').each(function() {
-          maxWidth = Math.max(maxWidth, $(this).width());
-        }).height(maxWidth / 3 * 2);
-      }
-    );
-  };
-
-  $(window).resize(function() {
-    resizeLiOnResize();
-  });
-
 });

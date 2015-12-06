@@ -35,6 +35,10 @@ INSERT INTO albums (name, location, date, cover_photo_id, category) VALUES ('Los
 
 INSERT INTO albums (name, location, date, cover_photo_id, category) VALUES ('Napa 2015', 'Napa, CA', '04/26/2015', 7, 'travel');
 
+INSERT INTO albums (name, location, date, cover_photo_id, category) VALUES ('Taiwan 2015', 'Taipei, TW', '03/21/2015', 8, 'travel');
+
+INSERT INTO albums (name, location, date, cover_photo_id, category) VALUES ('Boston 2014', 'Boston, MA', '12/28/2014', 9, 'travel');
+
 
 
 CREATE TABLE IF NOT EXISTS photos(
@@ -68,7 +72,8 @@ INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_
 
 INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('napa-2015/DSC_1230.jpg', 'Napa', 'Nikon D7100', '55mm', 'f/2.8', '1/1000s', 100, '04/26/2015', 1440, 960);
 
-INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('taiwan-2015/DSC_1075.jpg', 'Taiwan', 'Nikon D7100', '20mm', 'f/8', '1/320s', 160, '03/26/2015', 1440, 838);
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('boston-2014/DSC_0547.jpg', 'Boston', 'Nikon D7100', '10mm', 'f/13', '1/160s', 400, '12/31/2014', 1440, 960);
+
 
 
 CREATE TABLE IF NOT EXISTS album_photos(
