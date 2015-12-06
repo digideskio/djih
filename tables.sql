@@ -52,6 +52,11 @@ INSERT INTO albums (name, location, date, cover_photo_id, category) VALUES ('
 
 INSERT INTO albums (name, location, date, cover_photo_id, category) VALUES ('Chicago 2013', 'Chicago, IL', '07/04/2013', 15, 'travel');
 
+INSERT INTO albums (name, location, date, cover_photo_id, category) VALUES ('Hong Kong 2012', 'Hong Kong, PRC', '12/07/2012', 16, 'travel');
+
+INSERT INTO albums (name, location, date, cover_photo_id, category) VALUES ('Taiwan 2012', 'Taipei, TW', '12/02/2012', 17, 'travel');
+
+
 CREATE TABLE IF NOT EXISTS photos(
     id SERIAL PRIMARY KEY,
     filename TEXT NOT NULL,
@@ -100,6 +105,8 @@ INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_
 INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('chicago-2013/1048515_10200327796577910_224028052_o.jpg', 'Chicago', 'Nikon D5100', '35mm', 'f/1.8', '1/100s', 100, '07/04/2013', 1440, 954);
 
 INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('hong-kong-2012/735660_4274821589141_964558657_o.jpg', 'Hong Kong', 'Nikon D5100', '35mm', 'f/1.8', '10s', 100, '12/10/2012', 1440, 954);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('taiwan-2012/741042_4315623169155_1120544796_o.jpg', 'Taiwan', 'Nikon D5100', '35mm', 'f/1.8', '1/100s', 100, '12/13/2012', 1440, 954);
 
 
 CREATE TABLE IF NOT EXISTS album_photos(
