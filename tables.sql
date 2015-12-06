@@ -41,6 +41,7 @@ INSERT INTO albums (name, location, date, cover_photo_id, category) VALUES ('Bos
 
 INSERT INTO albums (name, location, date, cover_photo_id, category) VALUES ('Chicago 2014', 'Chicago, IL', '11/23/2014', 10, 'travel');
 
+INSERT INTO albums (name, location, date, cover_photo_id, category) VALUES ('Hong Kong 2014', 'Hong Kong, PRC', '09/14/2014', 11, 'travel');
 
 
 CREATE TABLE IF NOT EXISTS photos(
@@ -77,6 +78,10 @@ INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_
 INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('boston-2014/DSC_0547.jpg', 'Boston', 'Nikon D7100', '10mm', 'f/13', '1/160s', 400, '12/31/2014', 1440, 960);
 
 INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('chicago-2014/DSC_0171.jpg', 'Chicago', 'Nikon D5100', '10mm', 'f/8', '1/800s', 250, '11/25/2014', 1440, 954);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('hong-kong-2014/DSC_0540.jpg', 'Hong Kong', 'Nikon D5100', '10mm', 'f/8', '1/400s', 1000, '09/14/2014', 1440, 870);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('san-francisco-2014/DSC_0721.jpg', 'San Francisco', 'Nikon D5100', '10mm', 'f/22', '1/60s', 100, '07/13/2014', 960, 636);
 
 
 CREATE TABLE IF NOT EXISTS album_photos(
