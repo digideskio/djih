@@ -17,13 +17,13 @@ $(document).ready(function() {
   $('#close-sidebar').click(function(e) {
     e.preventDefault();
     $('.body-wrapper').toggleClass('toggled');
-    resizeLiOnResize();
+    setTimeout(resizeLiOnResize, 500);
   });
 
   $('#toggle-sidebar').click(function(e) {
     e.preventDefault();
     $('.body-wrapper').toggleClass('toggled');
-    resizeLiOnResize();
+    setTimeout(resizeLiOnResize, 500);
   });
 
   $('#content').scroll(function() {
