@@ -27,7 +27,7 @@ INSERT INTO albums (name, location, date, cover_photo_id, category) VALUES ('Van
 
 INSERT INTO albums (name, location, date, cover_photo_id, category) VALUES ('Crater Lake 2015', 'Crater Lake, OR', '09/05/2015', 2, 'travel');
 
-
+INSERT INTO albums (name, location, date, cover_photo_id, category) VALUES ('Caltopia 2015', 'Berkeley, CA', '08/23/2015', 3, 'travel');
 
 
 
@@ -54,6 +54,8 @@ INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_
 
 INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES (
     'crater-lake-2015/DSC_2856.jpg', 'Crater Lake', 'Nikon D7100', '10mm', 'f/8', '30s', 100, '09/11/2015', 1440, 977);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('caltopia-2015/DSC_2773.jpg', 'Berkeley', 'Nikon D7100', '10mm', 'f/11', '1/500s', 400, '08/23/2015', 1440, 960);
 
 
 
