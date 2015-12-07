@@ -37,6 +37,7 @@ var photo_get_exif = require('./routes/photo_get_exif');
 var food_freelancer = require('./routes/food_freelancer');
 var food_agency = require('./routes/food_agency');
 var version2 = require('./routes/version2');
+var album = require('./routes/album');
 
 
 // development only
@@ -61,6 +62,8 @@ app.get('/travel', version2.view);
 app.get('/food', version2.view);
 app.get('/blog', version2.view);
 app.get('/aboutme', version2.view);
+app.get('/album', function(req,res){res.redirect('/v2')});
+app.get('/album/:albumid', album.view);
 
 
 http.createServer(app).listen(app.get('port'), function(){
