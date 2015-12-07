@@ -1,18 +1,17 @@
-// var pg = require('pg');
-// var params = { host: 'ec2-54-225-101-119.compute-1.amazonaws.com', port: '5432', user: 'fijgchjkjpensc', password: 'zdGW3MUStdxwzq3nMGi5LQdT-Z', database: 'd26hna95h4r3en', ssl: true };
-
 // var Promise = require('bluebird');
 // var request = Promise.promisify(require('request'));
-// var get_photos_url = 'http://djih-rest.herokuapp.com/get_photos?sort_by=';
 var pg = require('pg');
+var format = require('string-format');
+format.extend(String.prototype);
 
-var album_query = "SELECT a.location, a.date, p.filename, p.width, p.height FROM albums AS a INNER JOIN photos AS p ON a.cover_photo_id = p.id WHERE a.category = 'travel' ORDER BY date DESC;";
-// var months = [
-//     'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August',
-//     'September', 'October', 'November', 'December'
-// ]
+var album_query = 'SELECT a.location, a.date, a.category, p.filename, p.width, p.height FROM albums AS a INNER JOIN photos AS p ON a.cover_photo_id = p.id WHERE a.id = {0}';
+var photo_query = 'SELECT p.filename, p.title, p.location, p.camera, p.focal_length, p.aperture, p.shutter_speed, p.iso, p.date_taken, p.width, p.height FROM album_photos AS a INNER JOIN photos AS p ON a.photo_id = p.id WHERE a.album_id = {0} ORDER BY p.date_taken, p.filename ASC;';
 
 var albums = [1];
+var months = [
+    'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August',
+    'September', 'October', 'November', 'December'
+]
 
 
 exports.view = function(req, res){
@@ -24,7 +23,58 @@ exports.view = function(req, res){
         res.redirect('/v2');
     }
 
-    
+    // fetch album info and cover
+    pg.connect(process.env.DATABASE_URL, function(err, client, done) {
+        client.query(album_query.format(albumid), function(err, result) {
+            if (err) {
+                done();
+                console.log(err); res.send('Error ' + err);
+            } else {
+                if (result.rowCount != 1) {
+                    done();
+                    var err = 'Could not find album info for albumid {0}'.format(albumid);
+                    console.log(err); res.send('Error: ' + err);
+                } else {
+
+                    // fetch album info
+                    var album = result.rows[0];
+                    // data.album_location = album.location;
+                    // data.album_date = album.date;
+                    data.cover_photo = album.filename;
+                    data[album.category] = true;
+                    
+                    // strip off country from location string
+                    var city = album.location;
+                    var comma = city.indexOf(',');
+                    if (comma >= 0) {
+                        city = city.substring(0, comma);
+                    }
+                    data.city = city;
+
+                    // format date to Month Year
+                    var date = new Date(album.date);
+                    date = months[date.getMonth()] + ' ' + date.getFullYear();
+                    data.date = date;
+
+
+                    // fetch photos
+                    client.query(photo_query.format(albumid), function(err, result) {
+                        done();
+                        if (err) {
+                            console.log(err); res.send('Error ' + err);
+                        } else {
+
+                            var photos = result.rows;
+                            data.photos = photos;
+
+                            res.render('album', data);
+                        }
+                    });
+                }
+            }
+        });
+    });
+
 
 
 

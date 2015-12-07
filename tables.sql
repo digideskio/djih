@@ -128,6 +128,29 @@ INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_
 
 
 
+# Album photos - Vancouver
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('vancouver-2015/DSC_3071.jpg', 'Vancouver', 'Nikon D7100', '10mm', 'f/8', '1/2000s', 1000, '09/11/2015', 1440, 871);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('vancouver-2015/DSC_3087.jpg', 'Vancouver', 'Nikon D7100', '10mm', 'f/8', '1/800s', 500, '09/11/2015', 1440, 810);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('vancouver-2015/DSC_3114.jpg', 'Stanley Park', 'Nikon D7100', '20mm', 'f/8', '13s', 100, '09/11/2015', 1440, 826);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('vancouver-2015/DSC_3122.jpg', 'Stanley Park', 'Nikon D7100', '10mm', 'f/8', '15s', 100, '09/11/2015', 1440, 771);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('vancouver-2015/DSC_3128.jpg', 'Stanley Park', 'Nikon D7100', '11mm', 'f/8', '1s', 100, '09/11/2015', 1440, 776);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('vancouver-2015/DSC_3156.jpg', 'Stanley Park', 'Nikon D7100', '17mm', 'f/8', '8s', 100, '09/11/2015', 1440, 677);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('vancouver-2015/DSC_3160.jpg', 'Vancouver', 'Nikon D7100', '10mm', 'f/4', '1/640s', 2000, '09/11/2015', 1440, 1320);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('vancouver-2015/DSC_3186.jpg', 'Granville Island', 'Nikon D7100', '10mm', 'f/8', '1/60s', 100, '09/12/2015', 1440, 960);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('vancouver-2015/DSC_3249.jpg', 'Vancouver Airport', 'Nikon D7100', '20mm', 'f/8', '1/80s', 1000, '09/13/2015', 1440, 960);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('vancouver-2015/DSC_3253.jpg', 'Vancouver Airport', 'Nikon D7100', '16mm', 'f/8', '1/125s', 1000, '09/13/2015', 1440, 960);
+
+
 
 
 CREATE TABLE IF NOT EXISTS album_photos(
@@ -139,3 +162,13 @@ CREATE TABLE IF NOT EXISTS album_photos(
 CREATE INDEX album_photos_album_idx ON album_photos (album_id);
 
 INSERT INTO album_photos (album_id, photo_id) VALUES (1, 1);
+INSERT INTO album_photos (album_id, photo_id) VALUES (1, 22);
+INSERT INTO album_photos (album_id, photo_id) VALUES (1, 23);
+INSERT INTO album_photos (album_id, photo_id) VALUES (1, 24);
+INSERT INTO album_photos (album_id, photo_id) VALUES (1, 25);
+INSERT INTO album_photos (album_id, photo_id) VALUES (1, 26);
+INSERT INTO album_photos (album_id, photo_id) VALUES (1, 27);
+INSERT INTO album_photos (album_id, photo_id) VALUES (1, 28);
+INSERT INTO album_photos (album_id, photo_id) VALUES (1, 29);
+INSERT INTO album_photos (album_id, photo_id) VALUES (1, 30);
+INSERT INTO album_photos (album_id, photo_id) VALUES (1, 31);

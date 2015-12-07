@@ -10,20 +10,28 @@ $(document).ready(function() {
     );
   };
 
+  var resizeCoverPhotoOnResize = function() {
+    var width = $('#masthead-photo').width();
+    $('#masthead-photo').height(width / 1440 * 757);
+  }
+
   $(window).resize(function() {
     resizeLiOnResize();
+    resizeCoverPhotoOnResize();
   });
 
   $('#close-sidebar').click(function(e) {
     e.preventDefault();
     $('.body-wrapper').toggleClass('toggled');
     setTimeout(resizeLiOnResize, 500);
+    setTimeout(resizeCoverPhotoOnResize, 500);
   });
 
   $('#toggle-sidebar').click(function(e) {
     e.preventDefault();
     $('.body-wrapper').toggleClass('toggled');
     setTimeout(resizeLiOnResize, 500);
+    setTimeout(resizeCoverPhotoOnResize, 500);
   });
 
   $('#content').scroll(function() {
@@ -51,4 +59,14 @@ $(document).ready(function() {
     });
   };
   resizeLiOnLoad();
+
+  // resize cover photo to be 1440x757
+  var resizeCoverPhotoOnLoad = function() {
+    $('#masthead-photo').load(function(){
+      var width = $(this).width();
+      $(this).height(width / 1440 * 757);
+    });
+  };
+  resizeCoverPhotoOnLoad();
+
 });

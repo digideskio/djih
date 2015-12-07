@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Daniel Jih Photography</title>
+    <title>{{city}} - Daniel Jih Photography</title>
 
     <!-- Bootstrap -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
@@ -46,10 +46,10 @@
           </a>
         </li>
         <li>
-          <a href="/travel" title="Travel" class="nav active">Travel</a>
+          <a href="/travel" title="Travel" class="nav{{#if travel}} active{{/if}}">Travel</a>
         </li>
         <li>
-          <a href="/food" title="Food" class="nav">Food</a>
+          <a href="/food" title="Food" class="nav{{#if food}} active{{/if}}">Food</a>
         </li>
         <li>
           <a href="/blog" title="Blog" class="nav">Blog</a>
@@ -65,27 +65,27 @@
     <div class="content" id="content">
 
       <div class="masthead" id="masthead">
-        <img src="/images/travel_bg.jpg">
+        <img src="/images/{{cover_photo}}" id="masthead-photo">
         <div class="masthead-text-wrapper">
-          <h1>Never Stop Exploring</h1>
-          <h3>Wherever you go, go with all your heart. - Confucious</h3>
-          <button type="button" id="jump-button">Explore</button>
+          <h1>{{city}}</h1>
+          <h3>{{date}}</h3>
+          <!-- <button type="button" id="jump-button">Explore</button> -->
         </div>
       </div>
 
 
       <ul class="gallery">
               
-        {{#each albums}}
+        {{#each photos}}
           <!-- <a href="#" id="{{this.filename}}_link"> -->
             <li class="img-li">
               <div class="img-details-wrapper">
-                <div class="img-border"></div>
+                <!-- <div class="img-border"></div> -->
                 <img src="/images/{{this.filename}}" class="img-album">
-                <div class="img-text">
+                <!-- <div class="img-text">
                   <h2>{{this.city}}</h2>
                   <h3>{{this.date}}</h3>
-                </div>
+                </div> -->
               </div>
             </li>
           <!-- </a> -->
