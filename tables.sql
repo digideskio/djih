@@ -142,7 +142,7 @@ INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_
 
 INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('vancouver-2015/DSC_3156.jpg', 'Stanley Park', 'Nikon D7100', '17mm', 'f/8', '8s', 100, '09/11/2015', 1440, 677);
 
-INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('vancouver-2015/DSC_3160.jpg', 'Vancouver', 'Nikon D7100', '10mm', 'f/4', '1/640s', 2000, '09/11/2015', 1440, 1320);
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('vancouver-2015/DSC_3160.jpg', 'Vancouver', 'Nikon D7100', '10mm', 'f/4', '1/640s', 2000, '09/11/2015', 1440, 1016);
 
 INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('vancouver-2015/DSC_3186.jpg', 'Granville Island', 'Nikon D7100', '10mm', 'f/8', '1/60s', 100, '09/12/2015', 1440, 960);
 

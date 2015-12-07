@@ -78,6 +78,7 @@
               
         {{#each albums}}
           <!-- <a href="#" id="{{this.filename}}_link"> -->
+          {{#if this.show_link}}<a href="/album/{{this.id}}">{{/if}}
             <li class="img-li">
               <div class="img-details-wrapper">
                 <div class="img-border"></div>
@@ -88,6 +89,7 @@
                 </div>
               </div>
             </li>
+          {{#if this.show_link}}</a>{{/if}}
           <!-- </a> -->
           <!--
           <script>

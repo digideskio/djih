@@ -2,11 +2,12 @@
 // var request = Promise.promisify(require('request'));
 var pg = require('pg');
 
-var album_query = "SELECT a.location, a.date, p.filename, p.width, p.height FROM albums AS a INNER JOIN photos AS p ON a.cover_photo_id = p.id WHERE a.category = 'travel' ORDER BY date DESC;";
+var album_query = "SELECT a.id, a.location, a.date, p.filename, p.width, p.height FROM albums AS a INNER JOIN photos AS p ON a.cover_photo_id = p.id WHERE a.category = 'travel' ORDER BY date DESC;";
 var months = [
     'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August',
     'September', 'October', 'November', 'December'
 ]
+var finished_albums = [1];
 
 exports.view = function(req, res){
     var data = [];
@@ -19,6 +20,10 @@ exports.view = function(req, res){
                 var albums = result.rows;
                 for (var i = 0; i < result.rowCount; i++) {
                     var album = albums[i];
+
+                    if (finished_albums.indexOf(album.id) > -1) {
+                        album.show_link = true;
+                    }
 
                     // strip off country from location string
                     var city = album['location'];
