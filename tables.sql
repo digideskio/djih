@@ -151,6 +151,22 @@ INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_
 INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('vancouver-2015/DSC_3253.jpg', 'Vancouver Airport', 'Nikon D7100', '16mm', 'f/8', '1/125s', 1000, '09/13/2015', 1440, 960);
 
 
+# Crater lake
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('crater-lake-2015/DSC_2837.jpg', 'Crater Lake', 'Nikon D7100', '10mm', 'f/4', '30s', 64000, '09/05/2015', 1440, 960);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('crater-lake-2015/DSC_2840.jpg', 'Crater Lake', 'Nikon D7100', '10mm', 'f/4', '30s', 64000, '09/05/2015', 1440, 960);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('crater-lake-2015/DSC_2842.jpg', 'Crater Lake', 'Nikon D7100', '10mm', 'f/8', '30m', 100, '09/05/2015', 1440, 960);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('crater-lake-2015/DSC_2905.jpg', 'Crater Lake', 'Nikon D7100', '10mm', 'f/8', '1/250s', 100, '09/06/2015', 1440, 784);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('crater-lake-2015/DSC_2969.jpg', 'Crater Lake', 'Nikon D7100', '10mm', 'f/8', '1/320s', 100, '09/06/2015', 1440, 904);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('crater-lake-2015/DSC_3021.jpg', 'Crater Lake', 'Nikon D7100', '10mm', 'f/8', '1/80s', 1000, '09/06/2015', 1440, 866);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('crater-lake-2015/DSC_3038.jpg', 'Crater Lake', 'Nikon D7100', '10mm', 'f/4', '30s', 6400, '09/06/2015', 1440, 960);
+
+
 
 
 CREATE TABLE IF NOT EXISTS album_photos(
@@ -161,6 +177,7 @@ CREATE TABLE IF NOT EXISTS album_photos(
 
 CREATE INDEX album_photos_album_idx ON album_photos (album_id);
 
+# vancouver
 INSERT INTO album_photos (album_id, photo_id) VALUES (1, 1);
 INSERT INTO album_photos (album_id, photo_id) VALUES (1, 22);
 INSERT INTO album_photos (album_id, photo_id) VALUES (1, 23);
@@ -172,3 +189,19 @@ INSERT INTO album_photos (album_id, photo_id) VALUES (1, 28);
 INSERT INTO album_photos (album_id, photo_id) VALUES (1, 29);
 INSERT INTO album_photos (album_id, photo_id) VALUES (1, 30);
 INSERT INTO album_photos (album_id, photo_id) VALUES (1, 31);
+
+# crater lake
+INSERT INTO album_photos (album_id, photo_id) VALUES (2, 2);
+INSERT INTO album_photos (album_id, photo_id) VALUES (2, 32);
+INSERT INTO album_photos (album_id, photo_id) VALUES (2, 33);
+INSERT INTO album_photos (album_id, photo_id) VALUES (2, 34);
+INSERT INTO album_photos (album_id, photo_id) VALUES (2, 35);
+INSERT INTO album_photos (album_id, photo_id) VALUES (2, 36);
+INSERT INTO album_photos (album_id, photo_id) VALUES (2, 37);
+INSERT INTO album_photos (album_id, photo_id) VALUES (2, 38);
+
+
+
+
+
+
