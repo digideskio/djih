@@ -181,6 +181,15 @@ INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_
 INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('caltopia-2015/DSC_2816.jpg', 'Berkeley', 'Nikon D7100', '10mm', 'f/8', '1/400s', 640, '08/23/2015', 1440, 960);
 
 
+# mission peak
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('mission-peak-2015/DSC_2525.jpg', 'Mission Peak', 'Nikon D7100', '12mm', 'f/8', '1/320s', 100, '07/12/2015', 1440, 960);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('mission-peak-2015/DSC_2529.jpg', 'Mission Peak', 'Nikon D7100', '10mm', 'f/8', '1/200s', 100, '07/12/2015', 1440, 960);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('mission-peak-2015/DSC_2549.jpg', 'Mission Peak', 'Nikon D7100', '10mm', 'f/8', '1/400s', 100, '07/12/2015', 1440, 960);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('mission-peak-2015/DSC_2623.jpg', 'Mission Peak', 'Nikon D7100', '20mm', 'f/7.1', '1/125s', 1250, '07/12/2015', 1440, 960);
+
 
 
 
@@ -219,10 +228,20 @@ INSERT INTO album_photos (album_id, photo_id) VALUES (2, 37);
 INSERT INTO album_photos (album_id, photo_id) VALUES (2, 38);
 
 # caltopia
-INSERT INTO album_photos (album_id, photo_id) VALUES (3, 39);
 INSERT INTO album_photos (album_id, photo_id) VALUES (3, 3);
+INSERT INTO album_photos (album_id, photo_id) VALUES (3, 39);
 INSERT INTO album_photos (album_id, photo_id) VALUES (3, 40);
 INSERT INTO album_photos (album_id, photo_id) VALUES (3, 41);
 INSERT INTO album_photos (album_id, photo_id) VALUES (3, 42);
 INSERT INTO album_photos (album_id, photo_id) VALUES (3, 43);
+
+# mission peak
+INSERT INTO album_photos (album_id, photo_id) VALUES (4, 4);
+INSERT INTO album_photos (album_id, photo_id) VALUES (4, 44);
+INSERT INTO album_photos (album_id, photo_id) VALUES (4, 45);
+INSERT INTO album_photos (album_id, photo_id) VALUES (4, 46);
+INSERT INTO album_photos (album_id, photo_id) VALUES (4, 47);
+
+
+
 
