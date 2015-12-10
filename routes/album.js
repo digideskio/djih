@@ -8,7 +8,10 @@ var album_query = 'SELECT a.location, a.date, a.category, p.filename, p.width, p
 // var photo_query = 'SELECT p.filename, p.title, p.location, p.camera, p.focal_length, p.aperture, p.shutter_speed, p.iso, p.date_taken, p.width, p.height FROM album_photos AS a INNER JOIN photos AS p ON a.photo_id = p.id WHERE a.album_id = {0} ORDER BY p.date_taken, p.filename ASC;';
 var photo_query = 'SELECT p.id, p.filename, p.title, p.location, p.camera, p.focal_length, p.aperture, p.shutter_speed, p.iso, p.date_taken, p.width, p.height FROM album_photos AS a INNER JOIN photos AS p ON a.photo_id = p.id WHERE a.album_id = {0} ORDER BY RANDOM();';
 
-var albums = [1, 2, 3, 4];
+var isValidAlbum = function(id) {
+    return id >= 1 && id <= 5;
+}
+
 var months = [
     'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August',
     'September', 'October', 'November', 'December'
@@ -20,7 +23,7 @@ exports.view = function(req, res){
     var albumid = parseInt(req.params.albumid);
 
     // invalid albumid
-    if (albums.indexOf(albumid) < 0) {
+    if (!isValidAlbum(albumid)) {
         res.redirect('/v2');
     }
 

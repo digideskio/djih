@@ -7,7 +7,10 @@ var months = [
     'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August',
     'September', 'October', 'November', 'December'
 ]
-var finished_albums = [1, 2, 3, 4];
+
+var isFinishedAlbum = function(id) {
+    return id >= 1 && id <= 5;
+}
 
 exports.view = function(req, res){
     var data = [];
@@ -21,7 +24,7 @@ exports.view = function(req, res){
                 for (var i = 0; i < result.rowCount; i++) {
                     var album = albums[i];
 
-                    if (finished_albums.indexOf(album.id) > -1) {
+                    if (isFinishedAlbum(album.id)) {
                         album.show_link = true;
                     }
 

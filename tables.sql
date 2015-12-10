@@ -93,9 +93,9 @@ INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_
 
 INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('mission-peak-2015/DSC_2607.jpg', 'Mission Peak', 'Nikon D7100', '13mm', 'f/7.1', '1/100s', 500, '07/12/2015', 1440, 960);
 
-INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('la-2015/DSC_1517.jpg', 'Los Angelos', 'Nikon D7100', '10mm', 'f/8', '1/2000s', 500, '05/24/2015', 1440, 960);
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('la-2015/DSC_1517.jpg', 'Getty Villa', 'Nikon D7100', '10mm', 'f/8', '1/2000s', 500, '05/24/2015', 1440, 960);
 
-INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('la-2015/DSC_1619.jpg', 'Los Angelos', 'Nikon D7100', '10mm', 'f/8', '1/800s', 800, '05/25/2015', 1440, 866);
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('la-2015/DSC_1619.jpg', 'Beckman Auditorium, Caltech', 'Nikon D7100', '10mm', 'f/8', '1/800s', 800, '05/25/2015', 1440, 866);
 
 INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('napa-2015/DSC_1230.jpg', 'Napa', 'Nikon D7100', '55mm', 'f/2.8', '1/1000s', 100, '04/26/2015', 1440, 960);
 
@@ -242,6 +242,8 @@ INSERT INTO album_photos (album_id, photo_id) VALUES (4, 45);
 INSERT INTO album_photos (album_id, photo_id) VALUES (4, 46);
 INSERT INTO album_photos (album_id, photo_id) VALUES (4, 47);
 
-
+# LA
+INSERT INTO album_photos (album_id, photo_id) VALUES (5, 5);
+INSERT INTO album_photos (album_id, photo_id) VALUES (5, 6);
 
 
