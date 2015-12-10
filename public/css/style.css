@@ -508,6 +508,11 @@ body {
     display: none;
   }
 
+  /* Disable gallery popup link on mobile */
+  ul.gallery a.gallery-popup-link {
+    pointer-events: none;
+  }
+
   ul.gallery li .img-text {
     top: 43%;
   }
