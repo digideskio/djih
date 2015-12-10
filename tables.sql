@@ -211,6 +211,13 @@ INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_
 INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('la-2015/DSC_1639.jpg', 'Beckman Auditorium, Caltech', 'Nikon D7100', '10mm', 'f/8', '1/200s', 800, '05/25/2015', 1440, 960);
 
 
+# Napa
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('napa-2015/DSC_1243.jpg', 'Clos Du Val Winery', 'Nikon D7100', '55mm', 'f/2.8', '1/1250s', 100, '04/26/2015', 1440, 960);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('napa-2015/DSC_1244.jpg', 'Clos Du Val Winery', 'Nikon D7100', '55mm', 'f/2.8', '1/1250s', 100, '04/26/2015', 1440, 960);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('napa-2015/DSC_1252.jpg', 'Clos Du Val Winery', 'Nikon D7100', '55mm', 'f/2.8', '1/1250s', 100, '04/26/2015', 1440, 960);
+
 
 
 
@@ -277,8 +284,10 @@ INSERT INTO album_photos (album_id, photo_id) VALUES (5, 54);
 INSERT INTO album_photos (album_id, photo_id) VALUES (5, 55);
 INSERT INTO album_photos (album_id, photo_id) VALUES (5, 56);
 
-
-
-
+# Napa
+INSERT INTO album_photos (album_id, photo_id) VALUES (6, 7);
+INSERT INTO album_photos (album_id, photo_id) VALUES (6, 57);
+INSERT INTO album_photos (album_id, photo_id) VALUES (6, 58);
+INSERT INTO album_photos (album_id, photo_id) VALUES (6, 59);
 
 
