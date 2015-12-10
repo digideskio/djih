@@ -97,6 +97,8 @@ INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_
 
 -- INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('la-2015/DSC_1619.jpg', 'Beckman Auditorium, Caltech', 'Nikon D7100', '10mm', 'f/8', '1/800s', 800, '05/25/2015', 1440, 866);
 
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('taiwan-2015/DSC_1075.jpg', 'Chiang Kai-shek Memorial Hall', 'Nikon D7100', '20mm', 'f/8', '1/320s', 160, '03/26/2015', 1440, 838);
+
 INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('napa-2015/DSC_1230.jpg', 'Napa', 'Nikon D7100', '55mm', 'f/2.8', '1/1000s', 100, '04/26/2015', 1440, 960);
 
 INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('boston-2014/DSC_0547.jpg', 'Boston', 'Nikon D7100', '10mm', 'f/13', '1/160s', 400, '12/31/2014', 1440, 960);
@@ -219,6 +221,32 @@ INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_
 INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('napa-2015/DSC_1252.jpg', 'Clos Du Val Winery', 'Nikon D7100', '55mm', 'f/2.8', '1/1250s', 100, '04/26/2015', 1440, 960);
 
 
+# Taiwan
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('taiwan-2015/DSC_0993.jpg', 'Taipei', 'Nikon D7100', '10mm', 'f/8', '1/125s', 100, '03/23/2015', 1440, 960);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('taiwan-2015/DSC_1023.jpg', 'Taroko National Park', 'Nikon D7100', '10mm', 'f/6.3', '1/50s', 2000, '03/24/2015', 1440, 960);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('taiwan-2015/DSC_1044.jpg', 'Addiction Aquatic Development', 'Nikon D7100', '15mm', 'f/5', '1/50s', 2000, '03/26/2015', 1440, 960);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('taiwan-2015/DSC_1046.jpg', 'Addiction Aquatic Development', 'Nikon D7100', '10mm', 'f/4', '1/60s', 2500, '03/26/2015', 1440, 960);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('taiwan-2015/DSC_1050.jpg', 'Addiction Aquatic Development', 'Nikon D7100', '12mm', 'f/4.5', '1/60s', 2500, '03/26/2015', 1440, 960);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('taiwan-2015/DSC_1051.jpg', 'Addiction Aquatic Development', 'Nikon D7100', '13mm', 'f/4.5', '1/40s', 2500, '03/26/2015', 1440, 960);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('taiwan-2015/DSC_1066.jpg', 'Chiang Kai-shek Memorial Hall', 'Nikon D7100', '10mm', 'f/8', '1/40s', 160, '03/26/2015', 1440, 789);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('taiwan-2015/DSC_1102.jpg', 'Honey Creme Taipei', 'Nikon D7100', '11mm', 'f/4.5', '1/80s', 400, '03/27/2015', 1440, 960);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('taiwan-2015/DSC_1114.jpg', 'Zhongxiao E Road, Section 4', 'Nikon D7100', '11.5mm', 'f/4.2', '1/40s', 400, '03/27/2015', 1440, 960);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('taiwan-2015/DSC_1135.jpg', 'Taipei 101', 'Nikon D7100', '10mm', 'f/8', '1/1000s', 500, '03/28/2015', 1440, 960);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('taiwan-2015/DSC_1182.jpg', 'Din Tai Fung Taipei 101', 'Nikon D7100', '10mm', 'f/6.3', '1/60s', 2000, '03/28/2015', 1440, 960);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('taiwan-2015/DSC_1192.jpg', 'Elephant Mountain', 'Nikon D7100', '20mm', 'f/8', '8s', 100, '03/28/2015', 1440, 960);
+
+
 
 
 
@@ -290,4 +318,18 @@ INSERT INTO album_photos (album_id, photo_id) VALUES (6, 57);
 INSERT INTO album_photos (album_id, photo_id) VALUES (6, 58);
 INSERT INTO album_photos (album_id, photo_id) VALUES (6, 59);
 
+# Taiwan
+INSERT INTO album_photos (album_id, photo_id) VALUES (7, 8);
+INSERT INTO album_photos (album_id, photo_id) VALUES (7, 60);
+INSERT INTO album_photos (album_id, photo_id) VALUES (7, 61);
+INSERT INTO album_photos (album_id, photo_id) VALUES (7, 62);
+INSERT INTO album_photos (album_id, photo_id) VALUES (7, 63);
+INSERT INTO album_photos (album_id, photo_id) VALUES (7, 64);
+INSERT INTO album_photos (album_id, photo_id) VALUES (7, 65);
+INSERT INTO album_photos (album_id, photo_id) VALUES (7, 66);
+INSERT INTO album_photos (album_id, photo_id) VALUES (7, 67);
+INSERT INTO album_photos (album_id, photo_id) VALUES (7, 68);
+INSERT INTO album_photos (album_id, photo_id) VALUES (7, 69);
+INSERT INTO album_photos (album_id, photo_id) VALUES (7, 70);
+INSERT INTO album_photos (album_id, photo_id) VALUES (7, 71);
 
