@@ -95,7 +95,7 @@ INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_
 
 INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('la-2015/DSC_1517.jpg', 'Getty Villa', 'Nikon D7100', '10mm', 'f/8', '1/2000s', 500, '05/24/2015', 1440, 960);
 
-INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('la-2015/DSC_1619.jpg', 'Beckman Auditorium, Caltech', 'Nikon D7100', '10mm', 'f/8', '1/800s', 800, '05/25/2015', 1440, 866);
+-- INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('la-2015/DSC_1619.jpg', 'Beckman Auditorium, Caltech', 'Nikon D7100', '10mm', 'f/8', '1/800s', 800, '05/25/2015', 1440, 866);
 
 INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('napa-2015/DSC_1230.jpg', 'Napa', 'Nikon D7100', '55mm', 'f/2.8', '1/1000s', 100, '04/26/2015', 1440, 960);
 
@@ -191,6 +191,28 @@ INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_
 INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('mission-peak-2015/DSC_2623.jpg', 'Mission Peak', 'Nikon D7100', '20mm', 'f/7.1', '1/125s', 1250, '07/12/2015', 1440, 960);
 
 
+# LA photos
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('la-2015/DSC_1477.jpg', 'I5 Rest Area', 'Nikon D7100', '14mm', 'f/8', '1/125s', 100, '05/23/2015', 1440, 960);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('la-2015/DSC_1512.jpg', 'Getty Villa', 'Nikon D7100', '16mm', 'f/8', '1/1600s', 500, '05/24/2015', 1440, 960);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('la-2015/DSC_1523.jpg', 'Santa Monica Seafood', 'Nikon D7100', '35mm', 'f/4', '1/40s', 200, '05/24/2015', 1440, 960);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('la-2015/DSC_1548.jpg', 'LACMA', 'Nikon D7100', '10mm', 'f/4', '1/8000s', 200, '05/24/2015', 1440, 960);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('la-2015/DSC_1560.jpg', 'Kang Ho-Dong Baekjeong', 'Nikon D7100', '10mm', 'f/4', '1/40s', 2500, '05/24/2015', 1440, 960);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('la-2015/DSC_1576.jpg', 'Boiling Point Pasadena', 'Nikon D7100', '35mm', 'f/3.2', '1/50s', 2500, '05/25/2015', 1440, 960);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('la-2015/DSC_1613.jpg', 'Caltech', 'Nikon D7100', '13mm', 'f/8', '1/640s', 2500, '05/25/2015', 1440, 637);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('la-2015/DSC_1626.jpg', 'Beckman Auditorium, Caltech', 'Nikon D7100', '10mm', 'f/8', '1/400s', 800, '05/25/2015', 1440, 960);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('la-2015/DSC_1639.jpg', 'Beckman Auditorium, Caltech', 'Nikon D7100', '10mm', 'f/8', '1/200s', 800, '05/25/2015', 1440, 960);
+
+
+
+
 
 
 
@@ -244,6 +266,19 @@ INSERT INTO album_photos (album_id, photo_id) VALUES (4, 47);
 
 # LA
 INSERT INTO album_photos (album_id, photo_id) VALUES (5, 5);
-INSERT INTO album_photos (album_id, photo_id) VALUES (5, 6);
+-- INSERT INTO album_photos (album_id, photo_id) VALUES (5, 6);
+INSERT INTO album_photos (album_id, photo_id) VALUES (5, 48);
+INSERT INTO album_photos (album_id, photo_id) VALUES (5, 49);
+INSERT INTO album_photos (album_id, photo_id) VALUES (5, 50);
+INSERT INTO album_photos (album_id, photo_id) VALUES (5, 51);
+INSERT INTO album_photos (album_id, photo_id) VALUES (5, 52);
+INSERT INTO album_photos (album_id, photo_id) VALUES (5, 53);
+INSERT INTO album_photos (album_id, photo_id) VALUES (5, 54);
+INSERT INTO album_photos (album_id, photo_id) VALUES (5, 55);
+INSERT INTO album_photos (album_id, photo_id) VALUES (5, 56);
+
+
+
+
 
 
