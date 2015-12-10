@@ -81,6 +81,8 @@ CREATE TABLE IF NOT EXISTS photos(
     height INTEGER
 );
 
+
+# Cover photos
 INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES (
     'vancouver-2015/DSC_3147.jpg', 'Stanley Park', 'Nikon D7100', '10mm', 'f/8', '1.3s', 100, '09/11/2015', 1440, 620);
 
@@ -167,6 +169,22 @@ INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_
 INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('crater-lake-2015/DSC_3038.jpg', 'Crater Lake', 'Nikon D7100', '10mm', 'f/4', '30s', 6400, '09/06/2015', 1440, 960);
 
 
+# Caltopia
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('caltopia-2015/DSC_1464.jpg', 'Eureka', 'Nikon D7100', '35mm', 'f/2.8', '1/125s', 500, '05/22/2015', 1440, 844);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('caltopia-2015/DSC_1473.jpg', 'Eureka', 'Nikon D7100', '35mm', 'f/2.8', '1/200s', 500, '05/22/2015', 1440, 960);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('caltopia-2015/DSC_2785.jpg', 'Berkeley', 'Nikon D7100', '10mm', 'f/11', '1/500s', 400, '08/23/2015', 1440, 960);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('caltopia-2015/DSC_2802.jpg', 'Berkeley', 'Nikon D7100', '10mm', 'f/8', '1/800s', 640, '08/23/2015', 1440, 960);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('caltopia-2015/DSC_2816.jpg', 'Berkeley', 'Nikon D7100', '10mm', 'f/8', '1/400s', 640, '08/23/2015', 1440, 960);
+
+
+
+
+
+
 
 
 CREATE TABLE IF NOT EXISTS album_photos(
@@ -200,8 +218,11 @@ INSERT INTO album_photos (album_id, photo_id) VALUES (2, 36);
 INSERT INTO album_photos (album_id, photo_id) VALUES (2, 37);
 INSERT INTO album_photos (album_id, photo_id) VALUES (2, 38);
 
-
-
-
-
+# caltopia
+INSERT INTO album_photos (album_id, photo_id) VALUES (3, 39);
+INSERT INTO album_photos (album_id, photo_id) VALUES (3, 3);
+INSERT INTO album_photos (album_id, photo_id) VALUES (3, 40);
+INSERT INTO album_photos (album_id, photo_id) VALUES (3, 41);
+INSERT INTO album_photos (album_id, photo_id) VALUES (3, 42);
+INSERT INTO album_photos (album_id, photo_id) VALUES (3, 43);
 

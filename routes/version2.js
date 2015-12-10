@@ -7,7 +7,7 @@ var months = [
     'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August',
     'September', 'October', 'November', 'December'
 ]
-var finished_albums = [1, 2];
+var finished_albums = [1, 2, 3];
 
 exports.view = function(req, res){
     var data = [];
