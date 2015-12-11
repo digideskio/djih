@@ -20,6 +20,8 @@ var months = [
 
 exports.view = function(req, res){
     var data = [];
+
+    /*
     var albumid = parseInt(req.params.albumid);
 
     // invalid albumid
@@ -78,7 +80,8 @@ exports.view = function(req, res){
             }
         });
     });
-
+    */
+    res.render('food', data);
 
 
 
