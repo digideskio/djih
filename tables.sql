@@ -247,6 +247,20 @@ INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_
 INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('taiwan-2015/DSC_1192.jpg', 'Elephant Mountain', 'Nikon D7100', '20mm', 'f/8', '8s', 100, '03/28/2015', 1440, 960);
 
 
+# Boston
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('boston-2014/DSC_0415.jpg', 'Tufts University', 'Nikon D7100', '10mm', 'f/8', '1/125s', 100, '12/29/2015', 1440, 960);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('boston-2014/DSC_0417.jpg', 'Tisch Library Roof', 'Nikon D7100', '10mm', 'f/8', '1/500s', 100, '12/29/2015', 1440, 960);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('boston-2014/DSC_0441.jpg', 'Charles River', 'Nikon D7100', '16mm', 'f/8', '1/200s', 100, '12/29/2015', 1440, 960);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('boston-2014/DSC_0447.jpg', 'Boston Museum of Science', 'Nikon D7100', '10mm', 'f/8', '3s', 100, '12/29/2015', 1440, 960);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('boston-2014/DSC_0475.jpg', 'New England Aquarium', 'Nikon D7100', '10mm', 'f/4', '1/60s', 2000, '12/30/2015', 1440, 960);
+
+
+
+
 
 
 
@@ -332,4 +346,13 @@ INSERT INTO album_photos (album_id, photo_id) VALUES (7, 68);
 INSERT INTO album_photos (album_id, photo_id) VALUES (7, 69);
 INSERT INTO album_photos (album_id, photo_id) VALUES (7, 70);
 INSERT INTO album_photos (album_id, photo_id) VALUES (7, 71);
+
+# Boston
+INSERT INTO album_photos (album_id, photo_id) VALUES (8, 9);
+INSERT INTO album_photos (album_id, photo_id) VALUES (8, 72);
+INSERT INTO album_photos (album_id, photo_id) VALUES (8, 73);
+INSERT INTO album_photos (album_id, photo_id) VALUES (8, 74);
+INSERT INTO album_photos (album_id, photo_id) VALUES (8, 75);
+INSERT INTO album_photos (album_id, photo_id) VALUES (8, 76);
+
 
