@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{city}} - Daniel Jih Photography</title>
+
+    <!-- Bootstrap -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/magnific-popup.css" rel="stylesheet">
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="/js/jquery-1.8.3.min.js"></script>
+    <script src="/js/jquery-ui.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <!--<script src="/js/jquery.exif.js"></script>-->
+    <script src="/js/jquery.magnific-popup.min.js" rel="stylesheet"></script>
+    <script src="/js/script.js"></script>
+  </head>
+  <body>
+
+  <div class="body-wrapper">
+    <div class="header" id="header">
+      <div class="header-background" id="header-background"></div>
+      <div class="header-content">
+        <span class="glyphicon glyphicon-align-justify" aria-hidden="true" id="toggle-sidebar"></span>
+        <a href="/v2" title="Daniel Jih Photography">
+          <h1>Daniel Jih Photography</h1>
+        </a>
+      </div>
+    </div>
+
+    <div class="sidebar" id="sidebar">
+      <ul class="sidebar-nav">
+        <li>
+          <div class="close-icon">
+            <span class="glyphicon glyphicon-remove" aria-hidden="true" id="close-sidebar"></span>
+          </div>
+        </li>
+        <li class="headshot">
+          <img src="/images/headshot.JPG">
+          <a href="/v2" title="Daniel Jih Photography">
+            <h1>Daniel Jih</h1>
+          </a>
+        </li>
+        <li>
+          <a href="/travel" title="Travel" class="nav{{#if travel}} active{{/if}}">Travel</a>
+        </li>
+        <li>
+          <a href="/food" title="Food" class="nav{{#if food}} active{{/if}}">Food</a>
+        </li>
+        <li>
+          <a href="/blog" title="Blog" class="nav">Blog</a>
+        </li>
+        <li>
+          <a href="/aboutme" title="About Me" class="nav">About Me</a>
+        </li>
+
+      </ul>
+    </div>
+
+
+    <div class="content" id="content">
+
+      <div class="masthead" id="masthead">
+        <img src="/images/{{cover_photo}}" id="masthead-photo">
+        <div class="masthead-text-wrapper">
+          <h1>{{city}}</h1>
+          <h3>{{date}}</h3>
+          <button type="button" id="jump-button">View</button>
+        </div>
+      </div>
+
+
+      <ul class="gallery">
+              
+        {{#each photos}}
+          <a href="#" id="img_{{this.id}}_link" class="gallery-popup-link">
+            <li class="img-li">
+              <div class="img-details-wrapper">
+                <!-- <div class="img-border"></div> -->
+                <img src="/images/{{this.filename}}" class="img-album" id="img_{{this.id}}">
+                <!-- <div class="img-text">
+                  <h2>{{this.city}}</h2>
+                  <h3>{{this.date}}</h3>
+                </div> -->
+              </div>
+            </li>
+          </a>
+
+          <script>
+            $('#img_{{this.id}}_link').click(function(e){
+              e.preventDefault();
+            });
+
+            $('#img_{{this.id}}').load(function(){
+              $('#img_{{this.id}}_link').magnificPopup({
+                disableOn: 480,
+                closeOnContentClick: true,
+                closeOnBgClick: true,
+                showCloseBtn: true,
+                items: {
+                  src: '/images/{{this.filename}}',
+                },
+                type: 'image',
+                image: {
+                  verticalFit: true,
+                  titleSrc: function(){return '<strong>{{this.location}}</strong>  -  {{this.camera}}, {{this.focal_length}}, {{this.aperture}}, {{this.shutter_speed}}, ISO {{this.iso}}';}
+                },
+                mainClass: 'mfp-img-mobile'
+              });
+            });
+
+          </script>
+        {{/each}}
+      </ul>
+
+      <!-- <div class="copyright"> -->
+        <!-- <p>All images &#169; 2014 Daniel Jih</p> -->
+      <!-- </div> -->
+        
+    </div>
+
+  </div>
+
+  </body>
+</html>
