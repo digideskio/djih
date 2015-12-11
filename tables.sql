@@ -356,3 +356,22 @@ INSERT INTO album_photos (album_id, photo_id) VALUES (8, 75);
 INSERT INTO album_photos (album_id, photo_id) VALUES (8, 76);
 
 
+ALTER TABLE photos ADD COLUMN category TEXT NOT NULL DEFAULT 'travel';
+CREATE INDEX photos_category_idx ON photos (category);
+UPDATE photos SET category = 'food' WHERE id = 39;
+UPDATE photos SET category = 'food' WHERE id = 40;
+UPDATE photos SET category = 'food' WHERE id = 50;
+UPDATE photos SET category = 'food' WHERE id = 52;
+UPDATE photos SET category = 'food' WHERE id = 53;
+UPDATE photos SET category = 'food' WHERE id = 57;
+UPDATE photos SET category = 'food' WHERE id = 58;
+UPDATE photos SET category = 'food' WHERE id = 62;
+UPDATE photos SET category = 'food' WHERE id = 63;
+UPDATE photos SET category = 'food' WHERE id = 64;
+UPDATE photos SET category = 'food' WHERE id = 65;
+UPDATE photos SET category = 'food' WHERE id = 67;
+UPDATE photos SET category = 'food' WHERE id = 70;
+
+
+
+
