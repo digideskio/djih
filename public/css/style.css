@@ -456,6 +456,10 @@ body {
 
   .body-wrapper .sidebar {
     width: 0;
+    -moz-transition: all 0s ease;
+    -webkit-transition: all 0s ease;
+    -o-transition: all 0s ease;
+    transition: all 0s ease;
   }
 
   .body-wrapper .header,
@@ -463,6 +467,10 @@ body {
   .body-wrapper .header-content
    {
     height: 3em;
+    -moz-transition: all 0s ease;
+    -webkit-transition: all 0s ease;
+    -o-transition: all 0s ease;
+    transition: all 0s ease;
   }
 
   .body-wrapper .header .header-content span,
@@ -475,10 +483,10 @@ body {
     width: 250px;
     background-color: #333;
     display: block;
-    -moz-transition: all 0.5s ease;
-    -webkit-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
+    -moz-transition: all 0s ease;
+    -webkit-transition: all 0s ease;
+    -o-transition: all 0s ease;
+    transition: all 0s ease;
   }
 
   .body-wrapper.toggled .header,
@@ -523,10 +531,10 @@ body {
   .body-wrapper.toggled .content ul.gallery li .img-text
   {
     display: none;
-    -moz-transition: all 0.5s ease;
-    -webkit-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
+    -moz-transition: all 0s ease;
+    -webkit-transition: all 0s ease;
+    -o-transition: all 0s ease;
+    transition: all 0s ease;
   }
 
   .body-wrapper.toggled ul.gallery li .img-details-wrapper 
