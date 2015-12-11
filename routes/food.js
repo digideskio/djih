@@ -5,6 +5,7 @@ var photo_query = "SELECT id, filename, title, location, camera, focal_length, a
 
 exports.view = function(req, res){
     var data = [];
+    data['food'] = true; // activates sidebar link background
 
     // fetch food photos
     pg.connect(process.env.DATABASE_URL, function(err, client, done) {
