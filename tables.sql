@@ -308,16 +308,13 @@ INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_
 
 INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('hong-kong-2014/DSC_0642.jpg', 'Lung King Heen', 'Nikon D5100', '20mm', 'f/8', '1/60s', 100, '09/15/2014', 1440, 954, 'food');
 
-INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('hong-kong-2014/DSC_0644.jpg', 'Lung King Heen', 'Nikon D5100', '20mm', 'f/8', '1/125s', 100, '09/15/2014', 1440, 954, 'food');
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('hong-kong-2014/DSC_0644.jpg', 'Lung King Heen', 'Nikon D5100', '10mm', 'f/5.6', '1/125s', 100, '09/15/2014', 1440, 954, 'food');
 
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('hong-kong-2014/DSC_0644.jpg', 'Lung King Heen', 'Nikon D5100', '10mm', 'f/5.6', '1/125s', 100, '09/15/2014', 1440, 954, 'food');
 
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('hong-kong-2014/DSC_0645.jpg', 'Lung King Heen', 'Nikon D5100', '20mm', 'f/8', '1/100s', 100, '09/15/2014', 1440, 954, 'food');
 
-
-
-
-
-
-
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('hong-kong-2014/DSC_0645.jpg', 'Tian Tan Buddha', 'Nikon D5100', '10mm', 'f/8', '1/125s', 100, '09/15/2014', 1440, 954, 'travel');
 
 # Taiwan
 INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('taiwan-2014/DSC_0836.jpg', 'National Taiwan University', 'Nikon D5100', '10mm', 'f/8', '1/125s', 1050, '11/25/2014', 1440, 954, 'travel');
@@ -462,11 +459,9 @@ INSERT INTO album_photos (album_id, photo_id) VALUES (10, 96);
 INSERT INTO album_photos (album_id, photo_id) VALUES (10, 97);
 INSERT INTO album_photos (album_id, photo_id) VALUES (10, 98);
 INSERT INTO album_photos (album_id, photo_id) VALUES (10, 99);
-
-
-
-
-
+INSERT INTO album_photos (album_id, photo_id) VALUES (10, 100);
+INSERT INTO album_photos (album_id, photo_id) VALUES (10, 101);
+INSERT INTO album_photos (album_id, photo_id) VALUES (10, 102);
 
 # Taiwan
 INSERT INTO album_photos (album_id, photo_id) VALUES (21, 87);
