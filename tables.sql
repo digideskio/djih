@@ -31,7 +31,7 @@ INSERT INTO albums (name, location, date, cover_photo_id, category) VALUES ('Cal
 
 INSERT INTO albums (name, location, date, cover_photo_id, category) VALUES ('Mission Peak 2015', 'Mission Peak, CA', '07/12/2015', 4, 'travel');
 
-INSERT INTO albums (name, location, date, cover_photo_id, category) VALUES ('Los Angelos 2015', 'Los Angelos, CA', '05/24/2015', 6, 'travel');
+INSERT INTO albums (name, location, date, cover_photo_id, category) VALUES ('Los Angeles 2015', 'Los Angelos, CA', '05/24/2015', 6, 'travel');
 
 INSERT INTO albums (name, location, date, cover_photo_id, category) VALUES ('Napa 2015', 'Napa, CA', '04/26/2015', 7, 'travel');
 
@@ -103,7 +103,7 @@ INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_
 
 INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('boston-2014/DSC_0547.jpg', 'Boston', 'Nikon D7100', '10mm', 'f/13', '1/160s', 400, '12/31/2014', 1440, 960);
 
-INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('chicago-2014/DSC_0171.jpg', 'Chicago', 'Nikon D5100', '10mm', 'f/8', '1/800s', 250, '11/25/2014', 1440, 954);
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('chicago-2014/DSC_0171.jpg', 'Magnificent Mile', 'Nikon D5100', '10mm', 'f/8', '1/800s', 250, '11/25/2014', 1440, 954);
 
 INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('hong-kong-2014/DSC_0540.jpg', 'Hong Kong', 'Nikon D5100', '10mm', 'f/8', '1/400s', 1000, '09/14/2014', 1440, 870);
 
@@ -248,17 +248,37 @@ INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_
 
 
 # Boston
-INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('boston-2014/DSC_0415.jpg', 'Tufts University', 'Nikon D7100', '10mm', 'f/8', '1/125s', 100, '12/29/2015', 1440, 960);
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('boston-2014/DSC_0415.jpg', 'Tufts University', 'Nikon D7100', '10mm', 'f/8', '1/125s', 100, '12/29/2014', 1440, 960);
 
-INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('boston-2014/DSC_0417.jpg', 'Tisch Library Roof', 'Nikon D7100', '10mm', 'f/8', '1/500s', 100, '12/29/2015', 1440, 960);
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('boston-2014/DSC_0417.jpg', 'Tisch Library Roof', 'Nikon D7100', '10mm', 'f/8', '1/500s', 100, '12/29/2014', 1440, 960);
 
-INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('boston-2014/DSC_0441.jpg', 'Charles River', 'Nikon D7100', '16mm', 'f/8', '1/200s', 100, '12/29/2015', 1440, 960);
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('boston-2014/DSC_0441.jpg', 'Charles River', 'Nikon D7100', '16mm', 'f/8', '1/200s', 100, '12/29/2014', 1440, 960);
 
-INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('boston-2014/DSC_0447.jpg', 'Boston Museum of Science', 'Nikon D7100', '10mm', 'f/8', '3s', 100, '12/29/2015', 1440, 960);
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('boston-2014/DSC_0447.jpg', 'Boston Museum of Science', 'Nikon D7100', '10mm', 'f/8', '3s', 100, '12/29/2014', 1440, 960);
 
-INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('boston-2014/DSC_0475.jpg', 'New England Aquarium', 'Nikon D7100', '10mm', 'f/4', '1/60s', 2000, '12/30/2015', 1440, 960);
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('boston-2014/DSC_0475.jpg', 'New England Aquarium', 'Nikon D7100', '10mm', 'f/4', '1/60s', 2000, '12/30/2014', 1440, 960);
 
 
+# Chicago
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('chicago-2014/DSC_0012.jpg', 'Magnificent Mile', 'Nikon D5100', '20mm', 'f/8', '1s', 100, '11/24/2014', 1440, 954);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('chicago-2014/DSC_0016.jpg', 'Magnificent Mile', 'Nikon D5100', '14mm', 'f/8', '2s', 100, '11/24/2014', 1440, 954);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('chicago-2014/DSC_0027.jpg', 'Magnificent Mile', 'Nikon D5100', '10mm', 'f/4', '1/100s', 800, '11/24/2014', 1440, 954);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('chicago-2014/DSC_0030.jpg', 'Magnificent Mile', 'Nikon D5100', '35mm', 'f/1.8', '1/640s', 800, '11/24/2014', 1440, 954);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('chicago-2014/DSC_0041.jpg', 'Hancock Observatory', 'Nikon D5100', '10mm', 'f/8', '10s', 100, '11/24/2014', 1440, 698);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('chicago-2014/DSC_0073.jpg', 'Chicago River', 'Nikon D5100', '10mm', 'f/8', '1/1000s', 250, '11/25/2014', 1440, 954);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('chicago-2014/DSC_0113.jpg', 'Chicago River', 'Nikon D5100', '10mm', 'f/8', '1/2000s', 250, '11/25/2014', 1440, 954);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('chicago-2014/DSC_0151.jpg', 'Trump Tower', 'Nikon D5100', '10mm', 'f/8', '1/1250s', 250, '11/25/2014', 1440, 954);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('chicago-2014/DSC_0182.jpg', 'Cloud Gate', 'Nikon D5100', '10mm', 'f/8', '1/400s', 250, '11/25/2014', 1440, 954);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('chicago-2014/DSC_0193.jpg', 'Cloud Gate', 'Nikon D5100', '10mm', 'f/5', '1/800s', 250, '11/25/2014', 1440, 954);
 
 
 
@@ -371,6 +391,19 @@ UPDATE photos SET category = 'food' WHERE id = 64;
 UPDATE photos SET category = 'food' WHERE id = 65;
 UPDATE photos SET category = 'food' WHERE id = 67;
 UPDATE photos SET category = 'food' WHERE id = 70;
+
+
+# Chicago
+INSERT INTO album_photos (album_id, photo_id) VALUES (9, 10);
+INSERT INTO album_photos (album_id, photo_id) VALUES (9, 77);
+INSERT INTO album_photos (album_id, photo_id) VALUES (9, 78);
+INSERT INTO album_photos (album_id, photo_id) VALUES (9, 79);
+INSERT INTO album_photos (album_id, photo_id) VALUES (9, 80);
+INSERT INTO album_photos (album_id, photo_id) VALUES (9, 81);
+INSERT INTO album_photos (album_id, photo_id) VALUES (9, 82);
+INSERT INTO album_photos (album_id, photo_id) VALUES (9, 83);
+INSERT INTO album_photos (album_id, photo_id) VALUES (9, 84);
+INSERT INTO album_photos (album_id, photo_id) VALUES (9, 85);
 
 
 
