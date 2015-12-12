@@ -312,14 +312,30 @@ INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_
 
 INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('hong-kong-2014/DSC_0644.jpg', 'Lung King Heen', 'Nikon D5100', '10mm', 'f/5.6', '1/125s', 100, '09/15/2014', 1440, 954, 'food');
 
-INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('hong-kong-2014/DSC_0645.jpg', 'Lung King Heen', 'Nikon D5100', '20mm', 'f/8', '1/100s', 100, '09/15/2014', 1440, 954, 'food');
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('hong-kong-2014/DSC_0653.jpg', 'Lung King Heen', 'Nikon D5100', '20mm', 'f/8', '1/100s', 100, '09/15/2014', 1440, 954, 'food');
 
-INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('hong-kong-2014/DSC_0645.jpg', 'Tian Tan Buddha', 'Nikon D5100', '10mm', 'f/8', '1/125s', 100, '09/15/2014', 1440, 954, 'travel');
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('hong-kong-2014/DSC_0713.jpg', 'Tian Tan Buddha', 'Nikon D5100', '10mm', 'f/8', '1/125s', 100, '09/15/2014', 1440, 954, 'travel');
 
 # Taiwan
-INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('taiwan-2014/DSC_0836.jpg', 'National Taiwan University', 'Nikon D5100', '10mm', 'f/8', '1/125s', 1050, '11/25/2014', 1440, 954, 'travel');
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('taiwan-2014/DSC_0836.jpg', 'National Taiwan University', 'Nikon D5100', '10mm', 'f/8', '1/125s', 1000, '09/19/2014', 1440, 954, 'travel');
 
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('taiwan-2014/DSC_0048.jpg', 'Tainan Tea Shop', 'Nikon D5100', '35mm', 'f/1.8', '1/1000s', 800, '09/07/2014', 1440, 954, 'travel');
 
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('taiwan-2014/DSC_0149.jpg', '六千牛肉湯', 'Nikon D5100', '35mm', 'f/4', '1/60s', 1600, '09/07/2014', 1440, 954, 'food');
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('taiwan-2014/DSC_0151.jpg', 'Tainan', 'Nikon D5100', '16mm', 'f/5', '1/4000s', 500, '09/07/2014', 1440, 954, 'travel');
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('taiwan-2014/DSC_0175.jpg', 'Taichung Rice Ball', 'Nikon D5100', '18mm', 'f/5.6', '1/1000s', 1250, '09/09/2014', 1440, 954, 'food');
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('taiwan-2014/DSC_0186.jpg', '台中火車站', 'Nikon D5100', '15mm', 'f/7.1', '1/160s', 1250, '09/09/2014', 1440, 954, 'food');
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('taiwan-2014/DSC_0198.jpg', '彩虹眷村', 'Nikon D5100', '10mm', 'f/11', '1/60s', 100, '09/09/2014', 1440, 954, 'travel');
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('taiwan-2014/DSC_0277.jpg', '貓空', 'Nikon D5100', '10mm', 'f/8', '1/320s', 400, '09/12/2014', 1440, 954, 'food');
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('taiwan-2014/DSC_0307.jpg', '貓空大茶壺茶餐廳', 'Nikon D5100', '10mm', 'f/9', '1/100s', 100, '09/12/2014', 1440, 954, 'travel');
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('taiwan-2014/DSC_0316.jpg', '貓空纜車', 'Nikon D5100', '10mm', 'f/4', '1/50s', 1000, '09/12/2014', 1440, 954, 'travel');
 
 
 
@@ -465,6 +481,14 @@ INSERT INTO album_photos (album_id, photo_id) VALUES (10, 102);
 
 # Taiwan
 INSERT INTO album_photos (album_id, photo_id) VALUES (21, 87);
-
+INSERT INTO album_photos (album_id, photo_id) VALUES (21, 103);
+INSERT INTO album_photos (album_id, photo_id) VALUES (21, 104);
+INSERT INTO album_photos (album_id, photo_id) VALUES (21, 105);
+INSERT INTO album_photos (album_id, photo_id) VALUES (21, 106);
+INSERT INTO album_photos (album_id, photo_id) VALUES (21, 107);
+INSERT INTO album_photos (album_id, photo_id) VALUES (21, 108);
+INSERT INTO album_photos (album_id, photo_id) VALUES (21, 109);
+INSERT INTO album_photos (album_id, photo_id) VALUES (21, 110);
+INSERT INTO album_photos (album_id, photo_id) VALUES (21, 111);
 
 
