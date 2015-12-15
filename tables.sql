@@ -109,7 +109,7 @@ INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_
 
 INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('hong-kong-2014/DSC_0540.jpg', 'Chi Lin Nunnery', 'Nikon D5100', '10mm', 'f/8', '1/400s', 1000, '09/14/2014', 1440, 870);
 
-INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('san-francisco-2014/DSC_0721.jpg', 'San Francisco', 'Nikon D5100', '10mm', 'f/22', '1/60s', 100, '07/13/2014', 960, 636);
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('san-francisco-2014/DSC_0721.jpg', 'Pier 33', 'Nikon D5100', '10mm', 'f/22', '1/60s', 100, '07/13/2014', 960, 636);
 
 
 INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES ('new-york-2013/1537842_10201326507305054_1391125307_o.jpg', 'New York City', 'Nikon D5100', '35mm', 'f/1.8', '1/60s', 100, '12/24/2013', 1440, 954);
@@ -342,6 +342,13 @@ INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_
 
 
 
+
+
+
+
+
+
+
 CREATE TABLE IF NOT EXISTS album_photos(
     id SERIAL PRIMARY KEY,
     album_id INTEGER NOT NULL,
@@ -490,5 +497,26 @@ INSERT INTO album_photos (album_id, photo_id) VALUES (21, 108);
 INSERT INTO album_photos (album_id, photo_id) VALUES (21, 109);
 INSERT INTO album_photos (album_id, photo_id) VALUES (21, 110);
 INSERT INTO album_photos (album_id, photo_id) VALUES (21, 111);
+
+
+
+
+# SAN FRANCISCO
+# cover photo
+INSERT INTO album_photos (album_id, photo_id) VALUES (11, 12);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('san-francisco-2014/DSC_0052.jpg', 'Ghirardelli Square', 'Nikon D5100', '20mm', 'f/22', '1/3s', 100, '07/15/2014', 1440, 900, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (11, 112);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('san-francisco-2014/DSC_0070.jpg', 'Ghirardelli Square', 'Nikon D5100', '10mm', 'f/22', '1/60s', 1000, '07/15/2014', 1440, 900, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (11, 113);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('san-francisco-2014/DSC_0089.jpg', 'Ghirardelli Square', 'Nikon D5100', '15mm', 'f/22', '1/2s', 100, '07/15/2014', 1440, 900, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (11, 114);
+
+
+
+
+
 
 
