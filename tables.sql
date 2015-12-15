@@ -514,6 +514,78 @@ INSERT INTO album_photos (album_id, photo_id) VALUES (11, 113);
 INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('san-francisco-2014/DSC_0089.jpg', 'Ghirardelli Square', 'Nikon D5100', '15mm', 'f/22', '1/2s', 100, '07/15/2014', 1440, 900, 'travel');
 INSERT INTO album_photos (album_id, photo_id) VALUES (11, 114);
 
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('san-francisco-2014/DSC_0113.jpg', 'Alcatraz', 'Nikon D5100', '11mm', 'f/10', '1/250s', 500, '06/22/2014', 1440, 900, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (11, 115);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('san-francisco-2014/DSC_0115.jpg', 'Ghirardelli Square', 'Nikon D5100', '14mm', 'f/22', '3s', 100, '07/16/2014', 1440, 900, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (11, 116);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('san-francisco-2014/DSC_0195.jpg', 'Pier 14', 'Nikon D5100', '11.5mm', 'f/4.2', '1/1000s', 500, '08/10/2014', 1440, 900, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (11, 117);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('san-francisco-2014/DSC_0217.jpg', 'Alcatraz', 'Nikon D5100', '10mm', 'f/10', '4s', 100, '06/22/2014', 1440, 900, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (11, 118);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('san-francisco-2014/DSC_0224.jpg', 'Ocean Beach', 'Nikon D5100', '20mm', 'f/5.6', '1/100s', 500, '06/28/2014', 1440, 900, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (11, 119);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('san-francisco-2014/DSC_0238.jpg', 'Ocean Beach', 'Nikon D5100', '11mm', 'f/11', '4s', 100, '06/29/2014', 1440, 900, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (11, 120);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('san-francisco-2014/DSC_0240.jpg', 'Bay Bridge', 'Nikon D5100', '14mm', 'f/8', '1/25s', 640, '08/10/2014', 1440, 900, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (11, 121);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('san-francisco-2014/DSC_0290.jpg', 'AT&T Park', 'Nikon D5100', '10mm', 'f/8', '1/320s', 1000, '07/02/2014', 1440, 900, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (11, 122);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('san-francisco-2014/DSC_0359.jpg', 'Driven Raceway', 'Nikon D5100', '14mm', 'f/4.8', '1/60s', 1600, '07/04/2014', 1440, 900, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (11, 123);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('san-francisco-2014/DSC_0597.jpg', 'Pebble Beach Crescent City', 'Nikon D5100', '22mm', 'f/10', '1/5s', 100, '07/05/2014', 1440, 900, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (11, 124);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('san-francisco-2014/DSC_0866.jpg', 'Alcatraz', 'Nikon D5100', '16mm', 'f/25', '1s', 100, '07/13/2014', 1440, 900, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (11, 125);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('san-francisco-2014/DSC_0890.jpg', 'Golden Gate Bridge', 'Nikon D5100', '20mm', 'f/32', '2.5s', 100, '07/14/2014', 1440, 900, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (11, 126);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('san-francisco-2014/DSC_0903.jpg', 'Alcatraz', 'Nikon D5100', '10mm', 'f/18', '15s', 100, '07/14/2014', 1440, 900, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (11, 127);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
