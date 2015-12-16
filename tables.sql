@@ -574,12 +574,15 @@ INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_
 INSERT INTO album_photos (album_id, photo_id) VALUES (22, 132);
 
 INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('fort-funston-2015/DSC_1960.jpg', 'Fort Funston', 'Nikon D7100', '10mm', 'f/8', '1/400s', 100, '06/18/2015', 1440, 960, 'travel');
-INSERT INTO album_photos (album_id, photo_id) VALUES (22, 132);
+INSERT INTO album_photos (album_id, photo_id) VALUES (22, 133);
 
 
 
+# I280 Vista Point Album
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('280-vista-2015/DSC_2081.jpg', 'I-280 Vista Point', 'Nikon D7100', '10mm', 'f/8', '1/125s', 500, '07/01/2015', 1440, 960, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (23, 134);
 
-
+INSERT INTO albums (name, location, date, cover_photo_id, category) VALUES ('I-280 Vista Point 2015', 'I-280 Vista Point, CA', '07/01/2015', 134, 'travel');
 
 
 
