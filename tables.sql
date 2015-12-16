@@ -584,19 +584,26 @@ INSERT INTO album_photos (album_id, photo_id) VALUES (23, 134);
 
 INSERT INTO albums (name, location, date, cover_photo_id, category) VALUES ('I-280 Vista Point 2015', 'I-280 Vista Point, CA', '07/01/2015', 134, 'travel');
 
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('280-vista-2015/DSC_2076.jpg', 'I-280 Vista Point', 'Nikon D7100', '10mm', 'f/8', '1/50s', 200, '07/01/2015', 1440, 960, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (23, 135);
 
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('280-vista-2015/DSC_2079.jpg', 'I-280 Vista Point', 'Nikon D7100', '13mm', 'f/8', '1/80s', 500, '07/01/2015', 1440, 960, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (23, 136);
 
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('280-vista-2015/DSC_2084.jpg', 'I-280 Vista Point', 'Nikon D7100', '10mm', 'f/8', '1/80s', 500, '07/01/2015', 1440, 960, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (23, 137);
 
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('280-vista-2015/DSC_2085.jpg', 'I-280 Vista Point', 'Nikon D7100', '10mm', 'f/8', '1/100s', 500, '07/01/2015', 1440, 960, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (23, 138);
 
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('280-vista-2015/DSC_2088.jpg', 'I-280 Vista Point', 'Nikon D7100', '10mm', 'f/8', '1/125s', 500, '07/01/2015', 1440, 960, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (23, 139);
 
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('280-vista-2015/DSC_2096.jpg', 'I-280 Vista Point', 'Nikon D7100', '10mm', 'f/8', '1/125s', 500, '07/01/2015', 1440, 960, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (23, 140);
 
-
-
-
-
-
-
-
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('280-vista-2015/DSC_2099.jpg', 'I-101', 'Nikon D7100', '10mm', 'f/8', '1/15s', 500, '07/01/2015', 1440, 960, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (23, 140);
 
 
 
