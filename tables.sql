@@ -570,9 +570,11 @@ INSERT INTO album_photos (album_id, photo_id) VALUES (22, 130);
 INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('fort-funston-2015/DSC_0650.jpg', 'Fort Funston', 'Nikon D7100', '10mm', 'f/8', '1/60s', 800, '01/11/2015', 1440, 960, 'travel');
 INSERT INTO album_photos (album_id, photo_id) VALUES (22, 131);
 
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('fort-funston-2015/DSC_1956.jpg', 'Fort Funston', 'Nikon D7100', '10mm', 'f/8', '1/400s', 100, '06/18/2015', 1440, 960, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (22, 132);
 
-
-
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('fort-funston-2015/DSC_1960.jpg', 'Fort Funston', 'Nikon D7100', '10mm', 'f/8', '1/400s', 100, '06/18/2015', 1440, 960, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (22, 132);
 
 
 
