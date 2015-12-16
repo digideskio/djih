@@ -603,9 +603,13 @@ INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_
 INSERT INTO album_photos (album_id, photo_id) VALUES (23, 140);
 
 INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('280-vista-2015/DSC_2099.jpg', 'I-101', 'Nikon D7100', '10mm', 'f/8', '1/15s', 500, '07/01/2015', 1440, 960, 'travel');
-INSERT INTO album_photos (album_id, photo_id) VALUES (23, 140);
+INSERT INTO album_photos (album_id, photo_id) VALUES (23, 141);
 
 
+
+
+# Random food album
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('food/DSC_0673.jpg', 'MarketBar Ferry Building', 'Nikon D7100', '10mm', 'f/8', '1/60s', 160, '01/18/2015', 1440, 960, 'food');
 
 
 
