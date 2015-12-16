@@ -555,9 +555,11 @@ INSERT INTO album_photos (album_id, photo_id) VALUES (11, 127);
 
 
 
+# FORT FUNSTON ALBUM
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('fort-funston-2015/DSC_0613.jpg', 'Fort Funston', 'Nikon D7100', '10mm', 'f/8', '1/1250s', 1000, '01/11/2015', 1440, 960, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (22, 128);
 
-
-
+INSERT INTO albums (name, location, date, cover_photo_id, category) VALUES ('Fort Funston 2015', 'Fort Funston, CA', '01/11/2015', 128, 'travel');
 
 
 
