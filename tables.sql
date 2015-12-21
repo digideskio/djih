@@ -607,6 +607,13 @@ INSERT INTO album_photos (album_id, photo_id) VALUES (23, 141);
 
 
 
+# Combining NY Aug 2013 and NY Dec 2013 Albums
+DELETE FROM albums WHERE id = 13;
+
+
+
+
+
 
 # Random food album
 INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('food/DSC_0673.jpg', 'MarketBar Ferry Building', 'Nikon D7100', '10mm', 'f/8', '1/60s', 160, '01/18/2015', 1440, 960, 'food');
