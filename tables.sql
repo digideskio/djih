@@ -626,8 +626,71 @@ INSERT INTO album_photos (album_id, photo_id) VALUES (12, 144);
 INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('new-york-2013/1502677_10201323760756392_772845047_o.jpg', 'Totto Ramen', 'Nikon D5100', '35mm', 'f/1.8', '1/30s', 1600, '12/27/2013', 1440, 954, 'food');
 INSERT INTO album_photos (album_id, photo_id) VALUES (12, 145);
 
-INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('new-york-2013/1522941_10201326508905094_1395246278_o.jpg', 'Brooklyn Bridge', 'Nikon D5100', '35mm', 'f/1.8', '1/100s', 1000, '08/26/2013', 1440, 954, 'food');
-INSERT INTO album_photos (album_id, photo_id) VALUES (12, 145);
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('new-york-2013/1522941_10201326508905094_1395246278_o.jpg', 'Brooklyn Bridge', 'Nikon D5100', '35mm', 'f/1.8', '1/100s', 1000, '08/26/2013', 1440, 954, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (12, 146);
+
+
+# Chicago album
+UPDATE photos SET location = 'River North' WHERE id = 15;
+INSERT INTO album_photos (album_id, photo_id) VALUES (14, 15);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('chicago-2013/977075_10200327796377905_363332958_o.jpg', 'River North', 'Nikon D5100', '35mm', 'f/1.8', '1/100s', 500, '07/04/2013', 1440, 954, 'food');
+INSERT INTO album_photos (album_id, photo_id) VALUES (14, 147);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('chicago-2013/1014675_10200327803618086_1252044622_o.jpg', 'Millenium Park', 'Nikon D5100', '35mm', 'f/1.8', '1/200s', 500, '07/05/2013', 1440, 954, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (14, 148);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('chicago-2013/1040024_10200327808218201_2143424073_o.jpg', 'Millenium Park', 'Nikon D5100', '35mm', 'f/1.8', '1/200s', 500, '07/05/2013', 1440, 954, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (14, 149);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('chicago-2013/1048740_10200327800778015_1221320468_o.jpg', 'Millenium Park', 'Nikon D5100', '35mm', 'f/1.8', '1/200s', 500, '07/05/2013', 1440, 954, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (14, 150);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('chicago-2013/1064559_10200327798217951_1774218513_o.jpg', 'River North', 'Nikon D5100', '35mm', 'f/1.8', '1/100s', 500, '07/04/2013', 1440, 954, 'food');
+INSERT INTO album_photos (album_id, photo_id) VALUES (14, 151);
+
+
+# Hong Kong Album
+UPDATE photos SET location = 'Victoria Harbor' WHERE id = 16;
+INSERT INTO album_photos (album_id, photo_id) VALUES (15, 16);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('hong-kong-2012/256647_4248448209823_46355845_o.jpg', 'Tsuen Wan', 'Nikon D5100', '35mm', 'f/1.8', '1/200s', 100, '12/07/2012', 1440, 954, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (15, 152);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('hong-kong-2012/735874_4248438689585_426255549_o.jpg', 'Victoria Peak', 'Nikon D5100', '35mm', 'f/1.8', '1/400s', 100, '12/08/2012', 1440, 954, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (15, 153);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('hong-kong-2012/735987_4248448649834_972572886_o.jpg', 'Mong Kok', 'Nikon D5100', '35mm', 'f/1.8', '1/600s', 1000, '12/09/2012', 1440, 954, 'food');
+INSERT INTO album_photos (album_id, photo_id) VALUES (15, 154);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('hong-kong-2012/736215_4274825589241_1215565119_o.jpg', 'Tian Tan Buddha', 'Nikon D5100', '35mm', 'f/4', '1/100s', 1000, '12/09/2012', 1440, 954, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (15, 155);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('hong-kong-2012/736731_4274821269133_1909324126_o.jpg', 'Victoria Harbor', 'Nikon D5100', '35mm', 'f/4', '1/600s', 800, '12/08/2012', 1440, 954, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (15, 156);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('hong-kong-2012/737122_4274820909124_793588435_o.jpg', 'Victoria Harbor', 'Nikon D5100', '35mm', 'f/1.8', '1/60s', 1000, '12/08/2012', 1440, 954, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (15, 157);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
