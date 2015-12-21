@@ -9,7 +9,7 @@ var months = [
 ]
 
 var isFinishedAlbum = function(id) {
-    return (id >= 21 && id <= 23) || (id >= 1 && id <= 14);
+    return (id >= 21 && id <= 23) || (id >= 1 && id <= 15);
 }
 
 exports.view = function(req, res){
