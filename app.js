@@ -48,23 +48,24 @@ if ('development' == app.get('env')) {
 }
 
 // Add routes here
-app.get('/', photo.view);
-app.get('/car', car.view);
-app.get('/dashboard', dashboard.view);
-app.get('/photo', photo.view);
-app.get('/photo_get_rest', photo_get_rest.view);
-app.get('/photo_get_exif', photo_get_exif.view);
-app.get('/food_freelancer', food_freelancer.view);
-app.get('/food_agency', food_agency.view);
+//app.get('/', photo.view);
+app.get('/', version2.view);
+// app.get('/car', car.view);
+// app.get('/dashboard', dashboard.view);
+// app.get('/photo', photo.view);
+// app.get('/photo_get_rest', photo_get_rest.view);
+// app.get('/photo_get_exif', photo_get_exif.view);
+// app.get('/food_freelancer', food_freelancer.view);
+// app.get('/food_agency', food_agency.view);
 
 
 // version 2
-app.get('/v2', version2.view);
+app.get('/v2', function(req,res){res.redirect('/')});
 app.get('/travel', version2.view);
 app.get('/food', food.view);
 app.get('/blog', version2.view);
 app.get('/aboutme', version2.view);
-app.get('/album', function(req,res){res.redirect('/v2')});
+app.get('/album', function(req,res){res.redirect('/')});
 app.get('/album/:albumid', album.view);
 
 
