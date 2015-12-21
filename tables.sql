@@ -660,7 +660,7 @@ INSERT INTO album_photos (album_id, photo_id) VALUES (15, 152);
 INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('hong-kong-2012/735874_4248438689585_426255549_o.jpg', 'Victoria Peak', 'Nikon D5100', '35mm', 'f/1.8', '1/400s', 100, '12/08/2012', 1440, 954, 'travel');
 INSERT INTO album_photos (album_id, photo_id) VALUES (15, 153);
 
-INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('hong-kong-2012/735987_4248448649834_972572886_o.jpg', 'Mong Kok', 'Nikon D5100', '35mm', 'f/1.8', '1/600s', 1000, '12/09/2012', 1440, 954, 'food');
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('hong-kong-2012/735987_4248448649834_972572886_o.jpg', 'Mong Kok', 'Nikon D5100', '35mm', 'f/1.8', '1/60s', 1000, '12/09/2012', 1440, 954, 'food');
 INSERT INTO album_photos (album_id, photo_id) VALUES (15, 154);
 
 INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('hong-kong-2012/736215_4274825589241_1215565119_o.jpg', 'Tian Tan Buddha', 'Nikon D5100', '35mm', 'f/4', '1/100s', 1000, '12/09/2012', 1440, 954, 'travel');
@@ -672,19 +672,40 @@ INSERT INTO album_photos (album_id, photo_id) VALUES (15, 156);
 INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('hong-kong-2012/737122_4274820909124_793588435_o.jpg', 'Victoria Harbor', 'Nikon D5100', '35mm', 'f/1.8', '1/60s', 1000, '12/08/2012', 1440, 954, 'travel');
 INSERT INTO album_photos (album_id, photo_id) VALUES (15, 157);
 
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('hong-kong-2012/737309_4248448689835_834812171_o.jpg', 'Mong Kok', 'Nikon D5100', '35mm', 'f/1.8', '1/60s', 1000, '12/09/2012', 1440, 954, 'food');
+INSERT INTO album_photos (album_id, photo_id) VALUES (15, 158);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('hong-kong-2012/740642_4274828229307_1964376032_o.jpg', 'Cafe e Nata Margaret''s', 'Nikon D5100', '35mm', 'f/1.8', '1/60s', 1000, '12/09/2012', 1440, 954, 'food');
+INSERT INTO album_photos (album_id, photo_id) VALUES (15, 159);
 
 
+# Taiwan album
+UPDATE photos SET location = 'Taipei Zoo' WHERE id = 17;
+INSERT INTO album_photos (album_id, photo_id) VALUES (16, 17);
 
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('taiwan-2012/736139_4243845494758_1209897196_o.jpg', 'San Francisco International Airport', 'Nikon D5100', '35mm', 'f/8', '1/100s', 400, '12/05/2012', 1440, 954, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (16, 160);
 
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('taiwan-2012/736653_4294864090191_1197926873_o.jpg', 'Alishan 阿里山', 'Nikon D5100', '35mm', 'f/4', '1/40s', 1000, '12/11/2012', 1440, 954, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (16, 161);
 
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('taiwan-2012/736755_4243845894768_1906811984_o.jpg', 'Taichung 台中', 'Nikon D5100', '35mm', 'f/1.8', '1/40s', 1600, '12/06/2012', 1440, 954, 'food');
+INSERT INTO album_photos (album_id, photo_id) VALUES (16, 162);
 
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('taiwan-2012/740397_4294857210019_2146226869_o.jpg', 'Alishan 阿里山', 'Nikon D5100', '35mm', 'f/4', '1/60s', 500, '12/11/2012', 1440, 954, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (16, 163);
 
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('taiwan-2012/740835_4315621849122_1727781019_o.jpg', 'Chiang Kai-shek Memorial Hall 中正紀念堂', 'Nikon D5100', '35mm', 'f/1.8', '1/100s', 1000, '12/13/2012', 1440, 954, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (16, 164);
 
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('taiwan-2012/741019_4294860010089_1352582894_o.jpg', 'Alishan 阿里山', 'Nikon D5100', '35mm', 'f/4', '1/60s', 500, '12/11/2012', 1440, 954, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (16, 165);
 
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('taiwan-2012/741091_4315633569415_269662649_o.jpg', 'Tao Yuan Airport 台灣桃園國際機場', 'Nikon D5100', '35mm', 'f/1.8', '1/100s', 100, '12/15/2012', 1440, 954, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (16, 166);
 
-
-
-
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('taiwan-2012/741282_4294865570228_441425912_o.jpg', 'Alishan 阿里山', 'Nikon D5100', '35mm', 'f/1.8', '1/60s', 1000, '12/11/2012', 1440, 954, 'food');
+INSERT INTO album_photos (album_id, photo_id) VALUES (16, 167);
 
 
 
