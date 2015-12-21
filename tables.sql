@@ -609,6 +609,25 @@ INSERT INTO album_photos (album_id, photo_id) VALUES (23, 141);
 
 # Combining NY Aug 2013 and NY Dec 2013 Albums
 DELETE FROM albums WHERE id = 13;
+UPDATE photos SET filename = 'new-york-2013/1150766_10200575871579630_27331072_o.jpg' WHERE id = 13;
+UPDATE photos SET location = 'Brooklyn Bridge' WHERE id = 13;
+INSERT INTO album_photos (album_id, photo_id) VALUES (12, 13);
+
+UPDATE photos SET filename  = 'new-york-2013/1116116_10200575878779810_1123777098_o.jpg' WHERE id = 14;
+UPDATE photos SET location = 'Brooklyn Bridge' WHERE id = 14;
+INSERT INTO album_photos (album_id, photo_id) VALUES (12, 14);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('new-york-2013/1498937_10201323754116226_366263792_o.jpg', 'Katsuhama', 'Nikon D5100', '35mm', 'f/1.8', '1/30s', 1600, '12/26/2013', 1440, 954, 'food');
+INSERT INTO album_photos (album_id, photo_id) VALUES (12, 143);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('new-york-2013/1501335_10201323760716391_1186661227_o.jpg', 'Totto Ramen', 'Nikon D5100', '35mm', 'f/1.8', '1/30s', 1600, '12/27/2013', 1440, 954, 'food');
+INSERT INTO album_photos (album_id, photo_id) VALUES (12, 144);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('new-york-2013/1502677_10201323760756392_772845047_o.jpg', 'Totto Ramen', 'Nikon D5100', '35mm', 'f/1.8', '1/30s', 1600, '12/27/2013', 1440, 954, 'food');
+INSERT INTO album_photos (album_id, photo_id) VALUES (12, 145);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('new-york-2013/1522941_10201326508905094_1395246278_o.jpg', 'Brooklyn Bridge', 'Nikon D5100', '35mm', 'f/1.8', '1/100s', 1000, '08/26/2013', 1440, 954, 'food');
+INSERT INTO album_photos (album_id, photo_id) VALUES (12, 145);
 
 
 
