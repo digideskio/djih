@@ -86,45 +86,34 @@
       <ul class="gallery">
 
         {{#each photos}}
-          <a href="#" id="img_{{this.id}}_link" class="gallery-popup-link">
+          <a href="/images/{{this.filename}}" id="img_{{this.id}}_link" class="gallery-popup-link">
             <li class="img-li">
               <div class="img-details-wrapper">
-                <!-- <div class="img-border"></div> -->
                 <img src="/images/{{this.filename}}" class="img-album" id="img_{{this.id}}">
-                <!-- <div class="img-text">
-                  <h2>{{this.city}}</h2>
-                  <h3>{{this.date}}</h3>
-                </div> -->
               </div>
             </li>
+            <div class="img_data" location="{{this.location}}" camera="{{this.camera}}" focal="{{this.focal_length}}" aperture="{{this.aperture}}" shutter="{{this.shutter_speed}}" iso="{{this.iso}}"></div>
           </a>
-
-          <script>
-            $('#img_{{this.id}}_link').click(function(e){
-              e.preventDefault();
-            });
-
-            $('#img_{{this.id}}').load(function(){
-              $('#img_{{this.id}}_link').magnificPopup({
-                disableOn: 480,
-                closeOnContentClick: true,
-                closeOnBgClick: true,
-                showCloseBtn: true,
-                items: {
-                  src: '/images/{{this.filename}}',
-                },
-                type: 'image',
-                image: {
-                  verticalFit: true,
-                  titleSrc: function(){return '<strong>{{this.location}}</strong>  -  {{this.camera}}, {{this.focal_length}}, {{this.aperture}}, {{this.shutter_speed}}, ISO {{this.iso}}';}
-                },
-                mainClass: 'mfp-img-mobile'
-              });
-            });
-
-          </script>
         {{/each}}
       </ul>
+
+      <script>
+        $('.gallery-popup-link').magnificPopup({
+          type: 'image',
+          gallery: {
+            enabled: true,
+            navigateByImgClick: true,
+            arrowMarkup: '<button title="%title%" type="button" class="mfp-arrow mfp-arrow-%dir%"></button>', // markup of an arrow button
+          },
+          image: {
+            verticalFit: true,
+            titleSrc: function(item){
+              var data = item.el.children('.img_data');
+              return '<strong>' + data.attr('location') + '</strong>  -  ' + data.attr('camera') + ', ' + data.attr('focal') + ', ' + data.attr('aperture') + ', ' + data.attr('shutter') + ', ISO ' + data.attr('iso');
+            }
+          }
+        });
+      </script>
 
       <!-- <div class="copyright"> -->
         <!-- <p>All images &#169; 2014 Daniel Jih</p> -->
