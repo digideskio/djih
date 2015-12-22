@@ -4,7 +4,7 @@ var pg = require('pg');
 var format = require('string-format');
 format.extend(String.prototype);
 
-var album_query = 'SELECT a.location, a.date, a.category, p.filename, p.width, p.height FROM albums AS a INNER JOIN photos AS p ON a.cover_photo_id = p.id WHERE a.id = {0}';
+var album_query = 'SELECT a.location, a.date, a.category, a.cover_photo_id, p.filename, p.width, p.height FROM albums AS a INNER JOIN photos AS p ON a.cover_photo_id = p.id WHERE a.id = {0}';
 // var photo_query = 'SELECT p.filename, p.title, p.location, p.camera, p.focal_length, p.aperture, p.shutter_speed, p.iso, p.date_taken, p.width, p.height FROM album_photos AS a INNER JOIN photos AS p ON a.photo_id = p.id WHERE a.album_id = {0} ORDER BY p.date_taken, p.filename ASC;';
 var photo_query = 'SELECT p.id, p.filename, p.title, p.location, p.camera, p.focal_length, p.aperture, p.shutter_speed, p.iso, p.date_taken, p.width, p.height FROM album_photos AS a INNER JOIN photos AS p ON a.photo_id = p.id WHERE a.album_id = {0} ORDER BY RANDOM();';
 
@@ -17,6 +17,10 @@ var months = [
     'September', 'October', 'November', 'December'
 ]
 
+// min inclusive, max exclusive
+var randomInt = function(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
 
 exports.view = function(req, res){
     var data = [];
@@ -29,6 +33,7 @@ exports.view = function(req, res){
 
     // fetch album info and cover
     pg.connect(process.env.DATABASE_URL, function(err, client, done) {
+        debugger;
         client.query(album_query.format(albumid), function(err, result) {
             if (err) {
                 done();
@@ -45,6 +50,7 @@ exports.view = function(req, res){
                     // data.album_location = album.location;
                     // data.album_date = album.date;
                     data.cover_photo = album.filename;
+                    data.cover_photo_id = album.cover_photo_id;
                     data[album.category] = true;
 
                     // strip off country from location string
@@ -69,6 +75,17 @@ exports.view = function(req, res){
                         } else {
 
                             var photos = result.rows;
+                            var numPhotos = photos.length;
+
+                            // if first photo is cover photo, swap with last, 
+                            // so on mobile you don't see the same photo twice
+                            if (photos[0].id == data.cover_photo_id && numPhotos > 1) {
+                                var swapIndex = randomInt(1, numPhotos-1);
+                                photo = photos[0];
+                                photos[0] = photos[swapIndex];
+                                photos[swapIndex] = photo;
+                            }
+
                             data.photos = photos;
 
                             res.render('album', data);
