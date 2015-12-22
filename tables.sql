@@ -721,6 +721,17 @@ INSERT INTO album_photos (album_id, photo_id) VALUES (17, 169);
 INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('new-york-2012/621635_3782400918932_75727693_o.jpg', 'Columbia University', 'Nikon D5100', '35mm', 'f/1.8', '1/60s', 500, '09/02/2012', 1440, 954, 'travel');
 INSERT INTO album_photos (album_id, photo_id) VALUES (17, 170);
 
+# SF 2012 album
+
+
+
+
+
+
+
+
+
+
 
 
 
