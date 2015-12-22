@@ -715,9 +715,11 @@ INSERT INTO album_photos (album_id, photo_id) VALUES (17, 18);
 INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('new-york-2012/277516_3782388278616_1931672317_o.jpg', 'Chelsea Market', 'Nikon D5100', '35mm', 'f/1.8', '1/40s', 1600, '09/01/2012', 1440, 954, 'food');
 INSERT INTO album_photos (album_id, photo_id) VALUES (17, 168);
 
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('new-york-2012/472696_3782398398869_18990330_o.jpg', 'Upper West Side', 'Nikon D5100', '35mm', 'f/4', '1/100s', 1000, '09/02/2012', 1440, 954, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (17, 169);
 
-
-
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('new-york-2012/621635_3782400918932_75727693_o.jpg', 'Columbia University', 'Nikon D5100', '35mm', 'f/1.8', '1/60s', 500, '09/02/2012', 1440, 954, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (17, 170);
 
 
 
