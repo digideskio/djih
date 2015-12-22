@@ -708,7 +708,12 @@ INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_
 INSERT INTO album_photos (album_id, photo_id) VALUES (16, 167);
 
 
+# NYC 2012 album
+UPDATE photos SET location = 'High Line' WHERE id = 18;
+INSERT INTO album_photos (album_id, photo_id) VALUES (17, 18);
 
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('new-york-2012/277516_3782388278616_1931672317_o.jpg', 'Chelsea Market', 'Nikon D5100', '35mm', 'f/1.8', '1/40s', 1600, '09/01/2012', 1440, 954, 'food');
+INSERT INTO album_photos (album_id, photo_id) VALUES (17, 168);
 
 
 
