@@ -751,13 +751,29 @@ INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_
 INSERT INTO album_photos (album_id, photo_id) VALUES (20, 177);
 
 
+# Inyokern album
+INSERT INTO album_photos (album_id, photo_id) VALUES (19, 20);
 
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('inyokern-2012/459164_3081574758716_777474347_o.jpg', 'Hagen Canyon', 'Nikon D5100', '18mm', 'f/3.5', '1/100s', 100, '04/05/2012', 1440, 954, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (19, 178);
 
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('inyokern-2012/460505_3216753978112_977781257_o.jpg', 'Inyokern', 'Nikon D5100', '18mm', 'f/3.5', '1/100s', 400, '04/07/2012', 1440, 954, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (19, 179);
 
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('inyokern-2012/461083_3354669025902_6768284_o.jpg', 'Ontario Airport', 'Nikon D5100', '18mm', 'f/3.5', '1/200s', 100, '04/05/2012', 1440, 954, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (19, 180);
 
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('inyokern-2012/465549_3216755378147_1489417121_o.jpg', 'Inyokern', 'Nikon D5100', '18mm', 'f/3.5', '1/100s', 400, '04/07/2012', 1440, 954, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (19, 181);
 
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('inyokern-2012/466414_3081576558761_72081871_o.jpg', 'In-N-Out Barstow', 'Nikon D5100', '18mm', 'f/3.5', '1/60s', 1000, '04/10/2012', 1440, 954, 'food');
+INSERT INTO album_photos (album_id, photo_id) VALUES (19, 182);
 
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('inyokern-2012/471748_3284066420881_280756049_o.jpg', 'Inyokern', 'Nikon D5100', '18mm', 'f/3.5', '1/40s', 1600, '04/07/2012', 1440, 954, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (19, 183);
 
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('inyokern-2012/478807_3354690466438_90613596_o.jpg', 'Lake Isabella', 'Nikon D5100', '55mm', 'f/5.5', '1/100s', 1000, '04/10/2012', 1440, 954, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (19, 184);
 
 
 
