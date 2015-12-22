@@ -722,11 +722,16 @@ INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_
 INSERT INTO album_photos (album_id, photo_id) VALUES (17, 170);
 
 # SF 2012 album
+INSERT INTO album_photos (album_id, photo_id) VALUES (18, 19);
 
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('san-francisco-2012/285898_3750110351688_1404073795_o.jpg', 'Embarcadero', 'Nikon D5100', '35mm', 'f/1.8', '1/60s', 1000, '08/25/2012', 1440, 954, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (18, 171);
 
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('san-francisco-2012/289289_3750083471016_176377386_o.jpg', 'Pier 14', 'Nikon D5100', '35mm', 'f/1.8', '1/200s', 100, '08/25/2012', 1440, 954, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (18, 172);
 
-
-
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('san-francisco-2012/328236_3750077150858_18492577_o.jpg', 'Stanford University', 'Nikon D5100', '35mm', 'f/1.8', '1/200s', 100, '08/25/2012', 1440, 954, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (18, 173);
 
 
 
