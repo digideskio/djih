@@ -25,7 +25,6 @@ body {
   width: 100%;
   height: 100vh;
   margin: 0 auto;
-  will-change: overflow;
   position: relative;
 }
 
@@ -133,7 +132,7 @@ body {
 /* sidebar */
 .sidebar, .content {
   overflow-y: auto;
-  overflow-x: disabled;
+  overflow-x: hidden;
   height: auto;
   color: white;
   -webkit-overflow-scrolling: touch;
@@ -313,7 +312,7 @@ body {
 
 .content .masthead button:hover {
   color: #91C1FF;
-  border: 2px solid #91C1FF; 
+  border: 2px solid #91C1FF;
 }
 
 /*
@@ -536,8 +535,6 @@ body {
     -o-transition: all 0s ease;
     transition: all 0s ease;
   }
-
-  .body-wrapper.toggled ul.gallery li .img-details-wrapper 
 }
 
 /* 2 images per row */
