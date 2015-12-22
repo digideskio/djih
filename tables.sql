@@ -733,6 +733,26 @@ INSERT INTO album_photos (album_id, photo_id) VALUES (18, 172);
 INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('san-francisco-2012/328236_3750077150858_18492577_o.jpg', 'Stanford University', 'Nikon D5100', '35mm', 'f/1.8', '1/200s', 100, '08/25/2012', 1440, 954, 'travel');
 INSERT INTO album_photos (album_id, photo_id) VALUES (18, 173);
 
+# Newton album
+UPDATE photos SET location = 'Newton Center' WHERE id = 21;
+UPDATE photos SET filename = 'newton-2012/467672_3049455955766_1500566214_o.jpg' WHERE id = 21;
+INSERT INTO album_photos (album_id, photo_id) VALUES (20, 21);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('newton-2012/412853_3049479796362_815065236_o.jpg', 'Blue Asia Cafe', 'Nikon D5100', '25mm', 'f/3.5', '1/60s', 1000, '03/30/2012', 1440, 954, 'food');
+INSERT INTO album_photos (album_id, photo_id) VALUES (20, 174);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('newton-2012/415477_3088327167522_1356973675_o.jpg', 'Rez Cafe Tufts University', 'Nikon D5100', '18mm', 'f/3.5', '1/60s', 1000, '03/30/2012', 1440, 954, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (20, 175);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('newton-2012/462487_3049489836613_425798520_o.jpg', 'Amelia''s Trattoria', 'Nikon D5100', '18mm', 'f/3.5', '1/40s', 1600, '03/25/2012', 1440, 954, 'food');
+INSERT INTO album_photos (album_id, photo_id) VALUES (20, 176);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('newton-2012/471521_3049479236348_1567125905_o.jpg', 'Blue Asia Cafe', 'Nikon D5100', '25mm', 'f/3.5', '1/40s', 1600, '03/30/2012', 1440, 954, 'food');
+INSERT INTO album_photos (album_id, photo_id) VALUES (20, 177);
+
+
+
+
 
 
 
