@@ -783,3 +783,14 @@ INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_
 
 
 
+
+# Sacramento 2015 album
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('sacramento-2015/DSC_3446.jpg', 'Sacramento', 'Nikon D7100', '10mm', 'f/8', '1/160s', 400, '11/26/2015', 1440, 707, 'travel');
+
+INSERT INTO albums (name, location, date, cover_photo_id, category) VALUES ('Sacramento 2015', 'Sacramento, CA', '11/24/2015', 185, 'travel');
+
+INSERT INTO album_photos (album_id, photo_id) VALUES (24, 185);
+
+
+
+

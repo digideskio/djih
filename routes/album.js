@@ -9,7 +9,7 @@ var album_query = 'SELECT a.location, a.date, a.category, a.cover_photo_id, p.fi
 var photo_query = 'SELECT p.id, p.filename, p.title, p.location, p.camera, p.focal_length, p.aperture, p.shutter_speed, p.iso, p.date_taken, p.width, p.height FROM album_photos AS a INNER JOIN photos AS p ON a.photo_id = p.id WHERE a.album_id = {0} ORDER BY RANDOM();';
 
 var isValidAlbum = function(id) {
-    return (id >= 1 && id <= 23);
+    return (id >= 1 && id <= 24);
 }
 
 var months = [
