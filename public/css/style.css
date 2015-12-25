@@ -550,6 +550,24 @@ body {
     top: 43%;
   }
 
+  /* Disable hover behavior on mobile */
+  ul.gallery li .img-details-wrapper:hover .img-border {
+    border: none;
+    cursor: pointer;
+   }
+
+  ul.gallery li .img-details-wrapper:hover img {
+    opacity: 1.0;
+  }
+
+  ul.gallery li .img-details-wrapper:hover h3 {
+    display: block;
+  }
+
+  ul.gallery li .img-details-wrapper:hover h4 {
+    display: none;
+  }
+
   .body-wrapper.toggled .content .masthead .masthead-text-wrapper h1,
   .body-wrapper.toggled .content .masthead .masthead-text-wrapper h3,
   .body-wrapper.toggled .content .masthead .masthead-text-wrapper button,
