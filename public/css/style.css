@@ -291,6 +291,10 @@ body {
   margin-bottom: 10px;
 }
 
+.content .masthead .masthead-text-wrapper h4 {
+  display: none;
+}
+
 /*.content .masthead .button-container {
   display: inline-block;
   width: 0px;
@@ -508,7 +512,12 @@ body {
 
   .content .masthead .masthead-text-wrapper h3 {
     font-size: 15px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+  }
+
+  .content .masthead .masthead-text-wrapper h4 {
+    display: block;
+    font-size: 15px;
   }
 
   .content .masthead .masthead-text-wrapper button {
