@@ -411,10 +411,27 @@ body {
  }
 
  ul.gallery li .img-text h3 {
+  display: block;
   font-size: 10px;
   font-family: 'Mont-Semi';
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 10px;
+ }
+
+ ul.gallery li .img-details-wrapper:hover h3 {
+  display: none;
+ }
+
+ ul.gallery li .img-text h4 {
+  display: none;
+ }
+
+ ul.gallery li .img-details-wrapper:hover h4 {
+  display: block;
+  font-size: 10px;
+  font-family: 'Mont-Semi';
+  margin-top: 0px;
+  margin-bottom: 10px;
  }
 
  /*ul.gallery li span {
@@ -517,7 +534,7 @@ body {
 
   .content .masthead .masthead-text-wrapper h4 {
     display: block;
-    font-size: 15px;
+    font-size: 12px;
   }
 
   .content .masthead .masthead-text-wrapper button {
