@@ -787,6 +787,25 @@ INSERT INTO albums (name, location, date, cover_photo_id, category) VALUES ('Sac
 
 INSERT INTO album_photos (album_id, photo_id) VALUES (24, 185);
 
-INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('sacramento-2015/DSC_3446.jpg', 'Sacramento', 'Nikon D7100', '10mm', 'f/8', '1/160s', 400, '11/26/2015', 1440, 707, 'travel');
-INSERT INTO album_photos (album_id, photo_id) VALUES (24, 185);
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('sacramento-2015/DSC_3451.jpg', 'Sacramento', 'Nikon D7100', '10mm', 'f/8', '1/60s', 100, '11/26/2015', 1440, 707, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (24, 186);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('sacramento-2015/DSC_3471.jpg', 'State Capitol Building', 'Nikon D7100', '20mm', 'f/8', '1/1250s', 1250, '11/27/2015', 1440, 960, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (24, 187);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('sacramento-2015/DSC_3478.jpg', 'State Capitol Building', 'Nikon D7100', '20mm', 'f/8', '1/1000s', 1250, '11/27/2015', 1440, 960, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (24, 188);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('sacramento-2015/DSC_3505.jpg', 'Sacramento River Dock', 'Nikon D7100', '10mm', 'f/8', '3s', 100, '11/27/2015', 1440, 960, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (24, 189);
+
+
+
+
+
+
+
+
+
+
 

@@ -24,7 +24,9 @@ var randomInt = function(min, max) {
 
 exports.view = function(req, res){
     var data = [];
+    data['API_KEY'] = process.env.AMPLITUDE_API_KEY || '850a8c4c4b49f343859014651aec1a20';
     var albumid = parseInt(req.params.albumid);
+    data['album_id'] = albumid;
 
     // invalid albumid
     if (!isValidAlbum(albumid)) {

@@ -14,6 +14,7 @@ var isFinishedAlbum = function(id) {
 
 exports.view = function(req, res){
     var data = [];
+    data['API_KEY'] = process.env.AMPLITUDE_API_KEY || '850a8c4c4b49f343859014651aec1a20';
     pg.connect(process.env.DATABASE_URL, function(err, client, done) {
         client.query(album_query, function(err, result) {
             done();

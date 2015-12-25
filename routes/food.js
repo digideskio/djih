@@ -5,6 +5,7 @@ var photo_query = "SELECT id, filename, title, location, camera, focal_length, a
 
 exports.view = function(req, res){
     var data = [];
+    data['API_KEY'] = process.env.AMPLITUDE_API_KEY || '850a8c4c4b49f343859014651aec1a20';
     data['food'] = true; // activates sidebar link background
 
     // fetch food photos
