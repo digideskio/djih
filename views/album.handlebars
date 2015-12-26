@@ -115,7 +115,7 @@
                 <img src="/images/{{this.filename}}" class="img-album" id="img_{{this.id}}">
               </div>
             </li>
-            <div class="img_data" location="{{this.location}}" camera="{{this.camera}}" focal="{{this.focal_length}}" aperture="{{this.aperture}}" shutter="{{this.shutter_speed}}" iso="{{this.iso}}"></div>
+            <div class="img_data" id="{{this.id}}" location="{{this.location}}" camera="{{this.camera}}" focal="{{this.focal_length}}" aperture="{{this.aperture}}" shutter="{{this.shutter_speed}}" iso="{{this.iso}}"></div>
           </a>
         {{/each}}
       </ul>
@@ -133,6 +133,15 @@
             titleSrc: function(item){
               var data = item.el.children('.img_data');
               return '<strong>' + data.attr('location') + '</strong>  -  ' + data.attr('camera') + ', ' + data.attr('focal') + ', ' + data.attr('aperture') + ', ' + data.attr('shutter') + ', ISO ' + data.attr('iso');
+            }
+          },
+          callbacks: {
+            change: function() {
+              var eventProperties = {
+                'photoId': this.currItem.el.children('.img_data').attr('id'),
+                'albumId': '{{album_id}}'
+              }
+              amplitude.logEvent('Viewed Image', eventProperties);
             }
           }
         });
