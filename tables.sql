@@ -858,5 +858,18 @@ INSERT INTO album_photos (album_id, photo_id) VALUES (25, 206);
 INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('la-xmas-2015/DSC_3732.jpg', 'Terranea', 'Nikon D7100', '20mm', 'f/8', '1/4s', 100, '12/25/2015', 1440, 865, 'travel');
 INSERT INTO album_photos (album_id, photo_id) VALUES (25, 207);
 
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('la-xmas-2015/DSC_3740.jpg', 'Trump National Golf Club', 'Nikon D7100', '10mm', 'f/8', '10s', 100, '12/25/2015', 1440, 814, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (25, 208);
 
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('la-xmas-2015/DSC_3744.jpg', 'Pasadena City Hall', 'Nikon D7100', '20mm', 'f/8', '4s', 100, '12/25/2015', 1440, 724, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (25, 209);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('la-xmas-2015/DSC_3750.jpg', 'Boiling Point Arcadia', 'Nikon D7100', '14mm', 'f/4.8', '1/50s', 2500, '12/26/2015', 1440, 960, 'food');
+INSERT INTO album_photos (album_id, photo_id) VALUES (25, 210);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('la-xmas-2015/DSC_3756.jpg', 'Lady M', 'Nikon D7100', '20mm', 'f/5.6', '1/500s', 2500, '12/26/2015', 1440, 849, 'food');
+INSERT INTO album_photos (album_id, photo_id) VALUES (25, 211);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('la-xmas-2015/DSC_3763.jpg', 'Lady M', 'Nikon D7100', '20mm', 'f/5.6', '1/400s', 2500, '12/26/2015', 1440, 960, 'food');
+INSERT INTO album_photos (album_id, photo_id) VALUES (25, 211);
 
