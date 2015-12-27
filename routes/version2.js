@@ -1,5 +1,3 @@
-// var Promise = require('bluebird');
-// var request = Promise.promisify(require('request'));
 require('dotenv').load();
 var pg = require('pg');
 
@@ -10,7 +8,7 @@ var months = [
 ]
 
 var isFinishedAlbum = function(id) {
-    return (id >= 1 && id <= 24);
+    return (id >= 1 && id <= 25);
 }
 
 exports.view = function(req, res){

@@ -800,9 +800,11 @@ INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_
 INSERT INTO album_photos (album_id, photo_id) VALUES (24, 189);
 
 
+# LA Xmas 2015 album
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('la-xmas-2015/DSC_3629.jpg', 'USC School of Cinematic Arts', 'Nikon D7100', '10mm', 'f/8', '1/160s', 100, '12/24/2015', 1440, 960, 'travel');
 
-
-
+INSERT INTO albums (name, location, date, cover_photo_id, category) VALUES ('Los Angeles Christmas 2015', 'Los Angeles, CA', '12/23/2015', 190, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (25, 190);
 
 
 
