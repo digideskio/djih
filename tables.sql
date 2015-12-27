@@ -806,8 +806,57 @@ INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_
 INSERT INTO albums (name, location, date, cover_photo_id, category) VALUES ('Los Angeles Christmas 2015', 'Los Angeles, CA', '12/23/2015', 190, 'travel');
 INSERT INTO album_photos (album_id, photo_id) VALUES (25, 190);
 
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('la-xmas-2015/DSC_3534.jpg', 'I-5 Rest Area', 'Nikon D7100', '20mm', 'f/8', '1/2000s', 1000, '12/23/2015', 1440, 854, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (25, 191);
 
+# maybe delete
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('la-xmas-2015/DSC_3545.jpg', 'Microsoft Square', 'Nikon D7100', '10mm', 'f/8', '1/400s', 125, '12/24/2015', 1440, 960, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (25, 192);
 
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('la-xmas-2015/DSC_3552.jpg', 'Microsoft Square', 'Nikon D7100', '10mm', 'f/8', '1/320s', 125, '12/24/2015', 1440, 813, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (25, 193);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('la-xmas-2015/DSC_3575.jpg', 'University of Southern California', 'Nikon D7100', '10mm', 'f/8', '1/400s', 125, '12/24/2015', 1440, 960, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (25, 194);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('la-xmas-2015/DSC_3586.jpg', 'University of Southern California', 'Nikon D7100', '15mm', 'f/8', '1/160s', 100, '12/24/2015', 1440, 825, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (25, 195);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('la-xmas-2015/DSC_3599.jpg', 'University of Southern California', 'Nikon D7100', '10mm', 'f/8', '1/200s', 100, '12/24/2015', 1440, 960, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (25, 196);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('la-xmas-2015/DSC_3607.jpg', 'University of Southern California', 'Nikon D7100', '10mm', 'f/8', '1/160s', 100, '12/24/2015', 1440, 960, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (25, 197);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('la-xmas-2015/DSC_3614.jpg', 'University of Southern California', 'Nikon D7100', '10mm', 'f/8', '1/160s', 100, '12/24/2015', 1440, 960, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (25, 198);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('la-xmas-2015/DSC_3625.jpg', 'USC School of Cinematic Arts', 'Nikon D7100', '10mm', 'f/8', '1/100s', 100, '12/24/2015', 1440, 960, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (25, 199);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('la-xmas-2015/DSC_3633.jpg', 'USC School of Cinematic Arts', 'Nikon D7100', '10mm', 'f/8', '1/640s', 100, '12/24/2015', 1440, 921, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (25, 200);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('la-xmas-2015/DSC_3635.jpg', 'USC School of Cinematic Arts', 'Nikon D7100', '12mm', 'f/8', '1/100s', 200, '12/24/2015', 1440, 960, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (25, 201);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('la-xmas-2015/DSC_3662.jpg', 'Shin-Sen-Gumi Hakata Ramen Little Tokyo', 'Nikon D7100', '20mm', 'f/5.6', '1/100s', 10159, '12/24/2015', 1440, 853, 'food');
+INSERT INTO album_photos (album_id, photo_id) VALUES (25, 202);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('la-xmas-2015/DSC_3666.jpg', 'Shin-Sen-Gumi Hakata Ramen Little Tokyo', 'Nikon D7100', '14mm', 'f/4.8', '1/200s', 10159, '12/24/2015', 1440, 1008, 'food');
+INSERT INTO album_photos (album_id, photo_id) VALUES (25, 203);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('la-xmas-2015/DSC_3676.jpg', 'Gen Korean BBQ House Torrance', 'Nikon D7100', '10mm', 'f/4', '1/100s', 2500, '12/25/2015', 1440, 810, 'food');
+INSERT INTO album_photos (album_id, photo_id) VALUES (25, 204);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('la-xmas-2015/DSC_3698.jpg', 'Terranea', 'Nikon D7100', '10mm', 'f/8', '1/800s', 1000, '12/25/2015', 1440, 746, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (25, 205);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('la-xmas-2015/DSC_3721.jpg', 'Terranea', 'Nikon D7100', '10mm', 'f/8', '1/6s', 100, '12/25/2015', 1440, 820, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (25, 206);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('la-xmas-2015/DSC_3732.jpg', 'Terranea', 'Nikon D7100', '20mm', 'f/8', '1/4s', 100, '12/25/2015', 1440, 865, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (25, 207);
 
 
 
