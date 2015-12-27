@@ -1,3 +1,4 @@
+require('dotenv').load();
 var pg = require('pg');
 
 var photo_query = "SELECT id, filename, title, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height FROM photos WHERE category = 'food' ORDER BY RANDOM();";

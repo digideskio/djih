@@ -1,5 +1,6 @@
 // var Promise = require('bluebird');
 // var request = Promise.promisify(require('request'));
+require('dotenv').load();
 var pg = require('pg');
 
 var album_query = "SELECT a.id, a.location, a.date, p.filename, p.width, p.height FROM albums AS a INNER JOIN photos AS p ON a.cover_photo_id = p.id WHERE a.category = 'travel' ORDER BY date DESC;";

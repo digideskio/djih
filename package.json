@@ -2,22 +2,21 @@
   "name": "djih",
   "version": "0.0.1",
   "author": "Daniel Jih",
-
   "repository": {
     "type": "git",
     "url": "https://github.com/djih/djih.git"
   },
   "license": "MIT",
-
   "private": true,
   "scripts": {
     "start": "node server.js"
   },
   "dependencies": {
-    "pg": "2.x",
+    "bluebird": "2.3.11",
+    "dotenv": "^1.2.0",
     "express": "3.x",
     "express3-handlebars": "*",
-    "bluebird": "2.3.11",
+    "pg": "2.x",
     "string-format": "0.5.0"
   },
   "engines": {

@@ -1,5 +1,6 @@
 // var Promise = require('bluebird');
 // var request = Promise.promisify(require('request'));
+require('dotenv').load();
 var pg = require('pg');
 var format = require('string-format');
 format.extend(String.prototype);
@@ -35,7 +36,6 @@ exports.view = function(req, res){
 
     // fetch album info and cover
     pg.connect(process.env.DATABASE_URL, function(err, client, done) {
-        debugger;
         client.query(album_query.format(albumid), function(err, result) {
             if (err) {
                 done();
@@ -53,6 +53,8 @@ exports.view = function(req, res){
                     // data.album_date = album.date;
                     data.cover_photo = album.filename;
                     data.cover_photo_id = album.cover_photo_id;
+                    data.cover_photo_width = album.width;
+                    data.cover_photo_height = album.height;
                     data[album.category] = true;
 
                     // strip off country from location string
