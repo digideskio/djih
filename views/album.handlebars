@@ -30,6 +30,7 @@
     <script src="/js/bootstrap.min.js"></script>
     <!--<script src="/js/jquery.exif.js"></script>-->
     <script src="/js/jquery.magnific-popup.min.js" rel="stylesheet"></script>
+    <script type="text/javascript">var albumId = '{{album_id}}';</script>
     <script src="/js/script.js"></script>
 
     <script type="text/javascript">
@@ -45,7 +46,7 @@
 
       amplitude.init("{{API_KEY}}", null, {'includeReferrer': true}, function() {
         var eventProperties = {
-          'albumId': {{album_id}}
+          'albumId': albumId
         };
         amplitude.logEvent('View Album Page', eventProperties);
       });
@@ -139,7 +140,7 @@
             change: function() {
               var eventProperties = {
                 'photoId': this.currItem.el.children('.img_data').attr('id'),
-                'albumId': '{{album_id}}'
+                'albumId': albumId
               }
               amplitude.logEvent('Viewed Image', eventProperties);
             }

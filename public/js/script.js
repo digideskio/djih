@@ -51,6 +51,7 @@ $(document).ready(function() {
   });
 
   $('#jump-button').bind('click', function(event) {
+    amplitude.logEvent('Clicked Jump Button', {'albumId': albumId});
     var jumpPos = $('#masthead').height() + 1;
     $('#content').animate({ scrollTop: jumpPos}, 1500, 'easeInOutExpo');
     event.preventDefault();

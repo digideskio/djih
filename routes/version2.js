@@ -13,7 +13,8 @@ var isFinishedAlbum = function(id) {
 
 exports.view = function(req, res){
     var data = [];
-    data['API_KEY'] = process.env.AMPLITUDE_API_KEY || '850a8c4c4b49f343859014651aec1a20';
+    data.album_id = 'travel';
+    data.API_KEY = process.env.AMPLITUDE_API_KEY || '850a8c4c4b49f343859014651aec1a20';
     pg.connect(process.env.DATABASE_URL, function(err, client, done) {
         client.query(album_query, function(err, result) {
             done();
@@ -29,20 +30,20 @@ exports.view = function(req, res){
                     }
 
                     // strip off country from location string
-                    var city = album['location'];
+                    var city = album.location;
                     var comma = city.indexOf(',');
                     if (comma >= 0) {
                         city = city.substring(0, comma);
                     }
-                    album['city'] = city;
+                    album.city = city;
 
                     // format date to Month Year
-                    var date = new Date(album['date']);
+                    var date = new Date(album.date);
                     date = months[date.getMonth()] + ' ' + date.getFullYear();
-                    album['date'] = date;
+                    album.date = date;
                 }
 
-                data['albums'] = albums;
+                data.albums = albums;
                 res.render('version2', data);
             }
         })
