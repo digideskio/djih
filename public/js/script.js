@@ -32,6 +32,7 @@ $(document).ready(function() {
   });
 
   $('#toggle-sidebar').click(function(e) {
+    amplitude.logEvent('Toggled Sidebar', {'albumId': albumId});
     e.preventDefault();
     var timeout = 500;
     if ($(window).width() <= 768) {
