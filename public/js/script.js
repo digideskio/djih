@@ -22,6 +22,7 @@ $(document).ready(function() {
 
   $('#close-sidebar').click(function(e) {
     e.preventDefault();
+    amplitude.logEvent('Toggled Sidebar', {'albumId': albumId, 'action': 'close'});
     var timeout = 500;
     if ($(window).width() <= 768) {
       timeout = 0;
@@ -32,8 +33,8 @@ $(document).ready(function() {
   });
 
   $('#toggle-sidebar').click(function(e) {
-    amplitude.logEvent('Toggled Sidebar', {'albumId': albumId});
     e.preventDefault();
+    amplitude.logEvent('Toggled Sidebar', {'albumId': albumId, 'action': 'open'});
     var timeout = 500;
     if ($(window).width() <= 768) {
       timeout = 0;
@@ -44,6 +45,7 @@ $(document).ready(function() {
   });
 
   $('#content').scroll(function() {
+    event.preventDefault();
     if ($('#content').scrollTop() > $('#masthead').height()) {
       $("#header-background").addClass('visible');
     } else {
@@ -55,7 +57,6 @@ $(document).ready(function() {
     amplitude.logEvent('Clicked Jump Button', {'albumId': albumId});
     var jumpPos = $('#masthead').height() + 1;
     $('#content').animate({ scrollTop: jumpPos}, 1500, 'easeInOutExpo');
-    event.preventDefault();
   });
 
   // resize all li to 3:2 ratio
