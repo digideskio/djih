@@ -875,8 +875,18 @@ INSERT INTO album_photos (album_id, photo_id) VALUES (25, 212);
 
 
 # Tahoe MLK 2016 photos
-INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('tahoe-mlk-2016/DSC_3844.jpg', 'Tahoe City Marina', 'Nikon D7100', '15mm', 'f/8', '1/640s', 100, '1/18/2016', 1440, 960, 'travel');
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('tahoe-mlk-2016/DSC_3844.jpg', 'Tahoe City Marina', 'Nikon D7100', '10mm', 'f/8', '1/640s', 100, '1/18/2016', 1440, 960, 'travel');
 INSERT INTO albums (name, location, date, cover_photo_id, category) VALUES ('Lake Tahoe MLK 2016', 'Lake Tahoe, CA', '1/18/2016', 213, 'travel');
 INSERT INTO album_photos (album_id, photo_id) VALUES (26, 213);
 
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('tahoe-mlk-2016/DSC_3846.jpg', 'Tahoe City Marina', 'Nikon D7100', '10mm', 'f/8', '1/400s', 100, '1/18/2016', 1440, 960, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (26, 214);
 
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('tahoe-mlk-2016/DSC_3848.jpg', 'Tahoe City Marina', 'Nikon D7100', '10mm', 'f/8', '1/400s', 100, '1/18/2016', 1440, 651, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (26, 215);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('tahoe-mlk-2016/DSC_3859.jpg', 'Tahoe City Marina', 'Nikon D7100', '10mm', 'f/8', '1/400s', 100, '1/18/2016', 1440, 960, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (26, 216);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('tahoe-mlk-2016/DSC_3861.jpg', 'Tahoe City Marina', 'Nikon D7100', '10mm', 'f/8', '1/320s', 100, '1/18/2016', 1440, 960, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (26, 217);
