@@ -871,5 +871,12 @@ INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_
 INSERT INTO album_photos (album_id, photo_id) VALUES (25, 211);
 
 INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('la-xmas-2015/DSC_3763.jpg', 'Lady M', 'Nikon D7100', '20mm', 'f/5.6', '1/400s', 2500, '12/26/2015', 1440, 960, 'food');
-INSERT INTO album_photos (album_id, photo_id) VALUES (25, 211);
+INSERT INTO album_photos (album_id, photo_id) VALUES (25, 212);
+
+
+# Tahoe MLK 2016 photos
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('tahoe-mlk-2016/DSC_3844.jpg', 'Tahoe City Marina', 'Nikon D7100', '15mm', 'f/8', '1/640s', 100, '1/18/2016', 1440, 960, 'travel');
+INSERT INTO albums (name, location, date, cover_photo_id, category) VALUES ('Lake Tahoe MLK 2016', 'Lake Tahoe, CA', '1/18/2016', 213, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (26, 213);
+
 
