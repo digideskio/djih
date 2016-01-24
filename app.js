@@ -40,6 +40,7 @@ var food_agency = require('./routes/food_agency');
 var version2 = require('./routes/version2');
 var album = require('./routes/album');
 var food = require('./routes/food');
+var trip = require('./routes/trip');
 
 
 // development only
@@ -67,6 +68,7 @@ app.get('/blog', version2.view);
 app.get('/aboutme', version2.view);
 app.get('/album', function(req,res){res.redirect('/')});
 app.get('/album/:albumid', album.view);
+app.get('/trip', trip.view);
 
 
 http.createServer(app).listen(app.get('port'), function(){
