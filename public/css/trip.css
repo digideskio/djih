@@ -62,7 +62,7 @@ h1.title {
 }
 
 .time {
-  width: 200px;
+  width: 180px;
   height: 100%;
   border: 1px solid #fff;
   float: left;
@@ -72,13 +72,13 @@ h1.title {
 
 .time h2 {
   color: #fff;
-  font-family: 'Mont-Semi';
+  font-family: 'Mont-Reg';
   font-size: 30px;
   margin: 0;
 }
 
 .item {
-  margin-left: 200px;
+  margin-left: 180px;
   height: 300px;
   border: 1px solid #fff;
 }
