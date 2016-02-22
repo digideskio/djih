@@ -41,6 +41,7 @@ var version2 = require('./routes/version2');
 var album = require('./routes/album');
 var food = require('./routes/food');
 var trip = require('./routes/trip');
+var photo = require('./routes/photo');
 
 
 // development only
@@ -69,6 +70,7 @@ app.get('/aboutme', version2.view);
 app.get('/album', function(req,res){res.redirect('/')});
 app.get('/album/:albumid', album.view);
 app.get('/trip', trip.view);
+app.get('/photo/:photoid', photo.view);
 
 
 http.createServer(app).listen(app.get('port'), function(){
