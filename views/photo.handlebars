@@ -30,7 +30,10 @@
     <script src="/js/bootstrap.min.js"></script>
     <!--<script src="/js/jquery.exif.js"></script>-->
     <script src="/js/jquery.magnific-popup.min.js" rel="stylesheet"></script>
-    <script type="text/javascript">var albumId = '{{album_id}}';</script>
+    <script type="text/javascript">
+      var albumId = '{{album_id}}';
+      var photoId = '{{photo.id}}';
+    </script>
     <script src="/js/script.js"></script>
 
     <script type="text/javascript">
@@ -46,9 +49,10 @@
 
       amplitude.init("{{API_KEY}}", null, {'includeReferrer': true}, function() {
         var eventProperties = {
-          'albumId': albumId
+          'albumId': albumId,
+          'photoId': photoId
         };
-        amplitude.logEvent('View Album Page', eventProperties);
+        amplitude.logEvent('View Photo Page', eventProperties);
       });
     </script>
   </head>
