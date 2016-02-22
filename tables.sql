@@ -893,6 +893,15 @@ INSERT INTO album_photos (album_id, photo_id) VALUES (26, 217);
 
 
 # HK Feb 2016 photos
-INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('hk-feb-2016/DSC_4122.jpg', 'Victoria Peak, HK', 'Nikon D7100', '10mm', 'f/8', '1.3s', 100, '2/20/2016', 1440, 664, 'travel');
-INSERT INTO albums (name, location, date, cover_photo_id, category) VALUES ('Lake Tahoe MLK 2016', 'Lake Tahoe, CA', '1/18/2016', 213, 'travel');
-INSERT INTO album_photos (album_id, photo_id) VALUES (26, 213);
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('hk-feb-2016/DSC_4122.jpg', 'Victoria Peak, HK', 'Nikon D7100', '10mm', 'f/8', '1.3s', 320, '2/20/2016', 1440, 664, 'travel');
+INSERT INTO albums (name, location, date, cover_photo_id, category) VALUES ('Hong Kong 2016', 'Hong Kong, PRC', '2/20/2016', 218, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (27, 218);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('hk-feb-2016/DSC_4062.jpg', 'Victoria Peak, HK', 'Nikon D7100', '10mm', 'f/8', '1/125s', 320, '2/20/2016', 1440, 737, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (27, 219);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('hk-feb-2016/DSC_4091.jpg', 'Victoria Peak, HK', 'Nikon D7100', '15mm', 'f/9', '61s', 320, '2/20/2016', 1440, 814, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (27, 220);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('hk-feb-2016/DSC_4107.jpg', 'Victoria Peak, HK', 'Nikon D7100', '35mm', 'f/8', '1/2s', 320, '2/20/2016', 1440, 960, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (27, 221);

@@ -12,7 +12,7 @@ var isValidAlbum = function(id) {
 }
 
 var isValidPhoto = function(id) {
-    return (id >= 1 && id <= 217);
+    return (id >= 1 && id <= 221);
 }
 
 var months = [
