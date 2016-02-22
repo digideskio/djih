@@ -8,7 +8,7 @@ var months = [
 ]
 
 var isFinishedAlbum = function(id) {
-    return (id >= 1 && id <= 26);
+    return (id >= 1 && id <= 27);
 }
 
 exports.view = function(req, res){

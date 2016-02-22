@@ -133,7 +133,7 @@
             verticalFit: true,
             titleSrc: function(item){
               var data = item.el.children('.img_data');
-              return '<strong>' + data.attr('location') + '</strong>  -  ' + data.attr('camera') + ', ' + data.attr('focal') + ', ' + data.attr('aperture') + ', ' + data.attr('shutter') + ', ISO ' + data.attr('iso');
+              return '<strong>' + data.attr('location') + '</strong>  -  ' + data.attr('camera') + ', ' + data.attr('focal') + ', ' + data.attr('aperture') + ', ' + data.attr('shutter') + ', ISO ' + data.attr('iso') + ', <a href="/photo/' + data.attr('id') + '">Link</a>';
             }
           },
           callbacks: {
