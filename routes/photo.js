@@ -8,7 +8,11 @@ var album_query = 'SELECT a.location, a.date, a.category, a.cover_photo_id, p.fi
 var photo_query = 'SELECT p.id, p.filename, p.title, p.location, p.camera, p.focal_length, p.aperture, p.shutter_speed, p.iso, p.date_taken, p.width, p.height FROM album_photos AS a INNER JOIN photos AS p ON a.photo_id = p.id WHERE a.album_id = {0} ORDER BY RANDOM();';
 
 var isValidAlbum = function(id) {
-    return (id >= 1 && id <= 26);
+    return (id >= 1 && id <= 27);
+}
+
+var isValidPhoto = function(id) {
+    return (id >= 1 && id <= 217);
 }
 
 var months = [
@@ -26,6 +30,11 @@ exports.view = function(req, res){
     data.API_KEY = process.env.AMPLITUDE_API_KEY || '850a8c4c4b49f343859014651aec1a20';
 
     var photoid = parseInt(req.params.photoid);
+
+    if (!isValidPhoto(photoid)) {
+        res.redirect('/');
+    }
+
     data.from_photo = true;
 
     pg.connect(process.env.DATABASE_URL, function(err, client, done) {
@@ -45,7 +54,7 @@ exports.view = function(req, res){
                     // invalid albumid
                     if (!isValidAlbum(albumid)) {
                         done();
-                        res.redirect('/v2');
+                        res.redirect('/');
                     }
 
                     data.album_id = albumid;
