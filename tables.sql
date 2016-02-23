@@ -920,3 +920,27 @@ INSERT INTO album_photos (album_id, photo_id) VALUES (27, 225);
 
 INSERT INTO photos (filename, title, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('hk-feb-2016/DSC_4164.jpg', 'Fois Gras Egg Custard', 'L''Atelier de Joël Robuchon, HK', 'Nikon D7100', '35mm', 'f/1.8', '1/40s', 1600, '2/21/2016', 1440, 960, 'food');
 INSERT INTO album_photos (album_id, photo_id) VALUES (27, 226);
+
+INSERT INTO photos (filename, title, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('hk-feb-2016/DSC_4170.jpg', 'Cheese Soufflé', 'L''Atelier de Joël Robuchon, HK', 'Nikon D7100', '35mm', 'f/1.8', '1/60s', 1600, '2/21/2016', 1440, 960, 'food');
+INSERT INTO album_photos (album_id, photo_id) VALUES (27, 227);
+
+INSERT INTO photos (filename, title, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('hk-feb-2016/DSC_4172.jpg', 'Sea Bream Carpaccio with Uni', 'L''Atelier de Joël Robuchon, HK', 'Nikon D7100', '35mm', 'f/1.8', '1/400s', 1600, '2/21/2016', 1440, 960, 'food');
+INSERT INTO album_photos (album_id, photo_id) VALUES (27, 228);
+
+INSERT INTO photos (filename, title, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('hk-feb-2016/DSC_4174.jpg', 'Sea bream carpaccio with uni', 'L''Atelier de Joël Robuchon, HK', 'Nikon D7100', '35mm', 'f/1.8', '1/250s', 1600, '2/21/2016', 1440, 960, 'food');
+INSERT INTO album_photos (album_id, photo_id) VALUES (27, 229);
+
+INSERT INTO photos (filename, title, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('hk-feb-2016/DSC_4179.jpg', 'Maine Lobster Spaghetti', 'L''Atelier de Joël Robuchon, HK', 'Nikon D7100', '35mm', 'f/4', '1/200s', 1600, '2/21/2016', 1440, 1001, 'food');
+INSERT INTO album_photos (album_id, photo_id) VALUES (27, 230);
+
+INSERT INTO photos (filename, title, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('hk-feb-2016/DSC_4181.jpg', 'Slow Cooked Lamb', 'L''Atelier de Joël Robuchon, HK', 'Nikon D7100', '35mm', 'f/4', '1/100s', 2500, '2/21/2016', 1440, 960, 'food');
+INSERT INTO album_photos (album_id, photo_id) VALUES (27, 231);
+
+INSERT INTO photos (filename, title, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('hk-feb-2016/DSC_4190.jpg', 'Petit Fours', 'L''Atelier de Joël Robuchon, HK', 'Nikon D7100', '35mm', 'f/4', '1/80s', 2500, '2/21/2016', 1440, 960, 'food');
+INSERT INTO album_photos (album_id, photo_id) VALUES (27, 232);
+
+INSERT INTO photos (filename, title, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('hk-feb-2016/DSC_4231.jpg', 'A Symphony of Lights', 'Avenue of Stars, HK', 'Nikon D7100', '20mm', 'f/8', '181s', 320, '2/22/2016', 1440, 586, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (27, 233);
+
+INSERT INTO photos (filename, title, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('hk-feb-2016/DSC_4253.jpg', 'A Symphony of Lights', 'Avenue of Stars, HK', 'Nikon D7100', '20mm', 'f/25', '8s', 320, '2/22/2016', 1440, 595, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (27, 234);
