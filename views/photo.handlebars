@@ -120,7 +120,7 @@
                 <img src="/images/{{this.filename}}" class="img-album" id="img_{{this.id}}">
               </div>
             </li>
-            <div class="img_data" id="{{this.id}}" location="{{this.location}}" camera="{{this.camera}}" focal="{{this.focal_length}}" aperture="{{this.aperture}}" shutter="{{this.shutter_speed}}" iso="{{this.iso}}"></div>
+            <div class="img_data" id="{{this.id}}" location="{{this.location}}" camera="{{this.camera}}" focal="{{this.focal_length}}" aperture="{{this.aperture}}" shutter="{{this.shutter_speed}}" iso="{{this.iso}}" title="{{this.title}}"></div>
           </a>
         {{/each}}
       </ul>
@@ -137,7 +137,7 @@
             verticalFit: true,
             titleSrc: function(item){
               var data = item.el.children('.img_data');
-              return '<strong>' + data.attr('location') + '</strong>  -  ' + data.attr('camera') + ', ' + data.attr('focal') + ', ' + data.attr('aperture') + ', ' + data.attr('shutter') + ', ISO ' + data.attr('iso')  + ', <a href="/photo/' + data.attr('id') + '">Link</a>';
+              return '<strong>' + data.attr('title') + '</strong>  -  ' + data.attr('location') + ', ' + data.attr('camera') + ', ' + data.attr('focal') + ', ' + data.attr('aperture') + ', ' + data.attr('shutter') + ', ISO ' + data.attr('iso')  + ', <a href="/photo/' + data.attr('id') + '">Link</a>';
             }
           },
           callbacks: {
@@ -152,7 +152,6 @@
         });
 
         {{#if from_photo}}
-          console.log({{gallery_index}});
           $('.gallery-popup-link').magnificPopup('open', {{gallery_index}});
         {{/if}}
       </script>
