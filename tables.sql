@@ -905,3 +905,18 @@ INSERT INTO album_photos (album_id, photo_id) VALUES (27, 220);
 
 INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('hk-feb-2016/DSC_4107.jpg', 'Victoria Peak, HK', 'Nikon D7100', '35mm', 'f/8', '1/2s', 320, '2/20/2016', 1440, 960, 'travel');
 INSERT INTO album_photos (album_id, photo_id) VALUES (27, 221);
+
+INSERT INTO photos (filename, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('hk-feb-2016/DSC_4129.jpg', 'Mong Kok, HK', 'Nikon D7100', '35mm', 'f/1.8', '1/400s', 800, '2/21/2016', 1440, 960, 'food');
+INSERT INTO album_photos (album_id, photo_id) VALUES (27, 222);
+
+INSERT INTO photos (filename, title, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('hk-feb-2016/DSC_4141.jpg', 'Mango Mochi', 'Mong Kok, HK', 'Nikon D7100', '35mm', 'f/1.8', '1/400s', 800, '2/21/2016', 1440, 960, 'food');
+INSERT INTO album_photos (album_id, photo_id) VALUES (27, 223);
+
+INSERT INTO photos (filename, title, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('hk-feb-2016/DSC_4148.jpg', '烤魷魚 (Grilled Octopus)', 'Mong Kok, HK', 'Nikon D7100', '35mm', 'f/1.8', '1/640s', 800, '2/21/2016', 1440, 960, 'food');
+INSERT INTO album_photos (album_id, photo_id) VALUES (27, 224);
+
+INSERT INTO photos (filename, title, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('hk-feb-2016/DSC_4161.jpg', 'Bread Platter', 'L''Atelier de Joël Robuchon, HK', 'Nikon D7100', '35mm', 'f/1.8', '1/100s', 1600, '2/21/2016', 1440, 960, 'food');
+INSERT INTO album_photos (album_id, photo_id) VALUES (27, 225);
+
+INSERT INTO photos (filename, title, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('hk-feb-2016/DSC_4164.jpg', 'Fois Gras Egg Custard', 'L''Atelier de Joël Robuchon, HK', 'Nikon D7100', '35mm', 'f/1.8', '1/40s', 1600, '2/21/2016', 1440, 960, 'food');
+INSERT INTO album_photos (album_id, photo_id) VALUES (27, 226);
