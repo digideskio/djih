@@ -953,3 +953,24 @@ INSERT INTO album_photos (album_id, photo_id) VALUES (28, 235);
 
 INSERT INTO photos (filename, title, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('taiwan-feb-2016/DSC_4307.jpg', 'Souvenir Shop (紀念品店)', 'Jiufen Old Street (九份老街), Taiwan', 'Nikon D7100', '35mm', 'f/2.5', '1/500s', 1600, '2/24/2016', 1440, 960, 'travel');
 INSERT INTO album_photos (album_id, photo_id) VALUES (28, 236);
+
+INSERT INTO photos (filename, title, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('taiwan-feb-2016/DSC_4311.jpg', 'Grilled Snails (烤海螺)', 'Jiufen Old Street (九份老街), Taiwan', 'Nikon D7100', '35mm', 'f/4', '1/320s', 1600, '2/24/2016', 1440, 818, 'food');
+INSERT INTO album_photos (album_id, photo_id) VALUES (28, 237);
+
+INSERT INTO photos (filename, title, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('taiwan-feb-2016/DSC_4315.jpg', 'Taiwanese Meatball (肉丸)', 'Jiufen Old Street (九份老街), Taiwan', 'Nikon D7100', '35mm', 'f/4', '1/50s', 1600, '2/24/2016', 1440, 874, 'food');
+INSERT INTO album_photos (album_id, photo_id) VALUES (28, 238);
+
+INSERT INTO photos (filename, title, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('taiwan-feb-2016/DSC_4317.jpg', 'Stuffed Meatball Soup (五味肉丸湯)', 'Jiufen Old Street (九份老街), Taiwan', 'Nikon D7100', '35mm', 'f/4', '1/100s', 1600, '2/24/2016', 1440, 960, 'food');
+INSERT INTO album_photos (album_id, photo_id) VALUES (28, 239);
+
+INSERT INTO photos (filename, title, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('taiwan-feb-2016/DSC_4322.jpg', 'Jiufen Vista Point', 'Jiufen Old Street (九份老街), Taiwan', 'Nikon D7100', '13mm', 'f/8', '1/100s', 1600, '2/24/2016', 1440, 831, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (28, 240);
+
+INSERT INTO photos (filename, title, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('taiwan-feb-2016/DSC_4330.jpg', 'Afternoon Tea (下午茶)', 'Jiufen Teahouse (九份茶坊), Taiwan', 'Nikon D7100', '35mm', 'f/1.8', '1/120s', 2500, '2/24/2016', 1440, 960, 'food');
+INSERT INTO album_photos (album_id, photo_id) VALUES (28, 241);
+
+INSERT INTO photos (filename, title, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('taiwan-feb-2016/DSC_4366.jpg', 'Jiufen Old Street Old Street (九份老街)', 'Jiufen Old Street (九份老街), Taiwan', 'Nikon D7100', '12mm', 'f/8', '1s', 100, '2/24/2016', 1440, 960, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (28, 242);
+
+INSERT INTO photos (filename, title, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('taiwan-feb-2016/DSC_4371.jpg', 'Colorful Souvenir Shop', 'Jiufen Old Street (九份老街), Taiwan', 'Nikon D7100', '10mm', 'f/8', '1s', 100, '2/24/2016', 1440, 960, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (28, 243);
