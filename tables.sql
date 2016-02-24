@@ -944,3 +944,9 @@ INSERT INTO album_photos (album_id, photo_id) VALUES (27, 233);
 
 INSERT INTO photos (filename, title, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('hk-feb-2016/DSC_4253.jpg', 'A Symphony of Lights', 'Avenue of Stars, HK', 'Nikon D7100', '20mm', 'f/25', '8s', 320, '2/22/2016', 1440, 595, 'travel');
 INSERT INTO album_photos (album_id, photo_id) VALUES (27, 234);
+
+
+# Taiwan Feb 2016 photos
+INSERT INTO photos (filename, title, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('taiwan-feb-2016/DSC_4290.jpg', 'View of the Sea', 'Jiufen (九份), Taiwan', 'Nikon D7100', '10mm', 'f/8', '1/60s', 1000, '2/24/2016', 1440, 795, 'travel');
+INSERT INTO albums (name, location, date, cover_photo_id, category) VALUES ('Taiwan 2016', 'Taipei, Taiwan', '2/23/2016', 235, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (28, 235);
