@@ -998,3 +998,9 @@ INSERT INTO album_photos (album_id, photo_id) VALUES (28, 250);
 
 INSERT INTO photos (filename, title, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('taiwan-feb-2016/DSC_4526.jpg', 'Chang Kai Shek Memorial', '中正紀念堂, Taiwan', 'Nikon D7100', '10mm', 'f/8', '1/200s', 1000, '2/25/2016', 1440, 730, 'travel');
 INSERT INTO album_photos (album_id, photo_id) VALUES (28, 251);
+
+INSERT INTO photos (filename, title, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('taiwan-feb-2016/DSC_4630.jpg', 'Light painting in Ximending', '西門町, Taiwan', 'Nikon D7100', '17mm', 'f/14', '3s', 100, '3/1/2016', 1440, 654, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (28, 252);
+
+INSERT INTO photos (filename, title, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('taiwan-feb-2016/DSC_4630.jpg', 'Light painting in Ximending', '西門町, Taiwan', 'Nikon D7100', '17mm', 'f/14', '3s', 100, '3/1/2016', 1440, 654, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (28, 253);
