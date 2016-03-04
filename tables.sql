@@ -1002,5 +1002,11 @@ INSERT INTO album_photos (album_id, photo_id) VALUES (28, 251);
 INSERT INTO photos (filename, title, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('taiwan-feb-2016/DSC_4630.jpg', 'Light painting in Ximending', '西門町, Taiwan', 'Nikon D7100', '17mm', 'f/14', '3s', 100, '3/1/2016', 1440, 654, 'travel');
 INSERT INTO album_photos (album_id, photo_id) VALUES (28, 252);
 
-INSERT INTO photos (filename, title, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('taiwan-feb-2016/DSC_4630.jpg', 'Light painting in Ximending', '西門町, Taiwan', 'Nikon D7100', '17mm', 'f/14', '3s', 100, '3/1/2016', 1440, 654, 'travel');
+INSERT INTO photos (filename, title, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('taiwan-feb-2016/DSC_4639.jpg', 'Light painting in Ximending', '西門町, Taiwan', 'Nikon D7100', '17mm', 'f/14', '3s', 100, '3/1/2016', 1440, 858, 'travel');
 INSERT INTO album_photos (album_id, photo_id) VALUES (28, 253);
+
+INSERT INTO photos (filename, title, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('taiwan-feb-2016/DSC_4659.jpg', 'Gua Bao (割包)', '藍家割包, Taiwan', 'Nikon D7100', '35mm', 'f/4', '1/125s', 1000, '3/1/2016', 1440, 960, 'food');
+INSERT INTO album_photos (album_id, photo_id) VALUES (28, 254);
+
+INSERT INTO photos (filename, title, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('taiwan-feb-2016/DSC_4675.jpg', '彩色鉛筆', '華山 1914 Creative Park, Taiwan', 'Nikon D7100', '10mm', 'f/4', '1/125s', 1250, '3/1/2016', 1440, 960, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (28, 255);
