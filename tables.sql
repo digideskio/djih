@@ -974,3 +974,27 @@ INSERT INTO album_photos (album_id, photo_id) VALUES (28, 242);
 
 INSERT INTO photos (filename, title, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('taiwan-feb-2016/DSC_4371.jpg', 'Colorful Souvenir Shop', 'Jiufen Old Street (九份老街), Taiwan', 'Nikon D7100', '10mm', 'f/8', '1s', 100, '2/24/2016', 1440, 960, 'travel');
 INSERT INTO album_photos (album_id, photo_id) VALUES (28, 243);
+
+INSERT INTO photos (filename, title, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('taiwan-feb-2016/DSC_4387.jpg', 'Taiwanese Sausage (台灣香腸)', 'Jiufen Old Street (九份老街), Taiwan', 'Nikon D7100', '35mm', 'f/3.2', '1/125s', 640, '2/24/2016', 1440, 960, 'food');
+INSERT INTO album_photos (album_id, photo_id) VALUES (28, 244);
+
+INSERT INTO photos (filename, title, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('taiwan-feb-2016/DSC_4419.jpg', 'Omakase', 'Addiction Aquatic Development (上引水產), Taiwan', 'Nikon D7100', '35mm', 'f/4.5', '1/40s', 2500, '2/25/2016', 1440, 912, 'food');
+INSERT INTO album_photos (album_id, photo_id) VALUES (28, 245);
+
+INSERT INTO photos (filename, title, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('taiwan-feb-2016/DSC_4454.jpg', 'Shopping District', 'ATT 4 Fun, Taiwan', 'Nikon D7100', '20mm', 'f/10', '2s', 100, '2/25/2016', 1440, 960, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (28, 246);
+
+INSERT INTO photos (filename, title, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('taiwan-feb-2016/DSC_4460.jpg', 'Mixed Berry Danish Tart', '201 Cafe Restaurant, ATT 4 Fun, Taiwan', 'Nikon D7100', '35mm', 'f/4', '1/50s', 1600, '2/25/2016', 1440, 913, 'food');
+INSERT INTO album_photos (album_id, photo_id) VALUES (28, 247);
+
+INSERT INTO photos (filename, title, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('taiwan-feb-2016/DSC_4467.jpg', 'Taiwanese Beef Noodle Soup (牛肉麵)', '永康牛肉麵, Taiwan', 'Nikon D7100', '35mm', 'f/3.5', '1/125s', 1600, '2/25/2016', 1440, 964, 'food');
+INSERT INTO album_photos (album_id, photo_id) VALUES (28, 248);
+
+INSERT INTO photos (filename, title, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('taiwan-feb-2016/DSC_4471.jpg', 'Mango Ice (芒果冰)', 'Smoothie House (思慕昔), Taiwan', 'Nikon D7100', '35mm', 'f/6.3', '1/40s', 1600, '2/25/2016', 1440, 960, 'food');
+INSERT INTO album_photos (album_id, photo_id) VALUES (28, 249);
+
+INSERT INTO photos (filename, title, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('taiwan-feb-2016/DSC_4477.jpg', '抓餅', '天津蔥抓餅, Taiwan', 'Nikon D7100', '35mm', 'f/1.8', '1/800s', 1600, '2/25/2016', 1440, 960, 'food');
+INSERT INTO album_photos (album_id, photo_id) VALUES (28, 250);
+
+INSERT INTO photos (filename, title, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height, category) VALUES ('taiwan-feb-2016/DSC_4526.jpg', 'Chang Kai Shek Memorial', '中正紀念堂, Taiwan', 'Nikon D7100', '10mm', 'f/8', '1/200s', 1000, '2/25/2016', 1440, 730, 'travel');
+INSERT INTO album_photos (album_id, photo_id) VALUES (28, 251);
