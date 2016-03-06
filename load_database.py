@@ -1,0 +1,86 @@
+import csv
+import os
+import psycopg2
+from dotenv import load_dotenv
+from os.path import join, dirname
+
+dotenv_path = join(dirname(__file__), '.env')
+load_dotenv(dotenv_path)
+
+
+DATA_FILENAME = 'data/tables.csv'
+
+CREATE_ALBUMS = 'CREATE TABLE IF NOT EXISTS test_albums(id SERIAL PRIMARY KEY, name TEXT, location TEXT NOT NULL, date DATE NOT NULL, cover_photo_id INTEGER, category TEXT NOT NULL);'
+CREATE_ALBUMS_INDEX = 'CREATE INDEX test_albums_category_idx ON test_albums (category);'
+CREATE_PHOTOS = 'CREATE TABLE IF NOT EXISTS test_photos(id SERIAL PRIMARY KEY, filename TEXT NOT NULL, dropbox_url TEXT, title TEXT, location TEXT, camera TEXT, focal_length TEXT, aperture TEXT, shutter_speed TEXT, iso INTEGER, date_taken DATE, width INTEGER, height INTEGER);'
+CREATE_ALBUM_PHOTOS = 'CREATE TABLE IF NOT EXISTS test_album_photos(id SERIAL PRIMARY KEY, album_id INTEGER NOT NULL, photo_id INTEGER NOT NULL);'
+CREATE_ALBUM_PHOTOS_INDEX = 'CREATE INDEX test_album_photos_album_idx ON test_album_photos (album_id);'
+
+INSERT_ALBUM = 'INSERT INTO test_albums (id, name, location, date, category) VALUES (%s, %s, %s, %s, %s);'
+INSERT_PHOTO = 'INSERT INTO test_photos (id, filename, dropbox_url, title, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s);'
+INSERT_ALBUM_PHOTO = 'INSERT INTO test_album_photos (album_id, photo_id) VALUES (%s, %s);'
+SET_COVER_PHOTO = 'UPDATE test_albums SET cover_photo_id = %s WHERE id = %s;'
+
+
+def resetDB():
+    def dropTable(cursor, table):
+        cursor.execute('DROP TABLE IF EXISTS %s;' % table)
+
+    with psycopg2.connect(os.environ.get('DATABASE_URL')) as conn:
+        with conn.cursor() as cursor:
+            dropTable(cursor, 'test_albums')
+            dropTable(cursor, 'test_photos')
+            dropTable(cursor, 'test_album_photos')
+            cursor.execute(CREATE_ALBUMS)
+            cursor.execute(CREATE_ALBUMS_INDEX)
+            cursor.execute(CREATE_PHOTOS)
+            cursor.execute(CREATE_ALBUM_PHOTOS)
+            cursor.execute(CREATE_ALBUM_PHOTOS_INDEX)
+
+
+def loadData(data_filename):
+
+    album_id = 0
+    photo_id = 0
+
+    with psycopg2.connect(os.environ.get('DATABASE_URL')) as conn, conn.cursor() as cursor, open(DATA_FILENAME, 'rU') as data_file:
+        data = csv.reader(data_file, quotechar="'", delimiter=',', quoting=csv.QUOTE_ALL, skipinitialspace=True)
+        for entry in data:
+
+            # check for next album
+            if 'album' in entry[0]:
+
+                album_id += 1
+                name, location, date, category = entry[:4]
+                name = name.split(':')[1]
+
+                cursor.execute(INSERT_ALBUM, (album_id, name, location, date, category))
+
+
+            # process photo
+            else:
+                if len(entry) < 12:
+                    print 'Invalid entry: %s' % str(entry)
+                    continue
+
+                photo_id += 1
+
+                try:
+                    title, filename, dropbox_url, location, camera, focal_length, aperture, shutter_speed, iso, date, width, height = entry[:12]
+                    cursor.execute(INSERT_PHOTO, (photo_id, filename, dropbox_url, title, location, camera, focal_length, aperture, shutter_speed, int(iso), date, int(width), int(height)))
+                except Exception as e:
+                    print 'Error parsing entry %s: %s' % (str(entry), e)
+                    continue
+
+                # add photo to album
+                cursor.execute(INSERT_ALBUM_PHOTO, (album_id, photo_id))
+
+                # set cover photo
+                if len(entry) == 13 and entry[12] == 'cover':
+                    cursor.execute(SET_COVER_PHOTO, (photo_id, album_id))
+
+
+
+if __name__ == '__main__':
+    resetDB()
+    loadData(DATA_FILENAME)

@@ -3,8 +3,8 @@ var pg = require('pg');
 var format = require('string-format');
 format.extend(String.prototype);
 
-var album_query = 'SELECT a.location, a.date, a.category, a.cover_photo_id, p.filename, p.width, p.height FROM albums AS a INNER JOIN photos AS p ON a.cover_photo_id = p.id WHERE a.id = {0}';
-var photo_query = 'SELECT p.id, p.filename, p.title, p.location, p.camera, p.focal_length, p.aperture, p.shutter_speed, p.iso, p.date_taken, p.width, p.height FROM album_photos AS a INNER JOIN photos AS p ON a.photo_id = p.id WHERE a.album_id = {0} ORDER BY RANDOM();';
+var album_query = 'SELECT a.location, a.date, a.category, a.cover_photo_id, p.filename, p.dropbox_url, p.width, p.height FROM test_albums AS a INNER JOIN test_photos AS p ON a.cover_photo_id = p.id WHERE a.id = {0}';
+var photo_query = 'SELECT p.id, p.filename, p.dropbox_url, p.title, p.location, p.camera, p.focal_length, p.aperture, p.shutter_speed, p.iso, p.date_taken, p.width, p.height FROM test_album_photos AS a INNER JOIN test_photos AS p ON a.photo_id = p.id WHERE a.album_id = {0} ORDER BY RANDOM();';
 
 var isValidAlbum = function(id) {
     return (id >= 1 && id <= 28);
@@ -48,7 +48,8 @@ exports.view = function(req, res){
                     var album = result.rows[0];
                     // data.album_location = album.location;
                     // data.album_date = album.date;
-                    data.cover_photo = album.filename;
+                    // data.cover_photo = album.filename;
+                    data.cover_photo = album.dropbox_url;
                     data.cover_photo_id = album.cover_photo_id;
                     data.cover_photo_width = album.width;
                     data.cover_photo_height = album.height;
