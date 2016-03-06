@@ -1,6 +1,7 @@
 import csv
 import os
 import psycopg2
+import re
 from dotenv import load_dotenv
 from os.path import join, dirname
 
@@ -9,6 +10,8 @@ load_dotenv(dotenv_path)
 
 
 DATA_FILENAME = 'data/tables.csv'
+
+PHOTO_FILENAME_REGEX = 'DSC_[0-9]+.jpg'
 
 CREATE_ALBUMS = 'CREATE TABLE IF NOT EXISTS test_albums(id SERIAL PRIMARY KEY, name TEXT, location TEXT NOT NULL, date DATE NOT NULL, cover_photo_id INTEGER, category TEXT NOT NULL);'
 CREATE_ALBUMS_INDEX = 'CREATE INDEX test_albums_category_idx ON test_albums (category);'
@@ -38,12 +41,27 @@ def resetDB():
             cursor.execute(CREATE_ALBUM_PHOTOS_INDEX)
 
 
+def validateFilenames(filename, dropbox_url):
+    if not filename or not dropbox_url:
+        return False
+
+    filename_match = re.search(PHOTO_FILENAME_REGEX, filename)
+    if not filename_match:
+        return False
+
+    dropbox_match = re.search(PHOTO_FILENAME_REGEX, dropbox_url)
+    if not dropbox_match:
+        return False
+
+    return filename_match.group(0) == dropbox_match.group(0)
+
+
 def loadData(data_filename):
 
     album_id = 0
     photo_id = 0
 
-    with psycopg2.connect(os.environ.get('DATABASE_URL')) as conn, conn.cursor() as cursor, open(DATA_FILENAME, 'rU') as data_file:
+    with psycopg2.connect(os.environ.get('DATABASE_URL')) as conn, conn.cursor() as cursor, open(DATA_FILENAME, 'r') as data_file:
         data = csv.reader(data_file, quotechar="'", delimiter=',', quoting=csv.QUOTE_ALL, skipinitialspace=True)
         for entry in data:
 
@@ -63,10 +81,12 @@ def loadData(data_filename):
                     print 'Invalid entry: %s' % str(entry)
                     continue
 
-                photo_id += 1
-
                 try:
                     title, filename, dropbox_url, location, camera, focal_length, aperture, shutter_speed, iso, date, width, height = entry[:12]
+                    if not validateFilenames(filename, dropbox_url):
+                        print 'Filename %s does not match Dropbox url %s' % (filename, dropbox_url)
+                        continue
+                    photo_id += 1
                     cursor.execute(INSERT_PHOTO, (photo_id, filename, dropbox_url, title, location, camera, focal_length, aperture, shutter_speed, int(iso), date, int(width), int(height)))
                 except Exception as e:
                     print 'Error parsing entry %s: %s' % (str(entry), e)
