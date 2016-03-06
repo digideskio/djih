@@ -68,10 +68,9 @@ def loadData(data_filename):
         for entry in data:
 
             # check for next album
-            if 'album' in entry[0]:
+            if 'album' == entry[0]:
 
-                name, location, date, category = entry[:4]
-                name = name.split(':')[1]
+                name, location, date, category = entry[1:5]
                 print 'Album: %s' % name
 
                 album_id += 1

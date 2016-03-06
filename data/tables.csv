@@ -1,4 +1,4 @@
-'album:Vancouver 2015', 'Vancouver, CA', '09/10/2015', 'travel'
+album, 'Vancouver 2015', 'Vancouver, CA', '09/10/2015', 'travel'
 'Coal Harbour Community Center', 'vancouver-2015/DSC_3071.jpg', 's/m2rjko03uv9q8cp/DSC_3071.jpg', 'Coal Harbour Community Center, Vancouver', 'Nikon D7100', '10mm', 'f/8', '1/2000s',1000, '09/11/2015',1440,871, travel
 Habour Green Park, 'vancouver-2015/DSC_3087.jpg', 's/yu7ennfjof3abqy/DSC_3087.jpg', 'Harbour Green Park, Vancouver', 'Nikon D7100', '10mm', 'f/8', '1/800s',500, '09/11/2015',1440,810, travel
 Vancouver Rowing Club, 'vancouver-2015/DSC_3122.jpg', 's/4mtlpu2z7n1b0a0/DSC_3122.jpg', 'Stanley Park, Vancouver', 'Nikon D7100', '10mm', 'f/8', '15s',100, '09/11/2015',1440,771, travel
@@ -9,25 +9,52 @@ Japanese Crepes, 'vancouver-2015/DSC_3160.jpg', s/rkpwslkfpr9bh3l/DSC_3160.jpg, 
 Under Granville Bridge, vancouver-2015/DSC_3186.jpg', s/sjwsf6ft5kmmgq1/DSC_3186.jpg, 'Granville Island, Vancouver', 'Nikon D7100', '10mm', 'f/8', '1/60s',100, '09/12/2015', 1440, 960, travel
 Goodbye Vancouver, vancouver-2015/DSC_3249.jpg', s/qn3migrkxcpsuw2/DSC_3249.jpg, 'Vancouver Airport', 'Nikon D7100', '20mm', 'f/8', '1/80s',1000, '09/13/2015', 1440, 960, travel
 Sunrise at the Airport, vancouver-2015/DSC_3253.jpg', s/2lfx5fi1wz82ni3/DSC_3253.jpg, 'Vancouver Airport', 'Nikon D7100', '16mm', 'f/8', '1/125s',1000, '09/13/2015', 1440, 960, travel
-'album:Crater Lake 2015', 'Crater Lake, OR', '09/05/2015', 'travel'
-Stargazing by the Camp Fire, 'crater-lake-2015/DSC_2837.jpg', s/vb70frx1tw7dbqi/DSC_2837.jpg, 'Crater Lake National Park, OR', 'Nikon D7100', '10mm', 'f/4', '30s', 64000, '09/05/2015', 1440, 960, travel
-Stargazing, 'crater-lake-2015/DSC_2840.jpg', s/sjguj4087nue0iq/DSC_2840.jpg, 'Crater Lake National Park, OR', 'Nikon D7100', '10mm', 'f/4', '30s', 64000, '09/05/2015', 1440, 960, travel
+album, 'Crater Lake 2015', 'Crater Lake, OR', '09/05/2015', 'travel'
+Stargazing by the Camp Fire, 'crater-lake-2015/DSC_2837.jpg', s/vb70frx1tw7dbqi/DSC_2837.jpg, 'Crater Lake National Park, OR', 'Nikon D7100', '10mm', 'f/4', '30s', 6400, '09/05/2015', 1440, 960, travel
+Stargazing, 'crater-lake-2015/DSC_2840.jpg', s/sjguj4087nue0iq/DSC_2840.jpg, 'Crater Lake National Park, OR', 'Nikon D7100', '10mm', 'f/4', '30s', 6400, '09/05/2015', 1440, 960, travel
 Stargazing Long Exposure, 'crater-lake-2015/DSC_2842.jpg', s/l9abvmr4jofs9tx/DSC_2842.jpg, 'Crater Lake National Park, OR', 'Nikon D7100', '10mm', 'f/8', '30m', 100, '09/05/2015', 1440, 960, travel
 Sunrise at Crater Lake, 'crater-lake-2015/DSC_2856.jpg', s/5yas0j4vgc628ee/DSC_2856.jpg, 'Crater Lake National Park, OR', 'Nikon D7100', '10mm', 'f/8', '30s', 100, '09/11/2015', 1440, 977, travel, cover
 Mount Scott, 'crater-lake-2015/DSC_2905.jpg', s/l62jotu6072s5e9/DSC_2905.jpg, 'Crater Lake National Park, OR', 'Nikon D7100', '10mm', 'f/8', '1/250s', 100, '09/06/2015', 1440, 784, travel
 Rim Drive, 'crater-lake-2015/DSC_2969.jpg', s/0whp4i1z74tbxc1/DSC_2969.jpg, 'Crater Lake National Park, OR', 'Nikon D7100', '10mm', 'f/8', '1/320s', 100, '09/06/2015', 1440, 904, travel
 One Last Drive, 'crater-lake-2015/DSC_3021.jpg', s/2kfj7nhhvybiv85/DSC_3021.jpg, 'Crater Lake National Park, OR', 'Nikon D7100', '10mm', 'f/8', '1/80s', 1000, '09/06/2015', 1440, 866, travel
 Milky Way over Crater Lake, 'crater-lake-2015/DSC_3038.jpg', s/08thp5umaua6vre/DSC_3038.jpg, 'Crater Lake National Park, OR', 'Nikon D7100', '10mm', 'f/4', '30s', 6400, '09/06/2015', 1440, 960, travel
-'album:Caltopia 2015', 'UC: Berkeley, CA', '08/23/2015', 'travel'
+album, 'Caltopia 2015', 'UC: Berkeley, CA', '08/23/2015', 'travel'
 Osso Buco Riblets, 'caltopia-2015/DSC_1464.jpg', s/qu5bwqvcoybi9h5/DSC_1464.jpg, 'Eureka!, Berkeley, CA', 'Nikon D7100', '35mm', 'f/2.8', '1/125s', 500, '05/22/2015', 1440, 844, food
 Honey Cinnamon Sweet Potato Fries, 'caltopia-2015/DSC_1473.jpg', s/n5oukxnfxfglkh4/DSC_1473.jpg, 'Eureka!, Berkeley, CA', 'Nikon D7100', '35mm', 'f/2.8', '1/200s', 500, '05/22/2015', 1440, 960, food
 The Campanile, 'caltopia-2015/DSC_2773.jpg', s/jfv60iu8uq1z15k/DSC_2773.jpg, 'University of California, Berkeley', 'Nikon D7100', '10mm', 'f/11', '1/500s', 400, '08/23/2015', 1440, 960, travel, cover
 Memorial Glade, 'caltopia-2015/DSC_2785.jpg', s/9j0urdvpj0rqfm9/DSC_2785.jpg, 'Berkeley', 'Nikon D7100', '10mm', 'f/11', '1/500s', 400, '08/23/2015', 1440, 960, travel
 Haas School of Business, 'caltopia-2015/DSC_2802.jpg', s/o0yy8e8fk924q3b/DSC_2802.jpg, 'Berkeley', 'Nikon D7100', '10mm', 'f/8', '1/800s', 640, '08/23/2015', 1440, 960, travel
 Eshleman Library, 'caltopia-2015/DSC_2816.jpg', s/q5c76xc883ei62b/DSC_2816.jpg, 'Berkeley', 'Nikon D7100', '10mm', 'f/8', '1/400s', 640, '08/23/2015', 1440, 960, travel
-'album:Mission Peak 2015', 'Mission Peak, CA', '07/12/2015', 4, 'travel'
+album, 'Mission Peak 2015', 'Mission Peak, CA', '07/12/2015', 4, 'travel'
 Start of the Hike, 'mission-peak-2015/DSC_2525.jpg', s/hio7stk90nm2cta/DSC_2525.jpg, 'Mission Peak, CA', 'Nikon D7100', '12mm', 'f/8', '1/320s', 100, '07/12/2015', 1440, 960, travel
 Overlooking Fremont, 'mission-peak-2015/DSC_2529.jpg', s/k7um1pcfkv6nq8k/DSC_2529.jpg, 'Mission Peak, CA', 'Nikon D7100', '10mm', 'f/8', '1/200s', 100, '07/12/2015', 1440, 960, travel
 Top of the Peak, 'mission-peak-2015/DSC_2549.jpg', s/dn9619488mg1hvr/DSC_2549.jpg, 'Mission Peak, CA', 'Nikon D7100', '10mm', 'f/8', '1/400s', 100, '07/12/2015', 1440, 960, travel
 Mission Peak Sunset, 'mission-peak-2015/DSC_2607.jpg', s/t5tp9h63e2a7gsf/DSC_2607.jpg, 'Mission Peak, CA', 'Nikon D7100', '13mm', 'f/7.1', '1/100s', 500, '07/12/2015', 1440, 960, travel, cover
 Slow Burn, 'mission-peak-2015/DSC_2623.jpg', s/oix0ul2un2c1y6x/DSC_2623.jpg, 'Mission Peak, CA', 'Nikon D7100', '20mm', 'f/7.1', '1/125s', 1250, '07/12/2015', 1440, 960, travel
+album, 'Los Angeles 2015', 'Los Angelos, CA', '05/24/2015', 'travel'
+Enroute to LA, 'la-2015/DSC_1477.jpg', s/fxy46vpo9nl1qhk/DSC_1477.jpg, 'I5 Rest Area', 'Nikon D7100', '14mm', 'f/8', '1s', 100, '05/23/2015', 1440, 960, travel
+Getty Villa Fountain, 'la-2015/DSC_1512.jpg', s/lkfdruimqoj7cyp/DSC_1512.jpg, 'Getty Villa', 'Nikon D7100', '16mm', 'f/8', '1/1600s', 500, '05/24/2015', 1440, 960, travel
+Outer Peristyle Garden, 'la-2015/DSC_1517.jpg', s/4adaexfvdgur1cx/DSC_1517.jpg, 'Getty Villa', 'Nikon D7100', '10mm', 'f/8', '1/2000s', 500, '05/24/2015', 1440, 960, travel, cover
+Steamed Mediterranean Mussels, 'la-2015/DSC_1523.jpg', s/2qlcgnn4prj7gd6/DSC_1523.jpg, 'Santa Monica Seafood', 'Nikon D7100', '35mm', 'f/4', '1/40s', 200, '05/24/2015', 1440, 960, food
+Donald Judd Sculpture, 'la-2015/DSC_1548.jpg', s/tj1rzgjuc34lx9k/DSC_1548.jpg, 'LACMA', 'Nikon D7100', '10mm', 'f/4', '1/8000s', 200, '05/24/2015', 1440, 960, travel
+Korean BBQ, 'la-2015/DSC_1560.jpg', s/jb1x0omi7uyne58/DSC_1560.jpg, 'Kang Ho-Dong Baekjeong', 'Nikon D7100', '10mm', 'f/4', '1/40s', 2500, '05/24/2015', 1440, 960, food
+Taiwanese Stinky Tofu Hotpot (台式臭臭鍋), 'la-2015/DSC_1576.jpg', s/ms73m5wt7h51l7g/DSC_1576.jpg, 'Boiling Point Pasadena', 'Nikon D7100', '35mm', 'f/3.2', '1/50s', 2500, '05/25/2015', 1440, 960, food
+Beckman Auditorium, 'la-2015/DSC_1613.jpg', s/y9zoawpcnwwtdge/DSC_1613.jpg, 'Caltech University, CA', 'Nikon D7100', '13mm', 'f/8', '1/640s', 800, '05/25/2015', 1440, 637, travel, cover
+Beckman Auditorium, 'la-2015/DSC_1626.jpg', s/n3criktebqqoius/DSC_1626.jpg, 'Caltech University, CA', 'Nikon D7100', '10mm', 'f/8', '1/400s', 800, '05/25/2015', 1440, 960, travel
+Beckman Auditorium, 'la-2015/DSC_1639.jpg', s/z207c0jx8ysdq19/DSC_1639.jpg, 'Caltech University, CA', 'Nikon D7100', '10mm', 'f/8', '1/200s', 800, '05/25/2015', 1440, 960, travel
+album, 'Napa 2015', 'Napa, CA', '04/26/2015', 'travel'
+album, 'Taiwan 2015', 'Taipei, TW', '03/21/2015', 'travel'
+album, 'Boston 2014', 'Boston, MA', '12/28/2014', 'travel'
+album, 'Chicago 2014', 'Chicago, IL', '11/23/2014', 'travel'
+album, 'Hong Kong 2014', 'Hong Kong, PRC', '09/14/2014', 'travel'
+album, 'San Francisco 2014', 'San Francisco, CA', '06/30/2014', 'travel'
+album, 'New York City 2013', 'New York, NY', '12/24/2013', 'travel'
+album, 'New York City 2013', 'New York, NY', '08/17/2013', 'travel'
+album, 'Chicago 2013', 'Chicago, IL', '07/04/2013', 'travel'
+album, 'Hong Kong 2012', 'Hong Kong, PRC', '12/07/2012', 'travel'
+album, 'Taiwan 2012', 'Taipei, TW', '12/02/2012', 'travel'
+album, 'New York 2012', 'New York, NY', '09/01/2012', 'travel'
+album, 'San Francisco 2012', 'San Francisco, CA', '08/17/2012', 'travel'
+album, 'Inyokern 2012', 'Inyokern, CA', '03/28/2012', 'travel'
+album, 'Newton 2012', 'Newton, MA', '03/16/2012', 'travel'
+album, 'Taiwan 2014', 'Taipei, TW', '09/07/2014', 'travel'
