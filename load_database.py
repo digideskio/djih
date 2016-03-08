@@ -32,9 +32,12 @@ def resetDB():
 
     with psycopg2.connect(os.environ.get('DATABASE_URL')) as conn:
         with conn.cursor() as cursor:
+            print 'Dropping Tables'
             dropTable(cursor, 'test_albums')
             dropTable(cursor, 'test_photos')
             dropTable(cursor, 'test_album_photos')
+
+            print 'Creating Tables'
             cursor.execute(CREATE_ALBUMS)
             cursor.execute(CREATE_ALBUMS_INDEX)
             cursor.execute(CREATE_PHOTOS)
@@ -71,7 +74,7 @@ def loadData(data_filename):
             if 'album' == entry[0]:
 
                 name, location, date, category = entry[1:5]
-                print 'Album: %s' % name
+                print 'Loading album: %s' % name
 
                 album_id += 1
                 cursor.execute(INSERT_ALBUM, (album_id, name, location, date, category))
