@@ -11,7 +11,8 @@ load_dotenv(dotenv_path)
 
 DATA_FILENAME = 'data/tables.csv'
 
-PHOTO_FILENAME_REGEX = 'DSC_[0-9]+.jpg'
+# PHOTO_FILENAME_REGEX = 'DSC_[0-9]+.jpg'
+PHOTO_FILENAME_REGEX = '/[0-9A-z]*.jpg'
 
 CREATE_ALBUMS = 'CREATE TABLE IF NOT EXISTS test_albums(id SERIAL PRIMARY KEY, name TEXT, location TEXT NOT NULL, date DATE NOT NULL, cover_photo_id INTEGER, category TEXT NOT NULL);'
 CREATE_ALBUMS_INDEX = 'CREATE INDEX test_albums_category_idx ON test_albums (category);'
@@ -56,6 +57,9 @@ def validateFilenames(filename, dropbox_url):
 
     dropbox_match = re.search(PHOTO_FILENAME_REGEX, dropbox_url)
     if not dropbox_match:
+        return False
+
+    if dropbox_url[0:2] != 's/' or dropbox_url[-4:] != '.jpg':
         return False
 
     return filename_match.group(0) == dropbox_match.group(0)
