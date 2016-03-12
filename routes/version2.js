@@ -1,7 +1,7 @@
 require('dotenv').load();
 var pg = require('pg');
 
-var album_query = "SELECT a.id, a.location, a.date, p.filename, p.width, p.height FROM albums AS a INNER JOIN photos AS p ON a.cover_photo_id = p.id WHERE a.category = 'travel' ORDER BY date DESC;";
+var album_query = "SELECT a.id, a.location, a.date, p.filename, p.dropbox_url, p.width, p.height FROM test_albums AS a INNER JOIN test_photos AS p ON a.cover_photo_id = p.id WHERE a.category = 'travel' ORDER BY date DESC;";
 var months = [
     'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August',
     'September', 'October', 'November', 'December'

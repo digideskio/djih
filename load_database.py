@@ -81,6 +81,9 @@ def loadData(data_filename):
             # check for next album
             if 'album' == entry[0]:
 
+                if (len(entry) != 5):
+                    print 'Invalid album entry: %s' % entry
+
                 name, location, date, category = entry[1:5]
                 print 'Loading album: %s' % name
 

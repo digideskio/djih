@@ -1,7 +1,7 @@
 require('dotenv').load();
 var pg = require('pg');
 
-var photo_query = "SELECT id, filename, title, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height FROM photos WHERE category = 'food' ORDER BY RANDOM();";
+var photo_query = "SELECT id, filename, dropbox_url, title, location, camera, focal_length, aperture, shutter_speed, iso, date_taken, width, height FROM test_photos WHERE category = 'food' ORDER BY RANDOM();";
 
 
 exports.view = function(req, res){

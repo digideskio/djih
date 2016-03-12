@@ -114,10 +114,10 @@
       <ul class="gallery">
 
         {{#each photos}}
-          <a href="/images/{{this.filename}}" id="img_{{this.id}}_link" class="gallery-popup-link">
+          <a href="https://dl.dropboxusercontent.com/{{this.dropbox_url}}" id="img_{{this.id}}_link" class="gallery-popup-link">
             <li class="img-li">
               <div class="img-details-wrapper">
-                <img src="/images/{{this.filename}}" class="img-album" id="img_{{this.id}}">
+                <img src="https://dl.dropboxusercontent.com/{{this.dropbox_url}}" class="img-album" id="img_{{this.id}}">
               </div>
             </li>
             <div class="img_data" id="{{this.id}}" location="{{this.location}}" camera="{{this.camera}}" focal="{{this.focal_length}}" aperture="{{this.aperture}}" shutter="{{this.shutter_speed}}" iso="{{this.iso}}" title="{{this.title}}"></div>
