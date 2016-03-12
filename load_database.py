@@ -74,6 +74,10 @@ def loadData(data_filename):
         data = csv.reader(data_file, quotechar="'", delimiter=',', quoting=csv.QUOTE_ALL, skipinitialspace=True)
         for entry in data:
 
+            # skip empty lines
+            if len(entry) == 0 or entry == []:
+                continue
+
             # check for next album
             if 'album' == entry[0]:
 
