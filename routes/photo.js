@@ -1,3 +1,5 @@
+var utils = require('./utils');
+
 require('dotenv').load();
 var pg = require('pg');
 var format = require('string-format');
@@ -7,23 +9,10 @@ var album_from_photo_id_query = 'SELECT album_id FROM test_album_photos WHERE ph
 var album_query = 'SELECT a.location, a.date, a.category, a.cover_photo_id, p.filename, p.width, p.height FROM test_albums AS a INNER JOIN test_photos AS p ON a.cover_photo_id = p.id WHERE a.id = {0}';
 var photo_query = 'SELECT p.id, p.filename, p.dropbox_url, p.title, p.location, p.camera, p.focal_length, p.aperture, p.shutter_speed, p.iso, p.date_taken, p.width, p.height FROM test_album_photos AS a INNER JOIN test_photos AS p ON a.photo_id = p.id WHERE a.album_id = {0} ORDER BY RANDOM();';
 
-var isValidAlbum = function(id) {
-    return (id >= 1 && id <= 28);
-}
-
-var isValidPhoto = function(id) {
-    return (id >= 1 && id <= 255);
-}
-
 var months = [
     'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August',
     'September', 'October', 'November', 'December'
 ]
-
-// min inclusive, max exclusive
-var randomInt = function(min, max) {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-}
 
 exports.view = function(req, res){
     var data = [];
@@ -31,8 +20,9 @@ exports.view = function(req, res){
 
     var photoid = parseInt(req.params.photoid);
 
-    if (!isValidPhoto(photoid)) {
+    if (!utils.isValidPhoto(photoid)) {
         res.redirect('/');
+        return;
     }
 
     data.from_photo = true;
@@ -52,9 +42,10 @@ exports.view = function(req, res){
                     var albumid = result.rows[0].album_id;
 
                     // invalid albumid
-                    if (!isValidAlbum(albumid)) {
+                    if (!utils.isValidAlbum(albumid)) {
                         done();
                         res.redirect('/');
+                        return;
                     }
 
                     data.album_id = albumid;
@@ -106,7 +97,7 @@ exports.view = function(req, res){
                                         // if first photo is cover photo, swap with last,
                                         // so on mobile you don't see the same photo twice
                                         if (photos[0].id == data.cover_photo_id && numPhotos > 1) {
-                                            var swapIndex = randomInt(1, numPhotos-1);
+                                            var swapIndex = utils.randomInt(1, numPhotos-1);
                                             photo = photos[0];
                                             photos[0] = photos[swapIndex];
                                             photos[swapIndex] = photo;

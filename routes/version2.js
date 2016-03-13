@@ -1,3 +1,5 @@
+var utils = require('./utils');
+
 require('dotenv').load();
 var pg = require('pg');
 
@@ -6,10 +8,6 @@ var months = [
     'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August',
     'September', 'October', 'November', 'December'
 ]
-
-var isFinishedAlbum = function(id) {
-    return (id >= 1 && id <= 28);
-}
 
 exports.view = function(req, res){
     var data = [];
@@ -25,7 +23,7 @@ exports.view = function(req, res){
                 for (var i = 0; i < result.rowCount; i++) {
                     var album = albums[i];
 
-                    if (isFinishedAlbum(album.id)) {
+                    if (utils.isValidAlbum(album.id)) {
                         album.show_link = true;
                     }
 
