@@ -3,8 +3,8 @@ import exifread
 import os
 from datetime import datetime
 
-PATH = '/Users/danieljih/Dropbox/Photos/djih/kula-sushi-2016'
-DEFAULT_LOCATION = 'Kula Revolving Sushi Bar, Cupertino, CA'
+PATH = '/Users/danieljih/Dropbox/Photos/djih/sutro-baths-2016'
+DEFAULT_LOCATION = 'Sutro Baths, Lands End, San Francisco, CA'
 
 
 def isEmptyString(string):
@@ -22,6 +22,8 @@ def prompt(variable_name, default=None):
 
 
 def fractionToFloat(fraction):
+    if '/' not in fraction:
+        return fraction
     num, den = fraction.split('/')
     return float(num)/float(den)
 
@@ -81,7 +83,9 @@ def readExifForImages(images):
             # category f/t
             category = 'food' if prompt('Category (f/t): ') == 'f' else 'travel'
 
-        data.append((title, filename, dropbox_url, location, camera, focal_length, aperture, shutter_speed, iso, date, width, height, category))
+        value = (title, filename, dropbox_url, location, camera, focal_length, aperture, shutter_speed, iso, date, width, height, category)
+
+        data.append(value)
             
     return data
 
