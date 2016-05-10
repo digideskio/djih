@@ -3,7 +3,6 @@
   <head>
 
     <script type="text/javascript">
-
       function initGeolocation() {
         if (navigator && navigator.geolocation) {
           navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
@@ -36,6 +35,7 @@
       Sauce: <input type="text" name="sauce"><br>
       <input type="submit" value="Submit">
     </form>
+      <button type="button" onclick="location.href = '/geo?lat=&lon=';">Refresh Geo</button>
 
     <br><br>
     {{#if entries}}
