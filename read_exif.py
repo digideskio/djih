@@ -3,8 +3,8 @@ import exifread
 import os
 from datetime import datetime
 
-PATH = '/Users/danieljih/Dropbox/Photos/djih/sutro-baths-2016'
-DEFAULT_LOCATION = 'Sutro Baths, Lands End, San Francisco, CA'
+PATH = '/Users/danieljih/Dropbox/Photos/djih/san-francisco-2016'
+DEFAULT_LOCATION = 'The Embarcadero, San Francisco, CA'
 
 
 def isEmptyString(string):
