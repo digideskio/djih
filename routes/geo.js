@@ -51,7 +51,12 @@ exports.view = function(req, res){
                 done();
                 console.log(result);
 
-                data.entries = result.rows;
+                var entries = result.rows;
+                for (var i = 0; i < result.rowCount; i++) {
+                    entries[i].distance = int(entries[i].distance);
+                }
+
+                data.entries = entries;
                 res.render('geo', data);
             });
         });
