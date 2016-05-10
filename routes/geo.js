@@ -53,7 +53,7 @@ exports.view = function(req, res){
 
                 var entries = result.rows;
                 for (var i = 0; i < result.rowCount; i++) {
-                    entries[i].distance = int(entries[i].distance);
+                    entries[i].distance = parseInt(entries[i].distance, 10);
                 }
 
                 data.entries = entries;
@@ -71,7 +71,7 @@ exports.view = function(req, res){
 
                 var entries = result.rows;
                 for (var i = 0; i < result.rowCount; i++) {
-                    entries[i].distance = int(entries[i].distance);
+                    entries[i].distance = parseInt(entries[i].distance, 10);
                 }
 
                 data.entries = entries;
