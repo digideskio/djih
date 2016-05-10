@@ -9,10 +9,12 @@ var insert_query = 'INSERT INTO test_geo (info, lat, lon) values ($1, $2, $3);'
 exports.view = function(req, res){
     var data = [];
     data.shouldInitGeo = true;
-    var lat = req.body.lat || '';
-    var lon = req.body.lon || '';
+    var lat = req.body.lat || req.query.lat || '';
+    var lon = req.body.lon || req.query.lon || '';
+    var sauce = req.body.sauce || req.query.sauce || '';
     data.lat = lat;
     data.lon = lon;
+    data.sauce = sauce;
     data.entries = null;
 
     if (lat !== '' && lon !== '') {

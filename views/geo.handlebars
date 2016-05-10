@@ -3,6 +3,12 @@
   <head>
 
     <script type="text/javascript">
+      function refreshGeo() {
+        var form = document.getElementById('input');
+        var sauce = form.sauce.value || '';
+        location.href = '/geo?lat=&lon=&sauce=' + sauce;
+      }
+
       function initGeolocation() {
         if (navigator && navigator.geolocation) {
           navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
@@ -32,10 +38,10 @@
       Lat: <input type="text" name="lat" value="{{lat}}" autocomplete="off"><br>
       Lon: <input type="text" name="lon" value="{{lon}}" autocomplete="off"><br>
       Msg: <input type="text" name="msg" autocomplete="off"><br>
-      Sauce: <input type="text" name="sauce"><br>
+      Sauce: <input type="text" name="sauce" value="{{sauce}}"><br>
       <input type="submit" value="Submit">
-    </form>
-      <button type="button" onclick="location.href = '/geo?lat=&lon=';">Refresh Geo</button>
+    </form><br>
+      <button type="button" onclick="refreshGeo();">Refresh Geo</button>
 
     <br><br>
     {{#if entries}}
