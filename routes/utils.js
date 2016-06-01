@@ -1,11 +1,11 @@
 var food_albums = []; // [1, 29];
 
 var isValidAlbum = function(id) {
-    return (id >= 1 && id <= 30 && food_albums.indexOf(id) == -1);
+    return (id >= 1 && id <= 31 && food_albums.indexOf(id) == -1);
 }
 
 var isValidPhoto = function(id) {
-    return (id >= 1 && id <= 255);
+    return (id >= 1 && id <= 282);
 }
 
 // min inclusive, max exclusive
